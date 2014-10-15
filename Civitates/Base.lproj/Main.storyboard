@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rYt-7d-Qgj"/>
+                        <viewControllerLayoutGuide type="bottom" id="KKm-zb-pV6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jz2-IQ-0Rd">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                            </mapView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPW-DW-pTo" customClass="KSLabel">
+                                <rect key="frame" x="475" y="40" width="75" height="47"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="900" minValue="-1000" maxValue="1600" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-hP-Wyk">
+                                <rect key="frame" x="143" y="72" width="738" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WPW-DW-pTo" secondAttribute="centerX" id="FbP-wY-WoE"/>
+                            <constraint firstAttribute="trailing" secondItem="GSB-hP-Wyk" secondAttribute="trailing" constant="145" id="KhZ-M2-Nqh"/>
+                            <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="Jz2-IQ-0Rd" secondAttribute="bottom" id="b0m-pz-soS"/>
+                            <constraint firstAttribute="centerX" secondItem="GSB-hP-Wyk" secondAttribute="centerX" id="igc-aJ-Rlf"/>
+                            <constraint firstAttribute="trailing" secondItem="Jz2-IQ-0Rd" secondAttribute="trailing" id="lHI-QL-Z8K"/>
+                            <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltb-SN-bgf"/>
+                            <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" id="pU0-7O-AhZ"/>
+                            <constraint firstItem="WPW-DW-pTo" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="20" id="q8p-kH-TUN"/>
+                            <constraint firstItem="GSB-hP-Wyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="145" id="wB8-M6-OF6"/>
+                            <constraint firstItem="GSB-hP-Wyk" firstAttribute="top" secondItem="WPW-DW-pTo" secondAttribute="bottom" constant="-15" id="xYf-bm-Use"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="Jz2-IQ-0Rd" id="JcT-9h-bEX"/>
+                        <outlet property="yearLabel" destination="WPW-DW-pTo" id="0Am-mX-hAe"/>
+                        <outlet property="yearSlider" destination="GSB-hP-Wyk" id="aSs-0c-TRv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="-126"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

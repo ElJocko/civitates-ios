@@ -1,0 +1,1875 @@
+{ "cities" : [
+{
+	"identifier" : "Adria",
+	"latitude": 45.05639,
+	"longitude": 12.05778,
+	"periods" : [
+	{
+		"startDate" : -530,
+		"endDate" : -200,
+		"preferredName" : "Atria",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Atria",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Adria",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Hatria",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Atria",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Atria",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Adria",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Agrigento",
+	"latitude": 37.31168,
+	"longitude": 13.57962,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Akragas",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Agrigentum",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Amalfi",
+	"latitude": 40.6349,
+	"longitude": 14.60238,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Amalfi",
+		"size" : 2,
+		"tagPosition" : 1
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Ancona",
+	"latitude": 43.59816,
+	"longitude": 13.51008,
+	"periods" : [
+	{
+		"startDate" : -387,
+		"endDate" : 2100,
+		"preferredName" : "Ancona",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Ancona",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Ancona",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Ancona",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Andria",
+	"latitude": 41.22984,
+	"longitude": 16.30674,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Aquileia",
+	"latitude": 45.77028,
+	"longitude": 13.36833,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Aquileia",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Aquileia",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Arezzo",
+	"latitude": 43.46734,
+	"longitude": 11.88261,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Arretium",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Arretium",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Aversa",
+	"latitude": 40.96321,
+	"longitude": 14.21681,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Bari",
+	"latitude": 41.11773,
+	"longitude": 16.85118,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Bari",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Benevento",
+	"latitude": 41.13204,
+	"longitude": 14.77328,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Beneventum",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Benevento",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Bisignano",
+	"latitude": 39.5059,
+	"longitude": 16.27719,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Bojano",
+	"latitude": 41.48572,
+	"longitude": 14.47293,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Bologna",
+	"latitude": 44.49381,
+	"longitude": 11.33875,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Felsina",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Bononia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Bologna",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Felsina",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Bononia",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Bologna",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Bolsena",
+	"latitude": 42.64383,
+	"longitude": 11.98506,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -264,
+		"preferredName" : "Velzna",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -263,
+		"endDate" : 600,
+		"preferredName" : "Volsinii",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Bolsena",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Velzna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Volsinii",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Bolsena",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Brindisi",
+	"latitude": 40.62773,
+	"longitude": 17.93682,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Brundisium",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Buonalbergo",
+	"latitude": 41.22322,
+	"longitude": 14.97744,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Butera",
+	"latitude": 37.19104,
+	"longitude": 14.18367,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Camerino",
+	"latitude": 43.13985,
+	"longitude": 13.06917,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Camerino",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Capua",
+	"latitude": 41.11082,
+	"longitude": 14.2133,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 1500,
+		"preferredName" : "Capua",
+		"size" : 2,
+		"tagPosition" : 3
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Cassino",
+	"latitude": 41.48762,
+	"longitude": 13.83151,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Catania",
+	"latitude": 37.503,
+	"longitude": 15.08638,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Catana",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Cefalu",
+	"latitude": 38.03856,
+	"longitude": 14.02285,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Chieti",
+	"latitude": 42.36094,
+	"longitude": 14.13801,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Chieti",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Chiusi",
+	"latitude": 43.01604,
+	"longitude": 11.94745,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Cosenza",
+	"latitude": 39.30999,
+	"longitude": 16.25019,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Cremona",
+	"latitude": 45.13617,
+	"longitude": 10.02797,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Cremona",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Crotone",
+	"latitude": 39.0851,
+	"longitude": 17.11781,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Croton",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Cumae",
+	"latitude": 40.848611,
+	"longitude": 14.053611,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Cumae",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Enna",
+	"latitude": 37.55885,
+	"longitude": 14.28917,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Ferrara",
+	"latitude": 44.82678,
+	"longitude": 11.62071,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Ferrara",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Florence",
+	"latitude": 43.76667,
+	"longitude": 11.25,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Florentia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Florence",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Gaeta",
+	"latitude": 41.21408,
+	"longitude": 13.57082,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Gaeta",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Galeria",
+	"latitude": 42.41,
+	"longitude": 8.6492,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Gallipoli",
+	"latitude": 40.05556,
+	"longitude": 17.97639,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Genoa",
+	"latitude": 44.40632,
+	"longitude": 8.93386,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Genua",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Genoa",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Genoa",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Gerace",
+	"latitude": 38.27137,
+	"longitude": 16.2207,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Giardini-Naxos",
+	"latitude": 37.82755,
+	"longitude": 15.26713,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Ivrea",
+	"latitude": 45.46723,
+	"longitude": 7.87617,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Ivrea",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Lavello",
+	"latitude": 41.04562,
+	"longitude": 15.79076,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Lecce",
+	"latitude": 40.35703,
+	"longitude": 18.17202,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Loreto",
+	"latitude": 43.43536,
+	"longitude": 13.60978,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Lucca",
+	"latitude": 43.84357,
+	"longitude": 10.50585,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Lucca",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Lucca",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Mantova",
+	"latitude": 45.16031,
+	"longitude": 10.79784,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Matera",
+	"latitude": 40.66852,
+	"longitude": 16.60158,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Melfi",
+	"latitude": 40.99656,
+	"longitude": 15.65364,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Melfi",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Messina",
+	"latitude": 38.19327,
+	"longitude": 15.54969,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Messana",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Milan",
+	"latitude": 45.46427,
+	"longitude": 9.18951,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Mediolanum",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Milan",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Milan",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Mediolanum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Milano",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Milan",
+		"language" : "English"
+	}
+	]
+},
+{
+	"identifier" : "Milazzo",
+	"latitude": 38.22117,
+	"longitude": 15.23828,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Mileto",
+	"latitude": 38.60958,
+	"longitude": 16.0696,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Modena",
+	"latitude": 44.64783,
+	"longitude": 10.92539,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Modena",
+		"size" : 2,
+		"tagPosition" : 1
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Monopoli",
+	"latitude": 40.95593,
+	"longitude": 17.2896,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Montescaglioso",
+	"latitude": 40.55222,
+	"longitude": 16.66689,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Naples",
+	"latitude": 40.83333,
+	"longitude": 14.25,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Neapolis",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Neapolis",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Naples",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Naples",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Nardo",
+	"latitude": 40.17512,
+	"longitude": 18.02972,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Nicastro",
+	"latitude": 38.98333,
+	"longitude": 16.31667,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Noto",
+	"latitude": 36.89014,
+	"longitude": 15.06929,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Oria",
+	"latitude": 40.49733,
+	"longitude": 17.64131,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Otranto",
+	"latitude": 40.14782,
+	"longitude": 18.48593,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Palermo",
+	"latitude": 38.11582,
+	"longitude": 13.35976,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Panormus",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Panormus",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Palermo",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Palermo",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Parma",
+	"latitude": 44.80266,
+	"longitude": 10.32898,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Parma",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Padua",
+	"latitude": 45.41519,
+	"longitude": 11.88181,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Patavium",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Paterno",
+	"latitude": 37.57095,
+	"longitude": 14.90268,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Pavia",
+	"latitude": 45.18446,
+	"longitude": 9.16145,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Pavia",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Perugia",
+	"latitude": 43.1122,
+	"longitude": 12.38878,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Perusia",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Pisa",
+	"latitude": 43.71553,
+	"longitude": 10.39659,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Pisae",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Pisa",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Pompeii",
+	"latitude": 40.75,
+	"longitude": 14.486111,
+	"periods" : [
+	{
+		"startDate" : -600,
+		"endDate" : 79,
+		"preferredName" : "Pompeii",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Pompeii",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Pontecorvo",
+	"latitude": 41.46162,
+	"longitude": 13.66671,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Pontecorvo",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Populonia",
+	"latitude": 42.989444,
+	"longitude": 10.491389,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Fufluna",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 570,
+		"preferredName" : "Populonia",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Fufluna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Pupluna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Populonia",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Potenza",
+	"latitude": 40.64432,
+	"longitude": 15.80857,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Ravenna",
+	"latitude": 44.4175,
+	"longitude": 12.20111,
+	"periods" : [
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Ravenna",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Ravenna",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Reggio Calabria",
+	"latitude": 38.11047,
+	"longitude": 15.66129,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Rhegium",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Rhegium",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Rimini",
+	"latitude": 44.06333,
+	"longitude": 12.58083,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Ariminum",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Rome",
+	"latitude": 41.89474,
+	"longitude": 12.4839,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 2100,
+		"preferredName" : "Rome",
+		"size" : 0,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Roma",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Roma",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Rome",
+		"language" : "English"
+	}
+	]
+},
+{
+	"identifier" : "Rossano",
+	"latitude": 39.5751,
+	"longitude": 16.6349,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Rusellae",
+	"latitude": 42.809444,
+	"longitude": 11.138611,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -294,
+		"preferredName" : "Rusellae",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -293,
+		"endDate" : 450,
+		"preferredName" : "Rusellae",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 451,
+		"endDate" : 1198,
+		"preferredName" : "Rusellae",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Rusellae",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Rusellae",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Salerno",
+	"latitude": 40.67802,
+	"longitude": 14.74577,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Salerno",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Saluzzo",
+	"latitude": 44.64644,
+	"longitude": 7.48623,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Saluzzo",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "San Marco",
+	"latitude": 40.2674,
+	"longitude": 14.93898,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "San Marino",
+	"latitude": 43.93667,
+	"longitude": 12.44639,
+	"periods" : [
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "San Marino",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Santa Severina",
+	"latitude": 39.1478,
+	"longitude": 16.91001,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Scalea",
+	"latitude": 39.813,
+	"longitude": 15.79558,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Siponto",
+	"latitude": 41.606944,
+	"longitude": 15.895833,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Sorrento",
+	"latitude": 40.62557,
+	"longitude": 14.3701,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Spina",
+	"latitude": 44.655,
+	"longitude": 12.115,
+	"periods" : [
+	{
+		"startDate" : -550,
+		"endDate" : -300,
+		"preferredName" : "Spina",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Spina",
+		"language" : "Etruscan"
+	}
+	]
+},
+{
+	"identifier" : "Spoleto",
+	"latitude": 42.74484,
+	"longitude": 12.73737,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Spoleto",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Squillace",
+	"latitude": 38.78091,
+	"longitude": 16.51175,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Syracuse",
+	"latitude": 37.08515,
+	"longitude": 15.273,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Syracusa",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Syracuse",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Syracuse",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Syracuse",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Taormina",
+	"latitude": 37.85358,
+	"longitude": 15.28851,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Taranto",
+	"latitude": 40.47611,
+	"longitude": 17.22972,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Tarentum",
+		"size" : 3,
+		"tagPosition" : 1
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Tarentum",
+		"size" : 1,
+		"tagPosition" : 1
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Tarquinia",
+	"latitude": 42.25419,
+	"longitude": 11.75657,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Tarchna",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Tarquinii",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1250,
+		"preferredName" : "Tarquinia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1251,
+		"endDate" : 1922,
+		"preferredName" : "Corneto",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Tarchna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Tarquinii",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Tarquinia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Corneto",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Terracina",
+	"latitude": 41.28967,
+	"longitude": 13.24127,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Trani",
+	"latitude": 41.28358,
+	"longitude": 16.42059,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Trani",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Trapani",
+	"latitude": 38.01906,
+	"longitude": 12.49758,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Trento",
+	"latitude": 46.06787,
+	"longitude": 11.12108,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Trento",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Trento",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Tricarico",
+	"latitude": 40.61939,
+	"longitude": 16.15133,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Troina",
+	"latitude": 37.78535,
+	"longitude": 14.59848,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Turin",
+	"latitude": 45.07049,
+	"longitude": 7.68682,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Turin",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Veii",
+	"latitude": 42.023889,
+	"longitude": 12.401389,
+	"periods" : [
+	{
+		"startDate" : -750,
+		"endDate" : -396,
+		"preferredName" : "Veii",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -395,
+		"endDate" : 200,
+		"preferredName" : "Veii",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Veii",
+		"language" : "Etruscan"
+	}
+	]
+},
+{
+	"identifier" : "Venice",
+	"latitude": 45.43861,
+	"longitude": 12.32667,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Venice",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1501,
+		"endDate" : 2100,
+		"preferredName" : "Venice",
+		"size" : 1,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Venosa",
+	"latitude": 40.96132,
+	"longitude": 15.81486,
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Verona",
+	"latitude": 45.43419,
+	"longitude": 10.99779,
+	"periods" : [
+	{
+		"startDate" : 601,
+		"endDate" : 1500,
+		"preferredName" : "Verona",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Volterra",
+	"latitude": 43.40034,
+	"longitude": 10.86002,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -298,
+		"preferredName" : "Velathri",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -297,
+		"endDate" : 600,
+		"preferredName" : "Volaterrae",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Volterra",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Velathri",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Volaterrae",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Volterra",
+		"language" : "Italian"
+	}
+	]
+}
+] }
