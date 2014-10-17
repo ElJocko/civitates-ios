@@ -18,6 +18,7 @@
 #import "CityDataTableViewController.h"
 #import "FileCacheTileOverlay.h"
 #import "SearchTableViewController.h"
+#import "AppUserDefaults.h"
 
 BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion region)
 {
@@ -68,9 +69,9 @@ static BOOL USE_COMMON_ERA = NO;
     self.cities = [DataLoader readCityData];
     [self prepareAlternateNames];
     
-    // Arbitrary year to start
-    // TBD: Make this a user default so it sticks
-    self.displayYear = 900;
+    // Get the last year the user selected
+    self.displayYear = [AppUserDefaults displayYear];
+    self.yearSlider.value = self.displayYear;
     
     // Set the era designation
     if (USE_COMMON_ERA) {
@@ -141,6 +142,9 @@ static BOOL USE_COMMON_ERA = NO;
         self.displayYear = value;
     }
     
+    // Save the selection
+    [AppUserDefaults setDisplayYear:self.displayYear];
+    
     // Display the year.
     [self updateYearLabel];
     
@@ -170,11 +174,10 @@ static BOOL USE_COMMON_ERA = NO;
     [self.presentationController.presentedViewController dismissViewControllerAnimated:YES completion:^ {
         // Warp the map to the city
         City *city = alternateName.city;
+        self.cityToSelectAfterRefresh = city;
         MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
         MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
         [self.mapView setRegion:region animated:YES];
-
-        self.cityToSelectAfterRefresh = city;
     }];
 }
 
@@ -354,7 +357,6 @@ static BOOL USE_COMMON_ERA = NO;
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
-    NSLog(@"Selected city.");
     [self.mapView deselectAnnotation:view.annotation animated:NO];
     CityAnnotationView *cityAnnotationView = (CityAnnotationView *)view;
     CityDataTableViewController *contentViewController = [[UIStoryboard storyboardWithName:@"CityPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"CityPopoverViewController"];

@@ -26,6 +26,7 @@
 		3D1FD5E9192E5B9D00D3D523 /* CityDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1FD5E8192E5B9D00D3D523 /* CityDataTableViewController.m */; };
 		3D27727818C7DDA100A3890F /* KSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D27727718C7DDA100A3890F /* KSLabel.m */; };
 		3D297214187E0E5B00273CD3 /* DynamicTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D297213187E0E5B00273CD3 /* DynamicTileOverlay.m */; };
+		3D2DCF2219F0C21E005CD639 /* AppUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */; };
 		3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6618B12BFF00284C0C /* DataLoader.m */; };
 		3D495E6A18B12EF400284C0C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6918B12EF400284C0C /* City.m */; };
 		3D495E6D18B12F6F00284C0C /* CityPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6C18B12F6F00284C0C /* CityPeriod.m */; };
@@ -81,6 +82,8 @@
 		3D297212187E0E5B00273CD3 /* DynamicTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTileOverlay.h; sourceTree = "<group>"; };
 		3D297213187E0E5B00273CD3 /* DynamicTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTileOverlay.m; sourceTree = "<group>"; };
 		3D2DCF1F19F0B1F8005CD639 /* SearchPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPopoverDelegate.h; sourceTree = "<group>"; };
+		3D2DCF2019F0C21E005CD639 /* AppUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUserDefaults.h; sourceTree = "<group>"; };
+		3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUserDefaults.m; sourceTree = "<group>"; };
 		3D495E6518B12BFF00284C0C /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		3D495E6618B12BFF00284C0C /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
 		3D495E6818B12EF300284C0C /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				3D14008A187BA2DD001FEE6C /* InfoPlist.strings */,
 				3D14008D187BA2DD001FEE6C /* main.m */,
 				3D14008F187BA2DD001FEE6C /* Civitates-Prefix.pch */,
+				3D2DCF2019F0C21E005CD639 /* AppUserDefaults.h */,
+				3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */,
+				3D2DCF2219F0C21E005CD639 /* AppUserDefaults.m in Sources */,
 				3D62AE431896A28700A02C18 /* CityAnnotation.m in Sources */,
 				3D53EC7A19CF62D800C9F1FC /* CityNameTableViewCell2.m in Sources */,
 				3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */,
