@@ -36,6 +36,8 @@
 		3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D53EC7919CF62D800C9F1FC /* CityNameTableViewCell2.xib */; };
 		3D53EC7D19D085B900C9F1FC /* CityPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */; };
 		3D62AE431896A28700A02C18 /* CityAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D62AE421896A28700A02C18 /* CityAnnotation.m */; };
+		3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB58E1A19EF6D5B00CE3146 /* SearchPopover.storyboard */; };
+		3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */; };
 		3DBE2F23189816B4009868E1 /* CityAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE2F22189816B4009868E1 /* CityAnnotationView.m */; };
 		3DE63259189FF7AC00E9F163 /* TSQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE63258189FF7AC00E9F163 /* TSQuadTree.m */; };
 /* End PBXBuildFile section */
@@ -78,6 +80,7 @@
 		3D27727718C7DDA100A3890F /* KSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSLabel.m; sourceTree = "<group>"; };
 		3D297212187E0E5B00273CD3 /* DynamicTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTileOverlay.h; sourceTree = "<group>"; };
 		3D297213187E0E5B00273CD3 /* DynamicTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTileOverlay.m; sourceTree = "<group>"; };
+		3D2DCF1F19F0B1F8005CD639 /* SearchPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPopoverDelegate.h; sourceTree = "<group>"; };
 		3D495E6518B12BFF00284C0C /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		3D495E6618B12BFF00284C0C /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
 		3D495E6818B12EF300284C0C /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
@@ -95,6 +98,9 @@
 		3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CityPopover.storyboard; sourceTree = "<group>"; };
 		3D62AE411896A28700A02C18 /* CityAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAnnotation.h; sourceTree = "<group>"; };
 		3D62AE421896A28700A02C18 /* CityAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAnnotation.m; sourceTree = "<group>"; };
+		3DB58E1A19EF6D5B00CE3146 /* SearchPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPopover.storyboard; sourceTree = "<group>"; };
+		3DB58E1C19EF784F00CE3146 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
 		3DBE2F21189816B4009868E1 /* CityAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAnnotationView.h; sourceTree = "<group>"; };
 		3DBE2F22189816B4009868E1 /* CityAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAnnotationView.m; sourceTree = "<group>"; };
 		3DE63257189FF7AB00E9F163 /* TSQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQuadTree.h; sourceTree = "<group>"; };
@@ -160,6 +166,7 @@
 		3D140087187BA2DD001FEE6C /* Civitates */ = {
 			isa = PBXGroup;
 			children = (
+				3DB58E1919EF6CF200CE3146 /* Search Popover */,
 				3D53EC7319CF563E00C9F1FC /* City Popover */,
 				3D53EC6F19CA3A8A00C9F1FC /* Overlay */,
 				3D495E7018B12FAE00284C0C /* UserInterface */,
@@ -258,14 +265,25 @@
 		3D53EC7319CF563E00C9F1FC /* City Popover */ = {
 			isa = PBXGroup;
 			children = (
+				3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */,
 				3D1FD5E7192E5B9D00D3D523 /* CityDataTableViewController.h */,
 				3D1FD5E8192E5B9D00D3D523 /* CityDataTableViewController.m */,
 				3D53EC7719CF62D800C9F1FC /* CityNameTableViewCell2.h */,
 				3D53EC7819CF62D800C9F1FC /* CityNameTableViewCell2.m */,
 				3D53EC7919CF62D800C9F1FC /* CityNameTableViewCell2.xib */,
-				3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */,
 			);
 			name = "City Popover";
+			sourceTree = "<group>";
+		};
+		3DB58E1919EF6CF200CE3146 /* Search Popover */ = {
+			isa = PBXGroup;
+			children = (
+				3DB58E1A19EF6D5B00CE3146 /* SearchPopover.storyboard */,
+				3D2DCF1F19F0B1F8005CD639 /* SearchPopoverDelegate.h */,
+				3DB58E1C19EF784F00CE3146 /* SearchTableViewController.h */,
+				3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */,
+			);
+			name = "Search Popover";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */,
 				3D495E7B18B2785300284C0C /* CityData in Resources */,
 				3D0A3ADD1896ED4B00A0FD12 /* Artwork in Resources */,
 				3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */,
@@ -375,6 +394,7 @@
 				3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */,
 				3D62AE431896A28700A02C18 /* CityAnnotation.m in Sources */,
 				3D53EC7A19CF62D800C9F1FC /* CityNameTableViewCell2.m in Sources */,
+				3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */,
 				3D53EC7219CA3AC500C9F1FC /* FileCacheTileOverlay.m in Sources */,
 				3D297214187E0E5B00273CD3 /* DynamicTileOverlay.m in Sources */,
 				3D495E7318B1304300284C0C /* AlternateName.m in Sources */,

@@ -7,13 +7,15 @@
 //
 
 #import "KSLabel.h"
+#import "SearchPopoverDelegate.h"
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController <MKMapViewDelegate, UIPopoverControllerDelegate>
+@interface ViewController : UIViewController <MKMapViewDelegate, UIPopoverControllerDelegate, SearchPopoverDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet KSLabel *yearLabel;
 @property (weak, nonatomic) IBOutlet UISlider *yearSlider;
+@property (weak, nonatomic) IBOutlet UIButton *searchButton;
 
 @end

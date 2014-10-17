@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class City;
+
 @interface AlternateName : NSObject
 
 @property NSString *name;
 @property NSString *culture;
+@property City *city;
 
 @end

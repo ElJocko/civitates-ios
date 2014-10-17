@@ -64,6 +64,7 @@
             AlternateName *alternateName = [[AlternateName alloc] init];
             alternateName.name = [alternateNameObject objectForKey:@"name"];
             alternateName.culture = [alternateNameObject objectForKey:@"language"];
+            alternateName.city = city;
             [tempAlternateNameArray addObject:alternateName];
 //            NSLog(@"alternate name: %@ for culture %@", alternateName.name, alternateName.culture);
         }

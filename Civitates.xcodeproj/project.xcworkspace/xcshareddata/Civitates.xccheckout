@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A173764-1737-4DC4-B7A2-0EBB5700D0E3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Civitates</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1617FBDE21B4DC357480D8FDB0359280DAFC7738</key>
+		<string>https://github.com/ElJocko/civitates-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Civitates.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1617FBDE21B4DC357480D8FDB0359280DAFC7738</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ElJocko/civitates-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1617FBDE21B4DC357480D8FDB0359280DAFC7738</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1617FBDE21B4DC357480D8FDB0359280DAFC7738</string>
+			<key>IDESourceControlWCCName</key>
+			<string>civitates-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

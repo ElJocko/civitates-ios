@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,12 +28,23 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="900" minValue="-1000" maxValue="1600" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-hP-Wyk">
                                 <rect key="frame" x="143" y="72" width="738" height="31"/>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-WK-x5O">
+                                <rect key="frame" x="977" y="40" width="25" height="25"/>
+                                <state key="normal" image="Artwork/search.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRr-Zn-pHd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="WPW-DW-pTo" secondAttribute="centerX" id="FbP-wY-WoE"/>
                             <constraint firstAttribute="trailing" secondItem="GSB-hP-Wyk" secondAttribute="trailing" constant="145" id="KhZ-M2-Nqh"/>
+                            <constraint firstItem="dLz-WK-x5O" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="20" id="MxT-JF-B0W"/>
                             <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="Jz2-IQ-0Rd" secondAttribute="bottom" id="b0m-pz-soS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dLz-WK-x5O" secondAttribute="trailing" constant="2" id="cJd-nr-JUj"/>
                             <constraint firstAttribute="centerX" secondItem="GSB-hP-Wyk" secondAttribute="centerX" id="igc-aJ-Rlf"/>
                             <constraint firstAttribute="trailing" secondItem="Jz2-IQ-0Rd" secondAttribute="trailing" id="lHI-QL-Z8K"/>
                             <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltb-SN-bgf"/>
@@ -47,6 +58,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="Jz2-IQ-0Rd" id="JcT-9h-bEX"/>
+                        <outlet property="searchButton" destination="dLz-WK-x5O" id="ht6-dP-cBk"/>
                         <outlet property="yearLabel" destination="WPW-DW-pTo" id="0Am-mX-hAe"/>
                         <outlet property="yearSlider" destination="GSB-hP-Wyk" id="aSs-0c-TRv"/>
                     </connections>
@@ -56,6 +68,9 @@
             <point key="canvasLocation" x="92" y="-126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Artwork/search.png" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>

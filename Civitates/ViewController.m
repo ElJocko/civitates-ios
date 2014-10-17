@@ -14,8 +14,10 @@
 #import "DataLoader.h"
 #import "City.h"
 #import "CityPeriod.h"
+#import "AlternateName.h"
 #import "CityDataTableViewController.h"
 #import "FileCacheTileOverlay.h"
+#import "SearchTableViewController.h"
 
 BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion region)
 {
@@ -48,7 +50,10 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 @property NSString *preZeroEra;
 @property NSString *postZeroEra;
 
-@property UIPopoverController *cityDataPopoverController;
+@property NSArray *allAlternateNames;
+
+@property UIPopoverPresentationController *presentationController;
+@property City *cityToSelectAfterRefresh;
 
 @end
 
@@ -61,6 +66,7 @@ static BOOL USE_COMMON_ERA = NO;
 {
     // Load the city data
     self.cities = [DataLoader readCityData];
+    [self prepareAlternateNames];
     
     // Arbitrary year to start
     // TBD: Make this a user default so it sticks
@@ -117,6 +123,7 @@ static BOOL USE_COMMON_ERA = NO;
     self.annotationsQueuedForRemoval = [[NSMutableSet alloc] init];
     
     // Display cities according to their category
+    self.cityToSelectAfterRefresh = nil;
     [self initializeAnnotationDisplay];
 }
 
@@ -139,6 +146,36 @@ static BOOL USE_COMMON_ERA = NO;
     
     // Update the cities shown on the map
     [self refreshAnnotationDisplay];
+}
+
+- (IBAction)searchButtonTapped:(id)sender
+{
+    UIButton *button = sender;
+    
+    SearchTableViewController *contentViewController = [[UIStoryboard storyboardWithName:@"SearchPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"SearchPopoverViewController"];
+    contentViewController.modalPresentationStyle = UIModalPresentationPopover;
+    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 10.0 + 58.0);
+    contentViewController.cityNames = self.allAlternateNames;
+    contentViewController.searchDelegate = self;
+    
+    self.presentationController = contentViewController.popoverPresentationController;
+    self.presentationController.sourceView = self.mapView;
+    self.presentationController.sourceRect = button.frame;
+    self.presentationController.permittedArrowDirections = UIPopoverArrowDirectionRight;
+    
+    [self presentViewController:contentViewController animated:YES completion:nil];
+}
+
+- (void)didSelectAlternateName:(AlternateName *)alternateName {
+    [self.presentationController.presentedViewController dismissViewControllerAnimated:YES completion:^ {
+        // Warp the map to the city
+        City *city = alternateName.city;
+        MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
+        MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
+        [self.mapView setRegion:region animated:YES];
+
+        self.cityToSelectAfterRefresh = city;
+    }];
 }
 
 - (void)updateYearLabel
@@ -301,6 +338,18 @@ static BOOL USE_COMMON_ERA = NO;
     for (CityAnnotation *annotation in offscreenAnnotationsToRemove) {
         [self.mapView removeAnnotation:annotation];
     }
+    
+    if (self.cityToSelectAfterRefresh) {
+        CityAnnotation *annotationToSelect = nil;
+        for (CityAnnotation *cityAnnotation in self.mapView.annotations) {
+            if (cityAnnotation.city == self.cityToSelectAfterRefresh) {
+                annotationToSelect = cityAnnotation;
+                break;
+            }
+        }
+        [self.mapView selectAnnotation:annotationToSelect animated:YES];
+        self.cityToSelectAfterRefresh = nil;
+    }
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
@@ -310,7 +359,8 @@ static BOOL USE_COMMON_ERA = NO;
     CityAnnotationView *cityAnnotationView = (CityAnnotationView *)view;
     CityDataTableViewController *contentViewController = [[UIStoryboard storyboardWithName:@"CityPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"CityPopoverViewController"];
     contentViewController.modalPresentationStyle = UIModalPresentationPopover;
-    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0 + 60.0 * 2.0);
+    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0 + 58.0 * 2.0);
+    contentViewController.city = cityAnnotationView.cityAnnotation.city;
     
     UIPopoverPresentationController *presentationController = contentViewController.popoverPresentationController;
     presentationController.sourceView = self.mapView;
@@ -318,14 +368,6 @@ static BOOL USE_COMMON_ERA = NO;
     presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
     
     [self presentViewController:contentViewController animated:YES completion:nil];
-    
-//    CityDataTableViewController *contentViewController = [[CityDataTableViewController alloc] init];
-    contentViewController.city = cityAnnotationView.cityAnnotation.city;
-//    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0);
-    
-//    self.cityDataPopoverController = [[UIPopoverController alloc] initWithContentViewController:contentViewController];
-//    self.cityDataPopoverController.delegate = self;
-//    [self.cityDataPopoverController presentPopoverFromRect:(view.frame) inView:self.mapView permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
@@ -424,6 +466,24 @@ static BOOL USE_COMMON_ERA = NO;
     [tempArray addObject:offscreenAnnotations.copy];
     
     return tempArray.copy;
+}
+
+- (void)prepareAlternateNames {
+    // Get the alternate name objects
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (City *city in self.cities) {
+        for (AlternateName *name in city.alternateNames) {
+            [tempArray addObject:name];
+        }
+    }
+    
+    // Sort them by name
+    self.allAlternateNames = [tempArray sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        AlternateName *name1 = obj1;
+        AlternateName *name2 = obj2;
+        
+        return [name1.name caseInsensitiveCompare:name2.name];
+    }];
 }
 
 - (void)didReceiveMemoryWarning
