@@ -163,9 +163,9 @@ static BOOL USE_COMMON_ERA = NO;
     contentViewController.searchDelegate = self;
     
     self.presentationController = contentViewController.popoverPresentationController;
-    self.presentationController.sourceView = self.mapView;
+    self.presentationController.sourceView = self.view;
     self.presentationController.sourceRect = button.frame;
-    self.presentationController.permittedArrowDirections = UIPopoverArrowDirectionRight;
+    self.presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
     
     [self presentViewController:contentViewController animated:YES completion:nil];
 }

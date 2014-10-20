@@ -27,6 +27,8 @@
 		3D27727818C7DDA100A3890F /* KSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D27727718C7DDA100A3890F /* KSLabel.m */; };
 		3D297214187E0E5B00273CD3 /* DynamicTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D297213187E0E5B00273CD3 /* DynamicTileOverlay.m */; };
 		3D2DCF2219F0C21E005CD639 /* AppUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */; };
+		3D2DCF3119F2FFF0005CD639 /* quattrocento.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DCF2F19F2FFF0005CD639 /* quattrocento.bold.ttf */; };
+		3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */; };
 		3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6618B12BFF00284C0C /* DataLoader.m */; };
 		3D495E6A18B12EF400284C0C /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6918B12EF400284C0C /* City.m */; };
 		3D495E6D18B12F6F00284C0C /* CityPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6C18B12F6F00284C0C /* CityPeriod.m */; };
@@ -84,6 +86,8 @@
 		3D2DCF1F19F0B1F8005CD639 /* SearchPopoverDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPopoverDelegate.h; sourceTree = "<group>"; };
 		3D2DCF2019F0C21E005CD639 /* AppUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUserDefaults.h; sourceTree = "<group>"; };
 		3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUserDefaults.m; sourceTree = "<group>"; };
+		3D2DCF2F19F2FFF0005CD639 /* quattrocento.bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = quattrocento.bold.ttf; sourceTree = "<group>"; };
+		3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = quattrocento.regular.ttf; sourceTree = "<group>"; };
 		3D495E6518B12BFF00284C0C /* DataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataLoader.h; sourceTree = "<group>"; };
 		3D495E6618B12BFF00284C0C /* DataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataLoader.m; sourceTree = "<group>"; };
 		3D495E6818B12EF300284C0C /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		3D140088187BA2DD001FEE6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D2DCF2B19F2F937005CD639 /* Fonts */,
 				3D495E7A18B2785300284C0C /* CityData */,
 				3D0A3ADC1896ED4B00A0FD12 /* Artwork */,
 				3D140089187BA2DD001FEE6C /* Civitates-Info.plist */,
@@ -220,6 +225,15 @@
 				3D1400A9187BA2DD001FEE6C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D2DCF2B19F2F937005CD639 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3D2DCF2F19F2FFF0005CD639 /* quattrocento.bold.ttf */,
+				3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3D495E6E18B12F8500284C0C /* Data */ = {
@@ -374,8 +388,10 @@
 				3D495E7B18B2785300284C0C /* CityData in Resources */,
 				3D0A3ADD1896ED4B00A0FD12 /* Artwork in Resources */,
 				3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */,
+				3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */,
 				3D14009A187BA2DD001FEE6C /* Images.xcassets in Resources */,
 				3D14008C187BA2DD001FEE6C /* InfoPlist.strings in Resources */,
+				3D2DCF3119F2FFF0005CD639 /* quattrocento.bold.ttf in Resources */,
 				3D140095187BA2DD001FEE6C /* Main.storyboard in Resources */,
 				3D53EC7D19D085B900C9F1FC /* CityPopover.storyboard in Resources */,
 			);
