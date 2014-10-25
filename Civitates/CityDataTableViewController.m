@@ -14,7 +14,7 @@
 @interface CityDataTableViewController ()
 
 @property NSDictionary *cultureSymbols;
-@property NSArray *condensedNames;
+@property NSArray *consolidatedNames;
 
 @end
 
@@ -33,7 +33,7 @@
 {
     [super viewDidLoad];
     [self.tableView registerNib:[UINib nibWithNibName:@"CityNameTableViewCell2" bundle:nil] forCellReuseIdentifier:@"cityNameCell"];
-    
+
     UIImage *latinImage = [UIImage imageNamed:@"Artwork/Latin.png"];
     UIImage *greekImage = [UIImage imageNamed:@"Artwork/Greek.png"];
     UIImage *italianImage = [UIImage imageNamed:@"Artwork/Italian.png"];
@@ -42,15 +42,36 @@
     
     self.cultureSymbols = [NSDictionary dictionaryWithObjectsAndKeys:latinImage, @"Latin", greekImage, @"Greek", italianImage, @"Italian", englishImage, @"English", etruscanImage, @"Etruscan", nil];
     
-    self.condensedNames = [[NSArray alloc] init];
+    self.consolidatedNames = [[NSArray alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSDictionary *cultureOrder = @{
+                                   @"Umbrian": @1,
+                                   @"Etruscan": @2,
+                                   @"Gallic": @3,
+                                   @"Greek": @4,
+                                   @"Latin": @5,
+                                   @"Italian": @6,
+                                   @"English": @7
+                                   };
+    
     if (self.city) {
         self.nameLabel.text = self.city.identifier;
         self.nameDescriptorLabel.text = @"MODERN";
         
+        // Each city has one or more names associated with it. These names are provided to this viewController
+        // as an array of alternateName objects, where each object has a name and a culture (e.g., "Fefluna"/"Etruscan").
+        // To prepare these names for display, they're reorganized as follows:
+        // 1. Consolidate all names for the same culture. So the objects "Vulci"/"Latin" and "Volci"/"Latin" are
+        // converted to one object "Vulci, Volci"/"Latin".
+        // 2. Sort the consolidated names by culture. The sorting is done using a very rough time peridization, not
+        // alphabetically.
+        // The product is an array that is used to fill the table view.
+        
+        // Consolidate the names
+        //   tempDictionary holds the list of consolidated names as we build it
         NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
         for (AlternateName *alternateName in self.city.alternateNames) {
             NSString *nameList = [tempDictionary objectForKey:alternateName.culture];
@@ -64,6 +85,7 @@
             [tempDictionary setObject:updatedNameList forKey:alternateName.culture];
         }
         
+        // Convert to an array of alternateName objects
         NSMutableArray *tempArray = [[NSMutableArray alloc] init];
         for (NSString *culture in [tempDictionary allKeys]) {
             AlternateName *alternateName = [[AlternateName alloc] init];
@@ -72,7 +94,21 @@
             [tempArray addObject:alternateName];
         }
         
-        self.condensedNames = tempArray.copy;
+        // Sort by culture time period
+        self.consolidatedNames = [tempArray sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+            AlternateName *name1 = obj1;
+            AlternateName *name2 = obj2;
+            
+            NSNumber *name1Order = [cultureOrder objectForKey:name1.culture];
+            NSNumber *name2Order = [cultureOrder objectForKey:name2.culture];
+            
+            if (name1Order && name2Order) {
+                return [name1Order compare:name2Order];
+            }
+            else {
+                return YES;
+            }
+        }];
     }
 }
 
@@ -105,7 +141,7 @@
 
     if (section == 0) {
         // Section 0 is always names
-        return self.condensedNames.count;
+        return self.consolidatedNames.count;
     }
     else {
         // If there's another section, it must be physical data
@@ -124,7 +160,7 @@
     
     if (indexPath.section == 0) {
         
-        AlternateName *name = [self.condensedNames objectAtIndex:indexPath.item];
+        AlternateName *name = [self.consolidatedNames objectAtIndex:indexPath.item];
         
         cell.cultureImage.image = [self.cultureSymbols objectForKey:name.culture];
         

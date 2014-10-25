@@ -10,7 +10,7 @@
 
 // This class performs the usual actions of the MKTileOverlay class, plus caches tiles in the /Library/caches directory.
 // Note that there is no explicit management of the cache at this point. So tiles do not expire and no maximum size of the cache is set.
-// The documentaion isn't very specific, but it implies that the OS manages the cache directory and may delete files as needed.
+// The Apple documentaion on the cache directory isn't very specific, but it implies that the OS manages the cache directory and may delete files as needed.
 
 @interface FileCacheTileOverlay()
 

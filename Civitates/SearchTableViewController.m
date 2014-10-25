@@ -13,7 +13,7 @@
 @interface SearchTableViewController ()
 
 @property NSDictionary *cultureSymbols;
-@property NSMutableArray *filteredCityNames;
+@property NSArray *filteredCityNames;
 
 @end
 
@@ -91,11 +91,10 @@
 
 -(void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
     // Update the filtered array based on the search text and scope.
-    // Remove all objects from the filtered search array
-    [self.filteredCityNames removeAllObjects];
+
     // Filter the array using NSPredicate
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name BEGINSWITH[c] %@", searchText];
-    self.filteredCityNames = [NSMutableArray arrayWithArray:[self.cityNames filteredArrayUsingPredicate:predicate]];
+    self.filteredCityNames = [NSArray arrayWithArray:[self.cityNames filteredArrayUsingPredicate:predicate]];
 }
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
