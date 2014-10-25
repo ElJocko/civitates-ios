@@ -14,6 +14,7 @@
 @interface CityDataTableViewController ()
 
 @property NSDictionary *cultureSymbols;
+@property NSArray *condensedNames;
 
 @end
 
@@ -40,12 +41,38 @@
     UIImage *etruscanImage = [UIImage imageNamed:@"Artwork/Etruscan.png"];
     
     self.cultureSymbols = [NSDictionary dictionaryWithObjectsAndKeys:latinImage, @"Latin", greekImage, @"Greek", italianImage, @"Italian", englishImage, @"English", etruscanImage, @"Etruscan", nil];
+    
+    self.condensedNames = [[NSArray alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     if (self.city) {
         self.nameLabel.text = self.city.identifier;
+        self.nameDescriptorLabel.text = @"MODERN";
+        
+        NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
+        for (AlternateName *alternateName in self.city.alternateNames) {
+            NSString *nameList = [tempDictionary objectForKey:alternateName.culture];
+            NSString *updatedNameList = nil;
+            if (nameList) {
+                updatedNameList = [nameList stringByAppendingFormat:@", %@", alternateName.name];
+            }
+            else {
+                updatedNameList = alternateName.name;
+            }
+            [tempDictionary setObject:updatedNameList forKey:alternateName.culture];
+        }
+        
+        NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+        for (NSString *culture in [tempDictionary allKeys]) {
+            AlternateName *alternateName = [[AlternateName alloc] init];
+            alternateName.culture = culture;
+            alternateName.name = [tempDictionary objectForKey:culture];
+            [tempArray addObject:alternateName];
+        }
+        
+        self.condensedNames = tempArray.copy;
     }
 }
 
@@ -78,7 +105,7 @@
 
     if (section == 0) {
         // Section 0 is always names
-        return self.city.alternateNames.count;
+        return self.condensedNames.count;
     }
     else {
         // If there's another section, it must be physical data
@@ -97,7 +124,7 @@
     
     if (indexPath.section == 0) {
         
-        AlternateName *name = [self.city.alternateNames objectAtIndex:indexPath.item];
+        AlternateName *name = [self.condensedNames objectAtIndex:indexPath.item];
         
         cell.cultureImage.image = [self.cultureSymbols objectForKey:name.culture];
         

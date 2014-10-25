@@ -1,5 +1,90 @@
 { "cities" : [
 {
+	"identifier" : "Acquarossa",
+	"latitude": 43.1556,
+	"longitude": 11.3994,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -500,
+		"preferredName" : "Acquarossa",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Acquarossa",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Anzio",
+	"latitude": 41.44749,
+	"longitude": 12.62707,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 235,
+		"preferredName" : "Antium",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 236,
+		"endDate" : 600,
+		"preferredName" : "Antium",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Anzio",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Antium",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Ardea",
+	"latitude": 41.6123,
+	"longitude": 12.51433,
+	"periods" : [
+	{
+		"startDate" : -750,
+		"endDate" : -201,
+		"preferredName" : "Ardea",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -200,
+		"endDate" : -100,
+		"preferredName" : "Ardea",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1000,
+		"endDate" : 2100,
+		"preferredName" : "Ardea",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Ardea",
+		"language" : "Latin"
+	}
+	]
+},
+{
 	"identifier" : "Adria",
 	"latitude": 45.05639,
 	"longitude": 12.05778,
@@ -36,10 +121,6 @@
 		"language" : "Greek"
 	},
 	{
-		"name" : "Atria",
-		"language" : "Latin"
-	},
-	{
 		"name" : "Adria",
 		"language" : "Italian"
 	}
@@ -51,22 +132,62 @@
 	"longitude": 13.57962,
 	"periods" : [
 	{
-		"startDate" : -700,
-		"endDate" : -200,
+		"startDate" : -582,
+		"endDate" : -406,
+		"preferredName" : "Akragas",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -405,
+		"endDate" : -210,
 		"preferredName" : "Akragas",
 		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -209,
+		"endDate" : 827,
 		"preferredName" : "Agrigentum",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 828,
+		"endDate" : 1086,
+		"preferredName" : "Girgenti",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1087,
+		"endDate" : 1600,
+		"preferredName" : "Girgenti",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Agrigento",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Agrigentum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Akragas",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Kirkent",
+		"language" : "Arabic"
+	},
+	{
+		"name" : "Girgenti",
+		"language" : "Arabic"
+	}
 	]
 },
 {
@@ -103,14 +224,6 @@
 	{
 		"name" : "Ancona",
 		"language" : "Greek"
-	},
-	{
-		"name" : "Ancona",
-		"language" : "Latin"
-	},
-	{
-		"name" : "Ancona",
-		"language" : "Italian"
 	}
 	]
 },
@@ -190,15 +303,29 @@
 	"longitude": 16.85118,
 	"periods" : [
 	{
+		"startDate" : -300,
+		"endDate" : 600,
+		"preferredName" : "Barium",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
-		"endDate" : 1500,
-		"preferredName" : "Bari",
+		"endDate" : 2100,
+		"preferredName" : "Barium",
 		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Bari",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Barium",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -278,6 +405,10 @@
 	{
 		"name" : "Felsina",
 		"language" : "Etruscan"
+	},
+	{
+		"name" : "Bona",
+		"language" : "Gallic"
 	},
 	{
 		"name" : "Bononia",
@@ -394,14 +525,35 @@
 	"periods" : [
 	{
 		"startDate" : -700,
-		"endDate" : 1500,
+		"endDate" : -424,
+		"preferredName" : "Capeva",
+		"size" : 3,
+		"tagPosition" : 3
+	},
+	{
+		"startDate" : -423,
+		"endDate" : 1156,
 		"preferredName" : "Capua",
 		"size" : 2,
+		"tagPosition" : 3
+	},
+	{
+		"startDate" : 1157,
+		"endDate" : 2100,
+		"preferredName" : "Capua",
+		"size" : 3,
 		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Capeva",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Capua",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -444,6 +596,56 @@
 	]
 },
 {
+	"identifier" : "Cerveteri",
+	"latitude": 41.99262,
+	"longitude": 12.09237,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Caisra",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Caere",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Cerveteri",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Caisra",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Cisra",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Agylla",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Caere",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Cerveteri",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Chieti",
 	"latitude": 42.36094,
 	"longitude": 14.13801,
@@ -465,10 +667,45 @@
 	"latitude": 43.01604,
 	"longitude": 11.94745,
 	"periods" : [
-
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Clevsin",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Clusium",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Chiusi",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Clusium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Clevsin",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Camars",
+		"language" : "Umbrian"
+	},
+	{
+		"name" : "Chiusi",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -567,14 +804,28 @@
 	"longitude": 11.25,
 	"periods" : [
 	{
-		"startDate" : -199,
+		"startDate" : -59,
 		"endDate" : 600,
 		"preferredName" : "Florentia",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1000,
+		"preferredName" : "Florence",
 		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 1501,
+		"startDate" : 1001,
+		"endDate" : 1300,
+		"preferredName" : "Florence",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1301,
 		"endDate" : 2100,
 		"preferredName" : "Florence",
 		"size" : 1,
@@ -582,7 +833,49 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Florence",
+		"language" : "English"
+	},
+	{
+		"name" : "Firenze",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Florentia",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Fluentia",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Gabii",
+	"latitude": 41.8869,
+	"longitude": 12.7158,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -100,
+		"preferredName" : "Gabii",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -99,
+		"endDate" : 300,
+		"preferredName" : "Gabii",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Gabii",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -706,6 +999,33 @@
 	]
 },
 {
+	"identifier" : "Lavinium",
+	"latitude": 41.6616,
+	"longitude": 12.4784,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -300,
+		"preferredName" : "Lavinium",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -299,
+		"endDate" : 400,
+		"preferredName" : "Lavinium",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Lavinium",
+		"language" : "Latin"
+	}
+	]
+},
+{
 	"identifier" : "Lecce",
 	"latitude": 40.35703,
 	"longitude": 18.17202,
@@ -813,21 +1133,28 @@
 	"longitude": 9.18951,
 	"periods" : [
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -400,
+		"endDate" : -222,
+		"preferredName" : "Mediolanum",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -221,
+		"endDate" : 285,
 		"preferredName" : "Mediolanum",
 		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 601,
-		"endDate" : 1500,
-		"preferredName" : "Milan",
-		"size" : 3,
+		"startDate" : 286,
+		"endDate" : 539,
+		"preferredName" : "Mediolanum",
+		"size" : 1,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 1501,
+		"startDate" : 540,
 		"endDate" : 2100,
 		"preferredName" : "Milan",
 		"size" : 2,
@@ -911,6 +1238,33 @@
 	]
 },
 {
+	"identifier" : "Murlo",
+	"latitude": 43.16114,
+	"longitude": 11.38794,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Murlo",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 2100,
+		"preferredName" : "Murlo",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Murlo",
+		"language" : "Etruscan"
+	}
+	]
+},
+{
 	"identifier" : "Naples",
 	"latitude": 40.83333,
 	"longitude": 14.25,
@@ -971,6 +1325,44 @@
 	]
 },
 {
+	"identifier" : "Nola",
+	"latitude": 40.9238,
+	"longitude": 14.52686,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -328,
+		"preferredName" : "Nuvlana",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -327,
+		"endDate" : -73,
+		"preferredName" : "Nola",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -72,
+		"endDate" : 2100,
+		"preferredName" : "Nola",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Nuvlana",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Nola",
+		"language" : "Latin"
+	}
+	]
+},
+{
 	"identifier" : "Noto",
 	"latitude": 36.89014,
 	"longitude": 15.06929,
@@ -1001,6 +1393,44 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Palestrina",
+	"latitude": 41.83552,
+	"longitude": 12.88899,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -73,
+		"preferredName" : "Praeneste",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -72,
+		"endDate" : 600,
+		"preferredName" : "Praeneste",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Palestrina",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Palestrina",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Praeneste",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1233,22 +1663,39 @@
 	"longitude": 12.20111,
 	"periods" : [
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -500,
+		"endDate" : -89,
+		"preferredName" : "Ravenna",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -88,
+		"endDate" : 401,
 		"preferredName" : "Ravenna",
 		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 601,
-		"endDate" : 1500,
+		"startDate" : 402,
+		"endDate" : 540,
 		"preferredName" : "Ravenna",
 		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 541,
+		"endDate" : 2100,
+		"preferredName" : "Ravenna",
+		"size" : 2,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Ravenna",
+		"language" : "Etruscan"
+	}
 	]
 },
 {
@@ -1361,10 +1808,6 @@
 	"altNames" : [
 	{
 		"name" : "Rusellae",
-		"language" : "Etruscan"
-	},
-	{
-		"name" : "Rusellae",
 		"language" : "Latin"
 	}
 	]
@@ -1401,6 +1844,30 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "San Felice Circeo",
+	"latitude": 41.23716,
+	"longitude": 13.09416,
+	"periods" : [
+	{
+		"startDate" : -550,
+		"endDate" : -30,
+		"preferredName" : "Circeii",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "San Felice Circeo",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Circeii",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1491,6 +1958,10 @@
 	"altNames" : [
 	{
 		"name" : "Spina",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Spica",
 		"language" : "Etruscan"
 	}
 	]
@@ -1654,10 +2125,72 @@
 	"latitude": 41.28967,
 	"longitude": 13.24127,
 	"periods" : [
-
+	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Tarracina",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Terracina",
+		"size" : 3,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Anxur",
+		"language" : "Volscian"
+	},
+	{
+		"name" : "Tarracina",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Terracina",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Tivoli",
+	"latitude": 41.96092,
+	"longitude": 12.79888,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -338,
+		"preferredName" : "Tibur",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -337,
+		"endDate" : 600,
+		"preferredName" : "Tibur",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Tivoli",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Tivoli",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Tibur",
+		"language" : "Etruscan"
+	}
 	]
 },
 {
@@ -1784,14 +2317,28 @@
 	"longitude": 12.32667,
 	"periods" : [
 	{
-		"startDate" : 601,
-		"endDate" : 1500,
+		"startDate" : 421,
+		"endDate" : 567,
+		"preferredName" : "Venetiae",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 568,
+		"endDate" : 1000,
+		"preferredName" : "Venice",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1001,
+		"endDate" : 1200,
 		"preferredName" : "Venice",
 		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 1501,
+		"startDate" : 1201,
 		"endDate" : 2100,
 		"preferredName" : "Venice",
 		"size" : 1,
@@ -1799,7 +2346,18 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Venice",
+		"language" : "English"
+	},
+	{
+		"name" : "Venezia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Venetiae",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1869,6 +2427,45 @@
 	{
 		"name" : "Volterra",
 		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Vulci",
+	"latitude": 42.418889,
+	"longitude": 11.631667,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -280,
+		"preferredName" : "Velch",
+		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -279,
+		"endDate" : 300,
+		"preferredName" : "Vulci",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Volci",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Vulci",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Velch",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Velx",
+		"language" : "Etruscan"
 	}
 	]
 }

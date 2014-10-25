@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="538" width="600" height="62"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="191-Xb-Gmj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="191-Xb-Gmj" userLabel="NameLabel">
                                 <rect key="frame" x="277" y="36" width="46" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -44,6 +45,12 @@
                                     <action selector="displayWikipediaArticle:" destination="HIG-UL-iFe" eventType="touchUpInside" id="qhI-vG-gHk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piT-Sr-38h" userLabel="DescriptorLabel">
+                                <rect key="frame" x="238" y="42" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97550101902173914" green="0.97550101902173914" blue="0.97550101902173914" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -51,6 +58,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="b96-OV-F6l" secondAttribute="trailing" constant="-16" id="4Cr-kb-wCt"/>
                             <constraint firstItem="m1o-Iz-nVn" firstAttribute="top" secondItem="EWT-8a-FFM" secondAttribute="bottom" constant="16" id="6Y5-PE-afD"/>
                             <constraint firstAttribute="bottom" secondItem="ZgG-WL-dMb" secondAttribute="bottom" id="6nk-6x-ZRw"/>
+                            <constraint firstItem="191-Xb-Gmj" firstAttribute="bottom" secondItem="piT-Sr-38h" secondAttribute="bottom" constant="1" id="7Me-Sx-kVi"/>
                             <constraint firstItem="191-Xb-Gmj" firstAttribute="top" secondItem="pEf-Dl-gij" secondAttribute="bottom" constant="16" id="UER-aG-0fA"/>
                             <constraint firstItem="EWT-8a-FFM" firstAttribute="top" secondItem="b96-OV-F6l" secondAttribute="bottom" constant="16" id="UEV-6U-7Oh"/>
                             <constraint firstItem="b96-OV-F6l" firstAttribute="top" secondItem="191-Xb-Gmj" secondAttribute="bottom" constant="16" id="bPZ-vB-dMv"/>
@@ -59,6 +67,7 @@
                             <constraint firstAttribute="centerX" secondItem="EWT-8a-FFM" secondAttribute="centerX" id="l85-4B-qLe"/>
                             <constraint firstItem="EWT-8a-FFM" firstAttribute="top" secondItem="b96-OV-F6l" secondAttribute="bottom" id="oBm-kU-L7c"/>
                             <constraint firstAttribute="centerX" secondItem="191-Xb-Gmj" secondAttribute="centerX" id="olM-2F-D4N"/>
+                            <constraint firstItem="191-Xb-Gmj" firstAttribute="leading" secondItem="piT-Sr-38h" secondAttribute="trailing" constant="8" id="wLJ-iu-AFg"/>
                             <constraint firstItem="ZgG-WL-dMb" firstAttribute="leading" secondItem="5HR-sg-sUi" secondAttribute="leadingMargin" constant="-16" id="wdF-Cg-1MH"/>
                             <constraint firstItem="ZgG-WL-dMb" firstAttribute="top" secondItem="b96-OV-F6l" secondAttribute="bottom" id="x5X-L2-vC2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZgG-WL-dMb" secondAttribute="trailing" constant="-16" id="zXk-op-PVS"/>
@@ -72,6 +81,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="nameDescriptorLabel" destination="piT-Sr-38h" id="Rzf-bo-f8T"/>
                         <outlet property="nameLabel" destination="191-Xb-Gmj" id="vh6-i7-JWs"/>
                         <outlet property="tableView" destination="b96-OV-F6l" id="SFO-i2-Ark"/>
                         <outlet property="wikipediaButton" destination="EWT-8a-FFM" id="oAs-Z6-pUN"/>
@@ -79,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0I-fe-avp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="441"/>
+            <point key="canvasLocation" x="336" y="414"/>
         </scene>
     </scenes>
 </document>

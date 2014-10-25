@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameDescriptorLabel;
 @property (weak, nonatomic) IBOutlet UIButton *wikipediaButton;
 
 @property City *city;
