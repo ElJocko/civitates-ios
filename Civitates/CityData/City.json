@@ -269,21 +269,67 @@
 	"periods" : [
 	{
 		"startDate" : -700,
-		"endDate" : -200,
+		"endDate" : -311,
 		"preferredName" : "Arretium",
 		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : -199,
+		"startDate" : -310,
 		"endDate" : 600,
 		"preferredName" : "Arretium",
 		"size" : 3,
 		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Arezzo",
+		"size" : 2,
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Arezzo",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Aritim",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Arretium",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Arpi",
+	"latitude": 15.555444,
+	"longitude": 41.475654,
+	"periods" : [
+	{
+		"startDate" : -600,
+		"endDate" : -200,
+		"preferredName" : "Arpi",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Arpi",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Argyripa",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Argos Hippium",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -312,7 +358,7 @@
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
-		"preferredName" : "Barium",
+		"preferredName" : "Bari",
 		"size" : 3,
 		"tagPosition" : 0
 	}
@@ -709,6 +755,48 @@
 	]
 },
 {
+	"identifier" : "Cortona",
+	"latitude": 43.27467,
+	"longitude": 11.98533,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Curtun",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Corito",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Cortona",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Cortona",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Corito",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Curtun",
+		"language" : "Etruscan"
+	}
+	]
+},
+{
 	"identifier" : "Cosenza",
 	"latitude": 39.30999,
 	"longitude": 16.25019,
@@ -742,15 +830,44 @@
 	"longitude": 17.11781,
 	"periods" : [
 	{
-		"startDate" : -700,
+		"startDate" : -710,
 		"endDate" : -200,
-		"preferredName" : "Croton",
+		"preferredName" : "Kroton",
 		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Crotona",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Crotone",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Crotone",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Crotona",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Kroton",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Cotrone",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -759,15 +876,44 @@
 	"longitude": 14.053611,
 	"periods" : [
 	{
-		"startDate" : -700,
-		"endDate" : -200,
+		"startDate" : -750,
+		"endDate" : -421,
 		"preferredName" : "Cumae",
 		"size" : 1,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -420,
+		"endDate" : 600,
+		"preferredName" : "Cumae",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1207,
+		"preferredName" : "Cuma",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Cumae",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Cuma",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Kume",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Kumai",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -848,6 +994,26 @@
 	{
 		"name" : "Fluentia",
 		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Foggia",
+	"latitude": 41.46093,
+	"longitude": 15.54925,
+	"periods" : [
+	{
+		"startDate" : 1000,
+		"endDate" : 2100,
+		"preferredName" : "Foggia",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Foggia",
+		"language" : "Italian"
 	}
 	]
 },
@@ -945,7 +1111,22 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Genoa",
+		"language" : "English"
+	},
+	{
+		"name" : "Genua",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Genova",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Zena",
+		"language" : "Ligurian"
+	}
 	]
 },
 {
@@ -985,6 +1166,37 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Larino",
+	"latitude": 41.80554,
+	"longitude": 14.91933,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Larinum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Larino",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Larino",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Larinum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1053,6 +1265,13 @@
 	"longitude": 10.50585,
 	"periods" : [
 	{
+		"startDate" : -300,
+		"endDate" : 600,
+		"preferredName" : "Luca",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
 		"endDate" : 1500,
 		"preferredName" : "Lucca",
@@ -1068,7 +1287,14 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Lucca",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Luca",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1116,15 +1342,44 @@
 	"longitude": 15.54969,
 	"periods" : [
 	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Messene",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Messana",
 		"size" : 3,
 		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Messina",
+		"size" : 3,
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Messina",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Messana",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Zankle",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Messene",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -1204,6 +1459,34 @@
 	"longitude": 10.92539,
 	"periods" : [
 	{
+		"startDate" : -600,
+		"endDate" : -250,
+		"preferredName" : "Mutna",
+		"size" : 3,
+		"tagPosition" : 1
+	},
+	{
+		"startDate" : -249,
+		"endDate" : -177,
+		"preferredName" : "Mutina",
+		"size" : 3,
+		"tagPosition" : 1
+	},
+	{
+		"startDate" : -176,
+		"endDate" : 600,
+		"preferredName" : "Mutina",
+		"size" : 2,
+		"tagPosition" : 1
+	},
+	{
+		"startDate" : 900,
+		"endDate" : 1500,
+		"preferredName" : "Modena",
+		"size" : 3,
+		"tagPosition" : 1
+	},
+	{
 		"startDate" : 1501,
 		"endDate" : 2100,
 		"preferredName" : "Modena",
@@ -1212,7 +1495,18 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Modena",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Mutna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Mutina",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1270,7 +1564,7 @@
 	"longitude": 14.25,
 	"periods" : [
 	{
-		"startDate" : -700,
+		"startDate" : -550,
 		"endDate" : -200,
 		"preferredName" : "Neapolis",
 		"size" : 3,
@@ -1285,13 +1579,13 @@
 	},
 	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 1442,
 		"preferredName" : "Naples",
 		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 1501,
+		"startDate" : 1443,
 		"endDate" : 2100,
 		"preferredName" : "Naples",
 		"size" : 1,
@@ -1299,7 +1593,18 @@
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Naples",
+		"language" : "English"
+	},
+	{
+		"name" : "Napoli",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Neapolis",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -1544,10 +1849,31 @@
 		"preferredName" : "Perusia",
 		"size" : 2,
 		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Perusia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Perugia",
+		"size" : 3,
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Perugia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Perusia",
+		"language" : "Etruscan"
+	}
 	]
 },
 {
@@ -1658,6 +1984,44 @@
 	]
 },
 {
+	"identifier" : "Ragusa",
+	"latitude": 36.92824,
+	"longitude": 14.71719,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Hybla Heraea",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Ragusia",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Ragusa",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Ragusa",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Ragusia",
+		"language" : "Latin"
+	}
+	]
+},
+{
 	"identifier" : "Ravenna",
 	"latitude": 44.4175,
 	"longitude": 12.20111,
@@ -1704,9 +2068,9 @@
 	"longitude": 15.66129,
 	"periods" : [
 	{
-		"startDate" : -700,
+		"startDate" : -737,
 		"endDate" : -200,
-		"preferredName" : "Rhegium",
+		"preferredName" : "Rhegion",
 		"size" : 2,
 		"tagPosition" : 0
 	},
@@ -1714,12 +2078,42 @@
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Rhegium",
-		"size" : 1,
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Reggio",
+		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Reggio Calabria",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Rhegium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Rhegion",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Rivah",
+		"language" : "Arabic"
+	},
+	{
+		"name" : "Regium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Reggio",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -1728,15 +2122,29 @@
 	"longitude": 12.58083,
 	"periods" : [
 	{
-		"startDate" : -700,
+		"startDate" : -268,
 		"endDate" : 600,
 		"preferredName" : "Ariminum",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Rimini",
 		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Rimini",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Ariminum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2194,6 +2602,62 @@
 	]
 },
 {
+	"identifier" : "Todi",
+	"latitude": 42.77994,
+	"longitude": 12.40456,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -217,
+		"preferredName" : "Tutere",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -216,
+		"endDate" : 600,
+		"preferredName" : "Tuder",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 1300,
+		"preferredName" : "Todi",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1301,
+		"endDate" : 1367,
+		"preferredName" : "Todi",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1368,
+		"endDate" : 2100,
+		"preferredName" : "Todi",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Todi",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Tuder",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Tutere",
+		"language" : "Umbrian"
+	}
+	]
+},
+{
 	"identifier" : "Trani",
 	"latitude": 41.28358,
 	"longitude": 16.42059,
@@ -2418,6 +2882,10 @@
 	"altNames" : [
 	{
 		"name" : "Velathri",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Felathri",
 		"language" : "Etruscan"
 	},
 	{
