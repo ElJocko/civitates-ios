@@ -15,7 +15,7 @@
 #import "City.h"
 #import "CityPeriod.h"
 #import "AlternateName.h"
-#import "CityDataTableViewController.h"
+#import "CityDataViewController.h"
 #import "FileCacheTileOverlay.h"
 #import "SearchTableViewController.h"
 #import "AppUserDefaults.h"
@@ -39,13 +39,16 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 
 @interface ViewController ()
 
-@property int displayYear;
+@property NSInteger displayYear;
 
 @property double preChangeZoomLevel;
 @property double preChangeZoomScale;
+
 @property NSArray *cities;
+
 @property NSArray *zoomThreshold;
 @property UILabel *zoomLabel;
+
 @property NSMutableSet *annotationsQueuedForRemoval;
 
 @property NSString *preZeroEra;
@@ -53,7 +56,6 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 
 @property NSArray *allAlternateNames;
 
-@property UIPopoverPresentationController *presentationController;
 @property City *cityToSelectAfterRefresh;
 
 @end
@@ -128,6 +130,13 @@ static BOOL USE_COMMON_ERA = NO;
     [self initializeAnnotationDisplay];
 }
 
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    // Dismiss any popovers that are currently displayed
+    if (self.presentedViewController) {
+        [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
 - (IBAction)sliderDidChange:(id)sender
 {
     // Get the selected value
@@ -156,29 +165,113 @@ static BOOL USE_COMMON_ERA = NO;
 {
     UIButton *button = sender;
     
+    // Configure the content view
     SearchTableViewController *contentViewController = [[UIStoryboard storyboardWithName:@"SearchPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"SearchPopoverViewController"];
     contentViewController.modalPresentationStyle = UIModalPresentationPopover;
     contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 10.0 + 58.0);
     contentViewController.cityNames = self.allAlternateNames;
     contentViewController.searchDelegate = self;
     
-    self.presentationController = contentViewController.popoverPresentationController;
-    self.presentationController.sourceView = self.view;
-    self.presentationController.sourceRect = button.frame;
-    self.presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
-    
+    // Present the popover
     [self presentViewController:contentViewController animated:YES completion:nil];
+    
+    // And configure the popover
+    UIPopoverPresentationController *presentationController = contentViewController.popoverPresentationController;
+    presentationController.sourceView = self.view;
+    presentationController.sourceRect = button.frame;
+    presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
 }
 
 - (void)didSelectAlternateName:(AlternateName *)alternateName {
-    [self.presentationController.presentedViewController dismissViewControllerAnimated:YES completion:^ {
-        // Warp the map to the city
-        City *city = alternateName.city;
-        self.cityToSelectAfterRefresh = city;
-        MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
-        MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
-        [self.mapView setRegion:region animated:YES];
-    }];
+    
+    City *city = alternateName.city;
+    self.cityToSelectAfterRefresh = city;
+    
+    // Is the city visible at the current year?
+    // If not, pick the closest year where it is visible.
+    bool shouldWarpYear = true;
+    bool isWarpYearSet = false;
+    NSInteger warpYear;
+    
+    for (CityPeriod *period in city.periods) {
+        if (self.displayYear >= period.startDate && self.displayYear <= period.endDate) {
+            shouldWarpYear = false;
+            break;
+        }
+        else {
+            NSInteger deltaStart = ABS(self.displayYear - period.startDate);
+            NSInteger deltaEnd = ABS(self.displayYear - period.endDate);
+            
+            if (isWarpYearSet) {
+                NSInteger deltaWarp = ABS(self.displayYear - warpYear);
+                if (deltaStart < deltaWarp) {
+                    warpYear = period.startDate;
+                }
+                
+                if (deltaEnd < deltaWarp && deltaEnd < deltaStart) {
+                    warpYear = period.endDate;
+                }
+            }
+            else {
+                if (deltaStart < deltaEnd) {
+                    warpYear = period.startDate;
+                }
+                else {
+                    warpYear = period.endDate;
+                }
+                isWarpYearSet = true;
+            }
+            
+            // Can't have a year 0
+            if (warpYear == 0) {
+                warpYear = 1;
+            }
+        }
+    }
+
+    if (shouldWarpYear) {
+        NSLog(@"Warp to year %ld", (long)warpYear);
+        [self.presentedViewController dismissViewControllerAnimated:YES completion:^ {
+            // Warp to the year
+            [UIView animateWithDuration:0.7
+                             animations:^{
+                                 // Animate the slider
+                                 [self.yearSlider setValue:warpYear animated:YES];
+                             }
+                             completion:^(BOOL finished) {
+                                 // Update the label
+                                 self.displayYear = warpYear;
+                                 [self updateYearLabel];
+                                 
+                                 // Warp the map to the city
+                                 MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
+                                 MKCoordinateRegion warpRegion = MKCoordinateRegionMake(city.location, span);
+                                 //                                 [self.mapView setRegion:warpRegion animated:YES];
+                                 [MKMapView animateWithDuration:0.7f
+                                                     animations:^{
+                                                         [self.mapView setRegion:warpRegion animated:YES];
+                                                     }
+                                                     completion:^(BOOL finished) {
+                                                         [self refreshAnnotationDisplay];
+                                                     }];
+                             }];
+        }];
+    }
+    else {
+        [self.presentedViewController dismissViewControllerAnimated:YES completion:^ {
+            // Warp the map to the city
+            MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
+            MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
+            //            [self.mapView setRegion:region animated:YES];
+            [MKMapView animateWithDuration:0.7f
+                                animations:^{
+                                    [self.mapView setRegion:region animated:YES];
+                                }
+                                completion:^(BOOL finished) {
+                                    [self refreshAnnotationDisplay];
+                                }];
+        }];
+    }
 }
 
 - (void)updateYearLabel
@@ -188,7 +281,7 @@ static BOOL USE_COMMON_ERA = NO;
         self.yearLabel.text = [NSString stringWithFormat:@"%d %@", (self.displayYear * -1), self.preZeroEra];
     }
     else {
-        self.yearLabel.text = [NSString stringWithFormat:@"%d %@", self.displayYear, self.postZeroEra];
+        self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (long)self.displayYear, self.postZeroEra];
     }
 }
 
@@ -302,6 +395,8 @@ static BOOL USE_COMMON_ERA = NO;
     [offscreenAnnotationsToRemove minusSet:onscreenAnnotationsToRemove];
     [offscreenAnnotationsToRemove minusSet:self.annotationsQueuedForRemoval];
 
+    NSLog(@"%d %d %d %d", onscreenAnnotationsToAdd.count, offscreenAnnotationsToAdd.count, onscreenAnnotationsToRemove.count, offscreenAnnotationsToRemove.count);
+    
     // Remove onscreen annotations
     // This is a two step process:
     // 1. Fade the annotations out (animate to transparent)
@@ -320,27 +415,31 @@ static BOOL USE_COMMON_ERA = NO;
                              }
                          }
                          completion:^(BOOL finished) {
+                             [self.mapView removeAnnotations:[onscreenAnnotationsToRemove allObjects]];
                              for (CityAnnotation *annotation in onscreenAnnotationsToRemove) {
-                                 [self.mapView removeAnnotation:annotation];
+//                                 [self.mapView removeAnnotation:annotation];
                                  [self.annotationsQueuedForRemoval removeObject:annotation];
                              }
                          }];
     }
     
     // Add onscreen annotations
-    for (CityAnnotation *annotation in onscreenAnnotationsToAdd) {
-        [self.mapView addAnnotation:annotation];
-    }
+//    for (CityAnnotation *annotation in onscreenAnnotationsToAdd) {
+//        [self.mapView addAnnotation:annotation];
+//    }
+    [self.mapView addAnnotations:[onscreenAnnotationsToAdd allObjects]];
     
     // Add offscreen annotations
-    for (CityAnnotation *annotation in offscreenAnnotationsToAdd) {
-        [self.mapView addAnnotation:annotation];
-    }
-
+//    for (CityAnnotation *annotation in offscreenAnnotationsToAdd) {
+//        [self.mapView addAnnotation:annotation];
+//    }
+    [self.mapView addAnnotations:[offscreenAnnotationsToAdd allObjects]];
+    
     // Remove offscreen annotations
-    for (CityAnnotation *annotation in offscreenAnnotationsToRemove) {
-        [self.mapView removeAnnotation:annotation];
-    }
+//    for (CityAnnotation *annotation in offscreenAnnotationsToRemove) {
+//        [self.mapView removeAnnotation:annotation];
+//    }
+    [self.mapView removeAnnotations:[offscreenAnnotationsToRemove allObjects]];
     
     if (self.cityToSelectAfterRefresh) {
         CityAnnotation *annotationToSelect = nil;
@@ -357,24 +456,22 @@ static BOOL USE_COMMON_ERA = NO;
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
+    // Configure the content view
     [self.mapView deselectAnnotation:view.annotation animated:NO];
     CityAnnotationView *cityAnnotationView = (CityAnnotationView *)view;
-    CityDataTableViewController *contentViewController = [[UIStoryboard storyboardWithName:@"CityPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"CityPopoverViewController"];
+    CityDataViewController *contentViewController = [[UIStoryboard storyboardWithName:@"CityPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"CityPopoverViewController"];
     contentViewController.modalPresentationStyle = UIModalPresentationPopover;
-    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0 + 58.0 * 2.0);
+    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0 + 54.0 * 3.0);
     contentViewController.city = cityAnnotationView.cityAnnotation.city;
     
+    // Present the popover
+    [self presentViewController:contentViewController animated:YES completion:nil];
+    
+    // And configure the popover
     UIPopoverPresentationController *presentationController = contentViewController.popoverPresentationController;
     presentationController.sourceView = self.mapView;
     presentationController.sourceRect = view.frame;
     presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
-    
-    [self presentViewController:contentViewController animated:YES completion:nil];
-}
-
-- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
-{
-    NSLog(@"Dismissed.");
 }
 
 - (NSArray *)annotationsForCurrentZoomAndRegion {

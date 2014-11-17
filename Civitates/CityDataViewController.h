@@ -1,8 +1,8 @@
 //
-//  CityDataTableViewController.h
+//  CityDataControllerViewController.h
 //  Civitates
 //
-//  Created by Sheriff III, Jack B on 5/22/14.
+//  Created by Sheriff III, Jack B on 11/14/14.
 //  Copyright (c) 2014 Sheriff III, Jack B. All rights reserved.
 //
 
@@ -10,9 +10,10 @@
 
 @class City;
 
-@interface CityDataTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface CityDataViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *dataSelector;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameDescriptorLabel;
 @property (weak, nonatomic) IBOutlet UIButton *wikipediaButton;

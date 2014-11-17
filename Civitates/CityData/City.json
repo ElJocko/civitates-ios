@@ -238,9 +238,23 @@
 	"periods" : [
 	{
 		"startDate" : -387,
+		"endDate" : 97,
+		"preferredName" : "Ancona",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 98,
+		"endDate" : 840,
+		"preferredName" : "Ancona",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 841,
 		"endDate" : 2100,
 		"preferredName" : "Ancona",
-		"size" : 2,
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
@@ -270,22 +284,39 @@
 	"elevation": 5,
 	"periods" : [
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -180,
+		"endDate" : -91,
+		"preferredName" : "Aquileia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -90,
+		"endDate" : 452,
 		"preferredName" : "Aquileia",
 		"size" : 1,
 		"tagPosition" : 0
 	},
 	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 1445,
 		"preferredName" : "Aquileia",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1446,
+		"endDate" : 2100,
+		"preferredName" : "Aquileia",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Aquileia",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -576,15 +607,40 @@
 	"elevation": 13,
 	"periods" : [
 	{
-		"startDate" : -700,
-		"endDate" : 600,
+		"startDate" : -600,
+		"endDate" : -268,
+		"preferredName" : "Brentesion",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -267,
+		"endDate" : 674,
 		"preferredName" : "Brundisium",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 675,
+		"endDate" : 2100,
+		"preferredName" : "Brindisi",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Brindisi",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Brundisium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Brentesion",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -639,7 +695,7 @@
 		"startDate" : -700,
 		"endDate" : -424,
 		"preferredName" : "Capeva",
-		"size" : 3,
+		"size" : 2,
 		"tagPosition" : 3
 	},
 	{
@@ -687,15 +743,40 @@
 	"elevation": 7,
 	"periods" : [
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -730,
+		"endDate" : -264,
+		"preferredName" : "Katane",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -263,
+		"endDate" : 535,
 		"preferredName" : "Catana",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 536,
+		"endDate" : 2100,
+		"preferredName" : "Catania",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Catana",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Catania",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Katane",
+		"language" : "Greek"
+	}
 	]
 },
 {
@@ -1167,15 +1248,36 @@
 	"elevation": 2,
 	"periods" : [
 	{
+		"startDate" : -700,
+		"endDate" : 600,
+		"preferredName" : "Caieta",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 1229,
 		"preferredName" : "Gaeta",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1230,
+		"endDate" : 2100,
+		"preferredName" : "Gaeta",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Gaeta",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Caieta",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2019,15 +2121,40 @@
 	"elevation": 12,
 	"periods" : [
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -700,
+		"endDate" : -46,
+		"preferredName" : "Patavium",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -45,
+		"endDate" : 613,
 		"preferredName" : "Patavium",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 614,
+		"endDate" : 2100,
+		"preferredName" : "Padua",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Padua",
+		"language" : "English"
+	},
+	{
+		"name" : "Padova",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Patavium",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2819,22 +2946,40 @@
 	"elevation": 15,
 	"periods" : [
 	{
-		"startDate" : -700,
-		"endDate" : -200,
-		"preferredName" : "Tarentum",
+		"startDate" : -706,
+		"endDate" : -273,
+		"preferredName" : "Taras",
 		"size" : 3,
 		"tagPosition" : 1
 	},
 	{
-		"startDate" : -199,
-		"endDate" : 600,
+		"startDate" : -272,
+		"endDate" : 685,
 		"preferredName" : "Tarentum",
 		"size" : 1,
+		"tagPosition" : 1
+	},
+	{
+		"startDate" : 686,
+		"endDate" : 2100,
+		"preferredName" : "Taranto",
+		"size" : 2,
 		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Taranto",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Tarentum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Taras",
+		"language" : "Greek"
+	}
 	]
 },
 {

@@ -39,7 +39,17 @@
         city.identifier = [cityObject objectForKey:@"identifier"];
         double latitude = [[cityObject objectForKey:@"latitude"] doubleValue];
         double longitude = [[cityObject objectForKey:@"longitude"] doubleValue];
+        NSInteger elevation = [[cityObject objectForKey:@"elevation"] integerValue];
         city.location = CLLocationCoordinate2DMake(latitude, longitude);
+        
+        // Add the physical data
+        NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
+        [tempDictionary setValue:[NSNumber numberWithDouble: latitude] forKey:@"latitude"];
+        [tempDictionary setValue:[NSNumber numberWithDouble: longitude] forKey:@"longitude"];
+        if (elevation != -999) {
+            [tempDictionary setValue:[NSNumber numberWithInteger: elevation] forKey:@"elevation"];
+        }
+        city.physicalData = tempDictionary.copy;
         
         // Add the periods
         NSArray *periodObjects = [cityObject objectForKey:@"periods"];

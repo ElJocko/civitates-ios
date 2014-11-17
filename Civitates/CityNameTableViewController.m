@@ -6,19 +6,19 @@
 //  Copyright (c) 2014 Sheriff III, Jack B. All rights reserved.
 //
 
-#import "CityDataTableViewController.h"
+#import "CityNameTableViewController.h"
 #import "City.h"
 #import "AlternateName.h"
 #import "CityNameTableViewCell2.h"
 
-@interface CityDataTableViewController ()
+@interface CityNameTableViewController ()
 
 @property NSDictionary *cultureSymbols;
 @property NSArray *consolidatedNames;
 
 @end
 
-@implementation CityDataTableViewController
+@implementation CityNameTableViewController
 
 //- (id)initWithStyle:(UITableViewStyle)style
 //{
@@ -58,9 +58,6 @@
                                    };
     
     if (self.city) {
-        self.nameLabel.text = self.city.identifier;
-        self.nameDescriptorLabel.text = @"MODERN";
-        
         // Each city has one or more names associated with it. These names are provided to this viewController
         // as an array of alternateName objects, where each object has a name and a culture (e.g., "Fefluna"/"Etruscan").
         // To prepare these names for display, they're reorganized as follows:
@@ -112,11 +109,6 @@
     }
 }
 
-- (IBAction)displayWikipediaArticle:(id)sender {
-    NSString *articlePath = [NSString stringWithFormat:@"http://wikipedia.com/wiki/%@", self.city.identifier];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:articlePath]];
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -127,26 +119,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    int numberOfSections = 1; // There's always a names section
-
-    if (self.city.physicalData != nil && self.city.physicalData.count > 0) {
-        ++numberOfSections;
-    }
-    
-    return numberOfSections;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    if (section == 0) {
-        // Section 0 is always names
-        return self.consolidatedNames.count;
-    }
-    else {
-        // If there's another section, it must be physical data
-        return self.city.physicalData.count;
-    }
+    return self.consolidatedNames.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
