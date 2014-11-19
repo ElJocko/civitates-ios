@@ -3,7 +3,7 @@
 	"identifier" : "Acquarossa",
 	"latitude": 43.1556,
 	"longitude": 11.3994,
-	"elevation": -999,
+	"elevation": 321,
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -364,9 +364,9 @@
 },
 {
 	"identifier" : "Arpi",
-	"latitude": 15.555444,
-	"longitude": 41.475654,
-	"elevation": -999,
+	"latitude": 41.475654,
+	"longitude": 15.555444,
+	"elevation": 60,
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -674,15 +674,29 @@
 	"elevation": 661,
 	"periods" : [
 	{
+		"startDate" : -300,
+		"endDate" : 600,
+		"preferredName" : "Camerinum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 2100,
 		"preferredName" : "Camerino",
-		"size" : 3,
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Camerino",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Camerinum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -721,6 +735,27 @@
 	{
 		"name" : "Capua",
 		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Casale Monferrato",
+	"latitude": 45.13336,
+	"longitude": 8.45714,
+	"elevation": 116,
+	"periods" : [
+	{
+		"startDate" : 1292,
+		"endDate" : 2100,
+		"preferredName" : "Casale Monferrato",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Casale Monferrato",
+		"language" : "Italian"
 	}
 	]
 },
@@ -849,15 +884,47 @@
 	"elevation": 330,
 	"periods" : [
 	{
+		"startDate" : -300,
+		"endDate" : 600,
+		"preferredName" : "Teate",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 1129,
+		"preferredName" : "Chieti",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1130,
+		"endDate" : 1400,
 		"preferredName" : "Chieti",
 		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1401,
+		"endDate" : 2100,
+		"preferredName" : "Chieti",
+		"size" : 4,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Chieti",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Theate",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Teate",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1055,7 +1122,7 @@
 	"identifier" : "Cumae",
 	"latitude": 40.848611,
 	"longitude": 14.053611,
-	"elevation": -999,
+	"elevation": 45,
 	"periods" : [
 	{
 		"startDate" : -750,
@@ -1217,7 +1284,7 @@
 	"identifier" : "Gabii",
 	"latitude": 41.8869,
 	"longitude": 12.7158,
-	"elevation": -999,
+	"elevation": 70,
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1284,7 +1351,7 @@
 	"identifier" : "Galeria",
 	"latitude": 42.41,
 	"longitude": 8.6492,
-	"elevation": -999,
+	"elevation": 28,
 	"periods" : [
 
 	],
@@ -1382,15 +1449,29 @@
 	"elevation": 253,
 	"periods" : [
 	{
-		"startDate" : 601,
-		"endDate" : 1500,
+		"startDate" : -100,
+		"endDate" : 571,
+		"preferredName" : "Eporedia",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 572,
+		"endDate" : 2100,
 		"preferredName" : "Ivrea",
 		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Ivrea",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Eporedia",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -1441,7 +1522,7 @@
 	"identifier" : "Lavinium",
 	"latitude": 41.6616,
 	"longitude": 12.4784,
-	"elevation": -999,
+	"elevation": 86,
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2176,15 +2257,36 @@
 	"elevation": 77,
 	"periods" : [
 	{
-		"startDate" : 601,
-		"endDate" : 1500,
+		"startDate" : -218,
+		"endDate" : 571,
+		"preferredName" : "Ticinum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 572,
+		"endDate" : 1525,
 		"preferredName" : "Pavia",
-		"size" : 1,
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1526,
+		"endDate" : 2100,
+		"preferredName" : "Pavia",
+		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Pavia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Ticinum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2280,7 +2382,7 @@
 	"identifier" : "Pompeii",
 	"latitude": 40.75,
 	"longitude": 14.486111,
-	"elevation": -999,
+	"elevation": 33,
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -2329,7 +2431,7 @@
 	"identifier" : "Populonia",
 	"latitude": 42.989444,
 	"longitude": 10.491389,
-	"elevation": -999,
+	"elevation": 179,
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2586,7 +2688,7 @@
 	"identifier" : "Rusellae",
 	"latitude": 42.809444,
 	"longitude": 11.138611,
-	"elevation": -999,
+	"elevation": 25,
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2777,12 +2879,32 @@
 	"identifier" : "Siponto",
 	"latitude": 41.606944,
 	"longitude": 15.895833,
-	"elevation": -999,
+	"elevation": 4,
 	"periods" : [
-
+	{
+		"startDate" : -400,
+		"endDate" : 663,
+		"preferredName" : "Sipontum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1034,
+		"endDate" : 1250,
+		"preferredName" : "Siponto",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Siponto",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Sipontum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2801,7 +2923,7 @@
 	"identifier" : "Spina",
 	"latitude": 44.655,
 	"longitude": 12.115,
-	"elevation": -999,
+	"elevation": 0,
 	"periods" : [
 	{
 		"startDate" : -550,
@@ -3293,22 +3415,47 @@
 	"elevation": 239,
 	"periods" : [
 	{
+		"startDate" : -27,
+		"endDate" : 600,
+		"preferredName" : "Augusta Taurinorum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
 		"startDate" : 601,
-		"endDate" : 1500,
+		"endDate" : 1229,
+		"preferredName" : "Turin",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1230,
+		"endDate" : 2100,
 		"preferredName" : "Turin",
 		"size" : 3,
 		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Turin",
+		"language" : "English"
+	},
+	{
+		"name" : "Torino",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Augusta Taurinorum",
+		"language" : "Latin"
+	}
 	]
 },
 {
 	"identifier" : "Veii",
 	"latitude": 42.023889,
 	"longitude": 12.401389,
-	"elevation": -999,
+	"elevation": 118,
 	"periods" : [
 	{
 		"startDate" : -750,
@@ -3437,6 +3584,53 @@
 	]
 },
 {
+	"identifier" : "Vetulonia",
+	"latitude": 42.8575784,
+	"longitude": 10.9717745,
+	"elevation": 319,
+	"periods" : [
+	{
+		"startDate" : -700,
+		"endDate" : -200,
+		"preferredName" : "Vetluna",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -199,
+		"endDate" : 600,
+		"preferredName" : "Vetulonium",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Vetulonia",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Vetulonia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Vetulonium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Vetluna",
+		"language" : "Etruscan"
+	},
+	{
+		"name" : "Colonnata",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Volterra",
 	"latitude": 43.40034,
 	"longitude": 10.86002,
@@ -3487,7 +3681,7 @@
 	"identifier" : "Vulci",
 	"latitude": 42.418889,
 	"longitude": 11.631667,
-	"elevation": -999,
+	"elevation": 65,
 	"periods" : [
 	{
 		"startDate" : -700,

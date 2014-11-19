@@ -244,7 +244,7 @@ static BOOL USE_COMMON_ERA = NO;
                                  [self updateYearLabel];
                                  
                                  // Warp the map to the city
-                                 MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
+                                 MKCoordinateSpan span = MKCoordinateSpanMake(2.7, 2.7);
                                  MKCoordinateRegion warpRegion = MKCoordinateRegionMake(city.location, span);
                                  //                                 [self.mapView setRegion:warpRegion animated:YES];
                                  [MKMapView animateWithDuration:0.7f
@@ -260,7 +260,7 @@ static BOOL USE_COMMON_ERA = NO;
     else {
         [self.presentedViewController dismissViewControllerAnimated:YES completion:^ {
             // Warp the map to the city
-            MKCoordinateSpan span = MKCoordinateSpanMake(3.0, 3.0);
+            MKCoordinateSpan span = MKCoordinateSpanMake(2.7, 2.7);
             MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
             //            [self.mapView setRegion:region animated:YES];
             [MKMapView animateWithDuration:0.7f
@@ -326,8 +326,10 @@ static BOOL USE_COMMON_ERA = NO;
 {
     MKZoomScale postChangeZoomScale = mapView.bounds.size.width / mapView.visibleMapRect.size.width;
     double postChangeZoomLevel = 20.0 + log2(postChangeZoomScale);
+    double latSpan = mapView.region.span.latitudeDelta;
+    double longSpan = mapView.region.span.longitudeDelta;
 
-    self.zoomLabel.text = [NSString stringWithFormat:@"%f", postChangeZoomLevel];
+    self.zoomLabel.text = [NSString stringWithFormat:@"%f (%f/%f)", postChangeZoomLevel, latSpan, longSpan];
     
     if (self.preChangeZoomLevel == postChangeZoomLevel) {
         return;
