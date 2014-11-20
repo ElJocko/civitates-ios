@@ -29,28 +29,28 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="900" minValue="-1000" maxValue="1600" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-hP-Wyk">
                                 <rect key="frame" x="143" y="65" width="738" height="31"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-WK-x5O">
-                                <rect key="frame" x="950" y="40" width="52" height="52"/>
-                                <state key="normal" backgroundImage="Artwork/antiquesearch2.png">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPW-DW-pTo" customClass="KSLabel">
+                                <rect key="frame" x="468" y="35" width="89" height="40"/>
+                                <fontDescription key="fontDescription" name="Quattrocento-Bold" family="Quattrocento" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-WK-x5O">
+                                <rect key="frame" x="951" y="43" width="52" height="52"/>
+                                <state key="normal" image="Artwork/antiquesearch2.png" backgroundImage="Artwork/antiquesearch2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRr-Zn-pHd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPW-DW-pTo" customClass="KSLabel">
-                                <rect key="frame" x="468" y="35" width="89" height="40"/>
-                                <fontDescription key="fontDescription" name="Quattrocento-Bold" family="Quattrocento" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="WPW-DW-pTo" secondAttribute="centerX" id="FbP-wY-WoE"/>
                             <constraint firstAttribute="trailing" secondItem="GSB-hP-Wyk" secondAttribute="trailing" constant="145" id="KhZ-M2-Nqh"/>
-                            <constraint firstItem="dLz-WK-x5O" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="20" id="MxT-JF-B0W"/>
+                            <constraint firstItem="dLz-WK-x5O" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="23" id="MxT-JF-B0W"/>
                             <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="Jz2-IQ-0Rd" secondAttribute="bottom" id="b0m-pz-soS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dLz-WK-x5O" secondAttribute="trailing" constant="2" id="cJd-nr-JUj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dLz-WK-x5O" secondAttribute="trailing" constant="5" id="cJd-nr-JUj"/>
                             <constraint firstAttribute="centerX" secondItem="GSB-hP-Wyk" secondAttribute="centerX" id="igc-aJ-Rlf"/>
                             <constraint firstAttribute="trailing" secondItem="Jz2-IQ-0Rd" secondAttribute="trailing" id="lHI-QL-Z8K"/>
                             <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltb-SN-bgf"/>

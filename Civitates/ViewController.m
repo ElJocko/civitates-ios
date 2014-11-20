@@ -19,6 +19,7 @@
 #import "FileCacheTileOverlay.h"
 #import "SearchTableViewController.h"
 #import "AppUserDefaults.h"
+#import "MapUtilities.h"
 
 BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion region)
 {
@@ -40,9 +41,14 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 @interface ViewController ()
 
 @property NSInteger displayYear;
+@property NSTimer *sliderTimer;
+//@property NSTimeInterval lastChangeTime;
+//@property NSInteger lastChangeValue;
+//@property NSTimeInterval lastRefreshTime;
+//@property BOOL slidingUp;
 
-@property double preChangeZoomLevel;
-@property double preChangeZoomScale;
+@property ZoomLevel preChangeZoomLevel;
+@property MKZoomScale preChangeZoomScale;
 
 @property NSArray *cities;
 
@@ -62,7 +68,8 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 
 @implementation ViewController
 
-static double MAX_ZOOM_LEVEL = 10.0;
+static ZoomLevel MAX_ZOOM_LEVEL = 10.0;
+static ZoomLevel SELECT_CITY_ZOOM_LEVEL = 8.1;
 static BOOL USE_COMMON_ERA = NO;
 
 - (void)viewDidLoad
@@ -96,6 +103,9 @@ static BOOL USE_COMMON_ERA = NO;
     
     // Initialize slider
     [self.yearSlider addTarget:self action:@selector(sliderDidChange:) forControlEvents:UIControlEventValueChanged];
+    [self.yearSlider addTarget:self action:@selector(sliderDidFinish:) forControlEvents:UIControlEventTouchUpInside];
+    [self.yearSlider addTarget:self action:@selector(sliderDidFinish:) forControlEvents:UIControlEventTouchUpOutside];
+//    self.lastChangeTime = 0.0;
     
     // Set the zoom levels that trigger changes in the display
     self.zoomThreshold = [[NSArray alloc] initWithObjects:@0.0, @5.0, @6.0, @7.0, @8.0, nil];
@@ -141,7 +151,30 @@ static BOOL USE_COMMON_ERA = NO;
 {
     // Get the selected value
     UISlider *slider = (UISlider *)sender;
-    int value = slider.value;
+    NSInteger value = slider.value;
+
+//    BOOL nowSlidingUp = (value > self.lastChangeValue);
+//
+//    NSTimeInterval now = [NSDate timeIntervalSinceReferenceDate];
+//    BOOL refresh = NO;
+//    if (self.lastChangeTime != 0.0) {
+//        CGFloat timeDiff = ABS(now - self.lastChangeTime) * 1000;
+//        NSInteger valueDiff = ABS(value - self.lastChangeValue);
+//        CGFloat rate = valueDiff / timeDiff;
+//        CGFloat refreshDiff = ABS(now - self.lastRefreshTime) * 1000;
+//        
+//        if (refreshDiff > 200 && timeDiff < 20.0 && rate < 0.4 && nowSlidingUp == self.slidingUp) {
+//            refresh = YES;
+//            self.lastRefreshTime = now;
+//            NSLog(@"Refresh");
+//        }
+//    }
+//    self.lastChangeTime = now;
+//    self.lastChangeValue = value;
+//    self.slidingUp = nowSlidingUp;
+
+//    NSInteger gap = self.displayYear - value;
+//    NSLog(@"%ld (%ld)", (long)gap, (long)value);
     
     // Set the display year. There is no year 0, so make it year 1.
     if (value == 0) {
@@ -158,6 +191,62 @@ static BOOL USE_COMMON_ERA = NO;
     [self updateYearLabel];
     
     // Update the cities shown on the map
+//    if (refresh) {
+//        [self refreshAnnotationDisplay];
+//    }
+    [self startSliderTimer];
+}
+
+- (IBAction)sliderDidFinish:(id)sender
+{
+    [self stopSliderTimer];
+    
+    // Get the selected value
+    UISlider *slider = (UISlider *)sender;
+    NSInteger value = slider.value;
+    
+    // Set the display year. There is no year 0, so make it year 1.
+    if (value == 0) {
+        self.displayYear = 1;
+    }
+    else {
+        self.displayYear = value;
+    }
+    
+    // Save the selection
+    [AppUserDefaults setDisplayYear:self.displayYear];
+    
+    // Display the year.
+    [self updateYearLabel];
+    
+    // Update the cities shown on the map
+    [self refreshAnnotationDisplay];
+}
+
+- (void)startSliderTimer {
+    if (self.sliderTimer && self.sliderTimer.valid) {
+        // Already started
+//        NSLog(@"Slider timer restarted");
+        [self.sliderTimer invalidate];
+    }
+    else {
+//        NSLog(@"Slider Timer started");
+    }
+    self.sliderTimer = [NSTimer timerWithTimeInterval:0.2 target:self selector:@selector(sliderDidPause:) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:self.sliderTimer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)stopSliderTimer {
+//    NSLog(@"Slider Timer stopped");
+    if (self.sliderTimer) {
+        [self.sliderTimer invalidate];
+        self.sliderTimer = nil;
+    }
+}
+
+- (void)sliderDidPause:(NSTimer *)timer {
+    NSLog(@"Slider Timer fired");
+    [self stopSliderTimer];
     [self refreshAnnotationDisplay];
 }
 
@@ -243,32 +332,49 @@ static BOOL USE_COMMON_ERA = NO;
                                  self.displayYear = warpYear;
                                  [self updateYearLabel];
                                  
-                                 // Warp the map to the city
-                                 MKCoordinateSpan span = MKCoordinateSpanMake(2.7, 2.7);
-                                 MKCoordinateRegion warpRegion = MKCoordinateRegionMake(city.location, span);
-                                 //                                 [self.mapView setRegion:warpRegion animated:YES];
-                                 [MKMapView animateWithDuration:0.7f
+                                 // Slew the map to the city
+                                 MKZoomScale resetZoomScale = [MapUtilities zoomScaleForZoomLevel:SELECT_CITY_ZOOM_LEVEL];
+                                 MKMapRect mapRect = [MapUtilities mapRectOfMapView:self.mapView withZoomScale:resetZoomScale atCenterCoordinate:city.location];
+                                 MKCoordinateRegion region = MKCoordinateRegionForMapRect(mapRect);
+                                 MKCoordinateRegion startingRegion = self.mapView.region;
+                                 MKZoomScale startingZoomScale = [MapUtilities zoomScaleOfMapView:self.mapView];
+                                 
+                                 [MKMapView animateWithDuration:1.0f
                                                      animations:^{
-                                                         [self.mapView setRegion:warpRegion animated:YES];
+                                                         [self.mapView setRegion:region animated:YES];
                                                      }
                                                      completion:^(BOOL finished) {
-                                                         [self refreshAnnotationDisplay];
+                                                         if ([MapUtilities mapRegion:self.mapView.region equalsMapRegion:startingRegion]) {
+                                                             // The map didn't move. Force a refresh since we changed the year.
+                                                             [self refreshAnnotationDisplay];
+                                                             [self selectCityAfterRefresh];
+                                                         }
+                                                         else if ([MapUtilities zoomScaleOfMapView:self.mapView] == startingZoomScale) {
+                                                             // The map moved but didn't zoom. Force a refresh, but don't select the city. That will happen
+                                                             // in response to the map move.
+                                                             [self refreshAnnotationDisplay];
+                                                         }
                                                      }];
                              }];
         }];
     }
     else {
         [self.presentedViewController dismissViewControllerAnimated:YES completion:^ {
-            // Warp the map to the city
-            MKCoordinateSpan span = MKCoordinateSpanMake(2.7, 2.7);
-            MKCoordinateRegion region = MKCoordinateRegionMake(city.location, span);
-            //            [self.mapView setRegion:region animated:YES];
-            [MKMapView animateWithDuration:0.7f
+            // Slew the map to the city
+            MKZoomScale resetZoomScale = [MapUtilities zoomScaleForZoomLevel:SELECT_CITY_ZOOM_LEVEL];
+            MKMapRect mapRect = [MapUtilities mapRectOfMapView:self.mapView withZoomScale:resetZoomScale atCenterCoordinate:city.location];
+            MKCoordinateRegion region = MKCoordinateRegionForMapRect(mapRect);
+            MKCoordinateRegion startingRegion = self.mapView.region;
+            
+            [MKMapView animateWithDuration:1.0f
                                 animations:^{
                                     [self.mapView setRegion:region animated:YES];
                                 }
                                 completion:^(BOOL finished) {
-                                    [self refreshAnnotationDisplay];
+                                    if ([MapUtilities mapRegion:self.mapView.region equalsMapRegion:startingRegion]) {
+                                        // The map didn't move. Just select the city.
+                                        [self selectCityAfterRefresh];
+                                    }
                                 }];
         }];
     }
@@ -318,36 +424,35 @@ static BOOL USE_COMMON_ERA = NO;
 
 - (void)mapView:(MKMapView *)mapView regionWillChangeAnimated:(BOOL)animated
 {
-    self.preChangeZoomScale = mapView.bounds.size.width / mapView.visibleMapRect.size.width;
-    self.preChangeZoomLevel = 20.0 + log2(self.preChangeZoomScale);
+    self.preChangeZoomScale = [MapUtilities zoomScaleOfMapView:mapView];
+    self.preChangeZoomLevel = [MapUtilities zoomLevelForZoomScale:self.preChangeZoomScale];
 }
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
-    MKZoomScale postChangeZoomScale = mapView.bounds.size.width / mapView.visibleMapRect.size.width;
-    double postChangeZoomLevel = 20.0 + log2(postChangeZoomScale);
-    double latSpan = mapView.region.span.latitudeDelta;
-    double longSpan = mapView.region.span.longitudeDelta;
+    MKZoomScale postChangeZoomScale = [MapUtilities zoomScaleOfMapView:mapView];
+    ZoomLevel postChangeZoomLevel = [MapUtilities zoomLevelForZoomScale:postChangeZoomScale];
+    CGFloat latSpan = mapView.region.span.latitudeDelta;
+    CGFloat longSpan = mapView.region.span.longitudeDelta;
 
     self.zoomLabel.text = [NSString stringWithFormat:@"%f (%f/%f)", postChangeZoomLevel, latSpan, longSpan];
     
     if (self.preChangeZoomLevel == postChangeZoomLevel) {
+        [self selectCityAfterRefresh];
         return;
     }
     
+    // Limit how far the user can zoom in
     if (postChangeZoomLevel > MAX_ZOOM_LEVEL) {
-        MKZoomScale resetZoomScale = pow(2.0, (MAX_ZOOM_LEVEL - 20));
-        MKMapPoint mapCenterPoint = MKMapPointForCoordinate(mapView.region.center);
-        double resetMapWidth = mapView.bounds.size.width / resetZoomScale;
-        double resetMapHeight = mapView.bounds.size.height / resetZoomScale;
-        MKMapPoint resetOrigin = MKMapPointMake(mapCenterPoint.x - (resetMapWidth / 2.0), mapCenterPoint.y - (resetMapHeight / 2.0));
-        MKMapRect resetMapRect = MKMapRectMake(resetOrigin.x, resetOrigin.y, resetMapWidth, resetMapHeight);
+        MKZoomScale resetZoomScale = [MapUtilities zoomScaleForZoomLevel:MAX_ZOOM_LEVEL];
+        MKMapRect resetMapRect = [MapUtilities mapRectOfMapView:mapView withZoomScale:resetZoomScale atCenterCoordinate:mapView.region.center];
         [mapView setVisibleMapRect:resetMapRect animated:YES];
         
         return;
     }
 
     [self refreshAnnotationDisplay];
+    [self selectCityAfterRefresh];
 }
 
 - (void)initializeAnnotationDisplay
@@ -370,26 +475,38 @@ static BOOL USE_COMMON_ERA = NO;
     // Note use of the annotationsQueuedForRemoval set. This holds annotations that are being "faded out" but that
     // have not been actually removed from the map view yet. We don't want to try to remove these annotations again
     // while they're being faded out.
+    
+//    NSLog(@"** 01 ** %d", self.displayYear);
 
     // Get the annotations that are currently on the map
     NSSet *preRefreshAnnotations = [NSSet setWithArray:self.mapView.annotations];
     NSSet *preRefreshOnscreenAnnotations = [self.mapView annotationsInMapRect:self.mapView.visibleMapRect];
+    
+//    NSLog(@"** 02 ** %d", self.displayYear);
     
     // Get the annotations that we want to have on the map
     NSArray *postRefreshAnnotations = [self annotationsForCurrentZoomAndRegion];
     NSSet *postRefreshOnscreenAnnotations = postRefreshAnnotations[0];
     NSSet *postRefreshOffscreenAnnotations = postRefreshAnnotations[1];
     
+//    NSLog(@"** 03 ** %d", self.displayYear);
+    
     // Determine which annotations need to be added or removed
     NSMutableSet *onscreenAnnotationsToAdd = [[NSMutableSet alloc] initWithSet:postRefreshOnscreenAnnotations];
     [onscreenAnnotationsToAdd minusSet:preRefreshOnscreenAnnotations];
+    
+//    NSLog(@"** 04 ** %d", self.displayYear);
     
     NSMutableSet *onscreenAnnotationsToRemove = [[NSMutableSet alloc] initWithSet:preRefreshOnscreenAnnotations];
     [onscreenAnnotationsToRemove minusSet:postRefreshOnscreenAnnotations];
     [onscreenAnnotationsToRemove minusSet:self.annotationsQueuedForRemoval];
     
+//    NSLog(@"** 05 ** %d", self.displayYear);
+    
     NSMutableSet *offscreenAnnotationsToAdd = [[NSMutableSet alloc] initWithSet:postRefreshOffscreenAnnotations];
     [offscreenAnnotationsToAdd minusSet:preRefreshAnnotations];
+    
+//    NSLog(@"** 06 ** %d", self.displayYear);
     
     NSMutableSet *offscreenAnnotationsToRemove = [[NSMutableSet alloc] initWithSet:preRefreshAnnotations];
     [offscreenAnnotationsToRemove minusSet:postRefreshOnscreenAnnotations];
@@ -397,7 +514,9 @@ static BOOL USE_COMMON_ERA = NO;
     [offscreenAnnotationsToRemove minusSet:onscreenAnnotationsToRemove];
     [offscreenAnnotationsToRemove minusSet:self.annotationsQueuedForRemoval];
 
-    NSLog(@"%d %d %d %d", onscreenAnnotationsToAdd.count, offscreenAnnotationsToAdd.count, onscreenAnnotationsToRemove.count, offscreenAnnotationsToRemove.count);
+//    NSLog(@"** 07 ** %d", self.displayYear);
+    
+//    NSLog(@"%d %d %d %d", onscreenAnnotationsToAdd.count, offscreenAnnotationsToAdd.count, onscreenAnnotationsToRemove.count, offscreenAnnotationsToRemove.count);
     
     // Remove onscreen annotations
     // This is a two step process:
@@ -429,20 +548,32 @@ static BOOL USE_COMMON_ERA = NO;
 //    for (CityAnnotation *annotation in onscreenAnnotationsToAdd) {
 //        [self.mapView addAnnotation:annotation];
 //    }
+//    NSLog(@"** 08 ** %d", self.displayYear);
+    
     [self.mapView addAnnotations:[onscreenAnnotationsToAdd allObjects]];
     
     // Add offscreen annotations
 //    for (CityAnnotation *annotation in offscreenAnnotationsToAdd) {
 //        [self.mapView addAnnotation:annotation];
 //    }
+//    NSLog(@"** 09 ** %d", self.displayYear);
+    
     [self.mapView addAnnotations:[offscreenAnnotationsToAdd allObjects]];
     
     // Remove offscreen annotations
 //    for (CityAnnotation *annotation in offscreenAnnotationsToRemove) {
 //        [self.mapView removeAnnotation:annotation];
 //    }
-    [self.mapView removeAnnotations:[offscreenAnnotationsToRemove allObjects]];
+//    NSLog(@"** 10 ** %d", self.displayYear);
     
+    [self.mapView removeAnnotations:[offscreenAnnotationsToRemove allObjects]];
+
+//    NSLog(@"remove %d", offscreenAnnotationsToRemove.count);
+//    NSLog(@"** 11 ** %d", self.displayYear);
+    
+}
+
+- (void)selectCityAfterRefresh {
     if (self.cityToSelectAfterRefresh) {
         CityAnnotation *annotationToSelect = nil;
         for (CityAnnotation *cityAnnotation in self.mapView.annotations) {
