@@ -42,6 +42,14 @@
         NSInteger elevation = [[cityObject objectForKey:@"elevation"] integerValue];
         city.location = CLLocationCoordinate2DMake(latitude, longitude);
         
+        NSString *title = [cityObject objectForKey:@"title"];
+        if (title) {
+            city.title = title;
+        }
+        else {
+            city.title = @"MODERN";
+        }
+        
         // Add the physical data
         NSMutableDictionary *tempDictionary = [[NSMutableDictionary alloc] init];
         [tempDictionary setValue:[NSNumber numberWithDouble: latitude] forKey:@"latitude"];

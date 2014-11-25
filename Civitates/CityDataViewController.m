@@ -35,7 +35,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     if (self.city) {
         self.nameLabel.text = self.city.identifier;
-        self.nameDescriptorLabel.text = @"MODERN";
+        self.nameDescriptorLabel.text = self.city.title;
     }
     
     CGRect contentFrame = CGRectMake(0.0, 0.0, self.contentView.frame.size.width, self.contentView.frame.size.height);

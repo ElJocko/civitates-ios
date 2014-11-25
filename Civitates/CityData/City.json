@@ -2585,6 +2585,7 @@
 },
 {
 	"identifier" : "Pompeii",
+	"title" : "ANCIENT",
 	"latitude": 40.75,
 	"longitude": 14.486111,
 	"elevation": 33,
