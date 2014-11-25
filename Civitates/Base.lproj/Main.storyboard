@@ -34,28 +34,47 @@
                                 <fontDescription key="fontDescription" name="Quattrocento-Bold" family="Quattrocento" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-WK-x5O">
-                                <rect key="frame" x="951" y="43" width="52" height="52"/>
-                                <state key="normal" image="Artwork/antiquesearch2.png" backgroundImage="Artwork/antiquesearch2.png">
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-WK-x5O">
+                                <rect key="frame" x="947" y="43" width="52" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="bkg-WI-vGB"/>
+                                    <constraint firstAttribute="width" constant="52" id="wra-xG-faJ"/>
+                                </constraints>
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="searchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RRr-Zn-pHd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiQ-8y-b7W">
+                                <rect key="frame" x="978" y="744" width="26" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bec-Py-p9a">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bec-Py-p9a" secondAttribute="trailing" id="33a-Vx-uk3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EiQ-8y-b7W" secondAttribute="trailing" id="4Ch-HS-PhB"/>
+                            <constraint firstItem="bec-Py-p9a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C3F-Po-hLS"/>
                             <constraint firstAttribute="centerX" secondItem="WPW-DW-pTo" secondAttribute="centerX" id="FbP-wY-WoE"/>
                             <constraint firstAttribute="trailing" secondItem="GSB-hP-Wyk" secondAttribute="trailing" constant="145" id="KhZ-M2-Nqh"/>
                             <constraint firstItem="dLz-WK-x5O" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="23" id="MxT-JF-B0W"/>
                             <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="Jz2-IQ-0Rd" secondAttribute="bottom" id="b0m-pz-soS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dLz-WK-x5O" secondAttribute="trailing" constant="5" id="cJd-nr-JUj"/>
+                            <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="EiQ-8y-b7W" secondAttribute="bottom" constant="12" id="iUc-yd-9ve"/>
                             <constraint firstAttribute="centerX" secondItem="GSB-hP-Wyk" secondAttribute="centerX" id="igc-aJ-Rlf"/>
                             <constraint firstAttribute="trailing" secondItem="Jz2-IQ-0Rd" secondAttribute="trailing" id="lHI-QL-Z8K"/>
                             <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltb-SN-bgf"/>
+                            <constraint firstAttribute="bottom" secondItem="bec-Py-p9a" secondAttribute="bottom" id="nZb-e4-b7D"/>
                             <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" id="pU0-7O-AhZ"/>
                             <constraint firstItem="WPW-DW-pTo" firstAttribute="top" secondItem="rYt-7d-Qgj" secondAttribute="bottom" constant="15" id="q8p-kH-TUN"/>
+                            <constraint firstItem="bec-Py-p9a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tJc-tX-QSP"/>
                             <constraint firstItem="GSB-hP-Wyk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="145" id="wB8-M6-OF6"/>
                             <constraint firstItem="GSB-hP-Wyk" firstAttribute="top" secondItem="WPW-DW-pTo" secondAttribute="bottom" constant="-10" id="xYf-bm-Use"/>
                         </constraints>
@@ -63,8 +82,10 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="mapAttributionLabel" destination="EiQ-8y-b7W" id="d8h-x0-qdk"/>
                         <outlet property="mapView" destination="Jz2-IQ-0Rd" id="JcT-9h-bEX"/>
                         <outlet property="searchButton" destination="dLz-WK-x5O" id="ht6-dP-cBk"/>
+                        <outlet property="splashImageView" destination="bec-Py-p9a" id="fc4-lM-Ln9"/>
                         <outlet property="yearLabel" destination="WPW-DW-pTo" id="0Am-mX-hAe"/>
                         <outlet property="yearSlider" destination="GSB-hP-Wyk" id="aSs-0c-TRv"/>
                     </connections>
@@ -74,9 +95,6 @@
             <point key="canvasLocation" x="92" y="-126"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Artwork/antiquesearch2.png" width="25" height="25"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>

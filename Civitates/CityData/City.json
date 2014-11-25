@@ -601,6 +601,45 @@
 	]
 },
 {
+	"identifier" : "Brescia",
+	"latitude": 45.52478,
+	"longitude": 10.22727,
+	"elevation": 149,
+	"periods" : [
+	{
+		"startDate" : -225,
+		"endDate" : 550,
+		"preferredName" : "Brixia",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 551,
+		"endDate" : 1439,
+		"preferredName" : "Brescia",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1440,
+		"endDate" : 2100,
+		"preferredName" : "Brescia",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Brescia",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Brixia",
+		"language" : "Latin"
+	}
+	]
+},
+{
 	"identifier" : "Brindisi",
 	"latitude": 40.62773,
 	"longitude": 17.93682,
@@ -769,6 +808,27 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Castelseprio",
+	"latitude": 45.71597,
+	"longitude": 8.86264,
+	"elevation": 310,
+	"periods" : [
+	{
+		"startDate" : 500,
+		"endDate" : 1287,
+		"preferredName" : "Castelseprio",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Castelseprio",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -970,6 +1030,45 @@
 	},
 	{
 		"name" : "Chiusi",
+		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Cividale del Friuli",
+	"latitude": 46.09306,
+	"longitude": 13.4275,
+	"elevation": 135,
+	"periods" : [
+	{
+		"startDate" : -50,
+		"endDate" : 567,
+		"preferredName" : "Cividale",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 568,
+		"endDate" : 1420,
+		"preferredName" : "Cividale",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1421,
+		"endDate" : 2100,
+		"preferredName" : "Cividale",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Cividale del Friuli",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Cividale",
 		"language" : "Italian"
 	}
 	]
@@ -1443,6 +1542,31 @@
 	]
 },
 {
+	"identifier" : "Grado",
+	"latitude": 45.67861,
+	"longitude": 13.38694,
+	"elevation": 2,
+	"periods" : [
+	{
+		"startDate" : 400,
+		"endDate" : 1451,
+		"preferredName" : "Grado",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "ad Aquae Gradatae",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Grado",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Ivrea",
 	"latitude": 45.46723,
 	"longitude": 7.87617,
@@ -1585,13 +1709,6 @@
 	},
 	{
 		"startDate" : 601,
-		"endDate" : 1500,
-		"preferredName" : "Lucca",
-		"size" : 3,
-		"tagPosition" : 0
-	},
-	{
-		"startDate" : 1501,
 		"endDate" : 2100,
 		"preferredName" : "Lucca",
 		"size" : 2,
@@ -1605,6 +1722,38 @@
 	},
 	{
 		"name" : "Luca",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Luni",
+	"latitude": 44.066667,
+	"longitude": 10.033333,
+	"elevation": 17,
+	"periods" : [
+	{
+		"startDate" : -109,
+		"endDate" : 641,
+		"preferredName" : "Luna",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 642,
+		"endDate" : 1058,
+		"preferredName" : "Lunu",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Luni",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Luna",
 		"language" : "Latin"
 	}
 	]
@@ -1766,7 +1915,7 @@
 		"startDate" : 540,
 		"endDate" : 2100,
 		"preferredName" : "Milan",
-		"size" : 2,
+		"size" : 1,
 		"tagPosition" : 0
 	}
 	],
@@ -1942,7 +2091,7 @@
 		"startDate" : 601,
 		"endDate" : 1442,
 		"preferredName" : "Naples",
-		"size" : 3,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
@@ -2061,10 +2210,41 @@
 	"longitude": 18.48593,
 	"elevation": 15,
 	"periods" : [
-
+	{
+		"startDate" : -191,
+		"endDate" : 550,
+		"preferredName" : "Hydruntum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 551,
+		"endDate" : 1480,
+		"preferredName" : "Otranto",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1481,
+		"endDate" : 2100,
+		"preferredName" : "Otranto",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Otranto",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Hydrus",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Hydruntum",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2149,6 +2329,10 @@
 	}
 	],
 	"altNames" : [
+	{
+		"name" : "Palermo",
+		"language" : "Italian"
+	},
 	{
 		"name" : "Panormos",
 		"language" : "Greek"
@@ -2325,6 +2509,27 @@
 	{
 		"name" : "Perusia",
 		"language" : "Etruscan"
+	}
+	]
+},
+{
+	"identifier" : "Piacenza",
+	"latitude": 45.04676,
+	"longitude": 9.69937,
+	"elevation": 61,
+	"periods" : [
+	{
+		"startDate" : -218,
+		"endDate" : 2100,
+		"preferredName" : "Piacenza",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Piacenza",
+		"language" : "Italian"
 	}
 	]
 },
@@ -2536,13 +2741,13 @@
 	},
 	{
 		"startDate" : 402,
-		"endDate" : 540,
+		"endDate" : 751,
 		"preferredName" : "Ravenna",
 		"size" : 1,
 		"tagPosition" : 0
 	},
 	{
-		"startDate" : 541,
+		"startDate" : 752,
 		"endDate" : 2100,
 		"preferredName" : "Ravenna",
 		"size" : 2,
@@ -2876,6 +3081,31 @@
 	]
 },
 {
+	"identifier" : "Siena",
+	"latitude": 43.32004,
+	"longitude": 11.33283,
+	"elevation": 322,
+	"periods" : [
+	{
+		"startDate" : 560,
+		"endDate" : 2100,
+		"preferredName" : "Siena",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Saena Julia",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Siena",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Siponto",
 	"latitude": 41.606944,
 	"longitude": 15.895833,
@@ -2989,10 +3219,19 @@
 	"longitude": 16.51175,
 	"elevation": 344,
 	"periods" : [
-
+	{
+		"startDate" : 600,
+		"endDate" : 2100,
+		"preferredName" : "Squillace",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Squillace",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -3380,6 +3619,45 @@
 	},
 	{
 		"name" : "Tridentum",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Treviso",
+	"latitude": 45.66667,
+	"longitude": 12.245,
+	"elevation": 15,
+	"periods" : [
+	{
+		"startDate" : -89,
+		"endDate" : 567,
+		"preferredName" : "Tarvisium",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 568,
+		"endDate" : 1339,
+		"preferredName" : "Treviso",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1340,
+		"endDate" : 2100,
+		"preferredName" : "Treviso",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Treviso",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Tarvisium",
 		"language" : "Latin"
 	}
 	]

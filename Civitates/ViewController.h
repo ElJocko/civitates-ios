@@ -17,5 +17,7 @@
 @property (weak, nonatomic) IBOutlet KSLabel *yearLabel;
 @property (weak, nonatomic) IBOutlet UISlider *yearSlider;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UILabel *mapAttributionLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *splashImageView;
 
 @end

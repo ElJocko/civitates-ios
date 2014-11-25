@@ -63,9 +63,11 @@
 {
     NSData *tile = [self retrieveTileFromCacheAtPath:path];
     if (tile) {
+        NSLog(@"Tile in cache (%@)", [self filePathForTileAtPath:path]);
         result(tile, nil);
     }
     else {
+        NSLog(@"Tile not found in cache.");
         if (!self.operationQueue) {
             self.operationQueue = [[NSOperationQueue alloc] init];
         }

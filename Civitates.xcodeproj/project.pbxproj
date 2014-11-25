@@ -30,6 +30,7 @@
 		3D2DCF3119F2FFF0005CD639 /* quattrocento.bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DCF2F19F2FFF0005CD639 /* quattrocento.bold.ttf */; };
 		3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */; };
 		3D2FA6BF1A1D3C7C00FBE491 /* MapUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */; };
+		3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */; };
 		3D3747741A16B43C006106DE /* CityDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747731A16B43C006106DE /* CityDataViewController.m */; };
 		3D3747771A16C44E006106DE /* CityPhysicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747761A16C44E006106DE /* CityPhysicalViewController.m */; };
 		3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6618B12BFF00284C0C /* DataLoader.m */; };
@@ -93,6 +94,8 @@
 		3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = quattrocento.regular.ttf; sourceTree = "<group>"; };
 		3D2FA6BD1A1D3C7C00FBE491 /* MapUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapUtilities.h; sourceTree = "<group>"; };
 		3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUtilities.m; sourceTree = "<group>"; };
+		3D2FA6F81A250F7E00FBE491 /* UIImage+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sizing.h"; sourceTree = "<group>"; };
+		3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sizing.m"; sourceTree = "<group>"; };
 		3D3747721A16B43C006106DE /* CityDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDataViewController.h; sourceTree = "<group>"; };
 		3D3747731A16B43C006106DE /* CityDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataViewController.m; sourceTree = "<group>"; };
 		3D3747751A16C44E006106DE /* CityPhysicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPhysicalViewController.h; sourceTree = "<group>"; };
@@ -284,9 +287,11 @@
 		3D495E7018B12FAE00284C0C /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				3D140093187BA2DD001FEE6C /* Main.storyboard */,
 				3D140096187BA2DD001FEE6C /* ViewController.h */,
 				3D140097187BA2DD001FEE6C /* ViewController.m */,
-				3D140093187BA2DD001FEE6C /* Main.storyboard */,
+				3D2FA6F81A250F7E00FBE491 /* UIImage+Sizing.h */,
+				3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				3D140098187BA2DD001FEE6C /* ViewController.m in Sources */,
 				3D140092187BA2DD001FEE6C /* AppDelegate.m in Sources */,
 				3D14008E187BA2DD001FEE6C /* main.m in Sources */,
+				3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */,
 				3D495E6A18B12EF400284C0C /* City.m in Sources */,
 				3D495E6D18B12F6F00284C0C /* CityPeriod.m in Sources */,
 				3D3747771A16C44E006106DE /* CityPhysicalViewController.m in Sources */,
@@ -522,6 +528,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -540,6 +547,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -561,6 +569,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -574,6 +583,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

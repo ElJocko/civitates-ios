@@ -20,6 +20,7 @@
 #import "SearchTableViewController.h"
 #import "AppUserDefaults.h"
 #import "MapUtilities.h"
+#import "UIImage+Sizing.h"
 
 BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion region)
 {
@@ -72,10 +73,16 @@ static ZoomLevel MAX_ZOOM_LEVEL = 10.0;
 static ZoomLevel SELECT_CITY_ZOOM_LEVEL = 8.1;
 static BOOL USE_COMMON_ERA = NO;
 
+static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Mapping Center";
+
 - (void)viewDidLoad
 {
+    // Load the appropriately sized splash image
+    [self loadSplashImage];
+    
     // Load the city data
     self.cities = [DataLoader readCityData];
+
     [self prepareAlternateNames];
     
     // Get the last year the user selected
@@ -101,11 +108,21 @@ static BOOL USE_COMMON_ERA = NO;
     // And show the current year
     [self updateYearLabel];
     
+    // Initilizer the search button
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Artwork/antiqueSearch2" ofType:@"png"];
+    UIImage *searchImage = [UIImage imageWithContentsOfFile:filePath];
+    searchImage = [searchImage imageWithSize:CGSizeMake(52.0, 52.0)];
+    [self.searchButton setBackgroundImage:searchImage forState:UIControlStateNormal];
+//    NSLog(@"%f %f %f %f", searchImage.size.width, searchImage.size.height, self.searchButton.frame.size.width, self.searchButton.frame.size.height);
+    
     // Initialize slider
     [self.yearSlider addTarget:self action:@selector(sliderDidChange:) forControlEvents:UIControlEventValueChanged];
     [self.yearSlider addTarget:self action:@selector(sliderDidFinish:) forControlEvents:UIControlEventTouchUpInside];
     [self.yearSlider addTarget:self action:@selector(sliderDidFinish:) forControlEvents:UIControlEventTouchUpOutside];
 //    self.lastChangeTime = 0.0;
+    
+    // Set the map attribution
+    self.mapAttributionLabel.text = MAP_ATTRIBUTION;
     
     // Set the zoom levels that trigger changes in the display
     self.zoomThreshold = [[NSArray alloc] initWithObjects:@0.0, @5.0, @6.0, @7.0, @8.0, nil];
@@ -138,6 +155,51 @@ static BOOL USE_COMMON_ERA = NO;
     // Display cities according to their category
     self.cityToSelectAfterRefresh = nil;
     [self initializeAnnotationDisplay];
+    
+    // Hide the splash image after giving time for the map to draw
+    NSTimer *splashTimer = [NSTimer timerWithTimeInterval:2.8 target:self selector:@selector(hideSplashImage) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:splashTimer forMode:NSDefaultRunLoopMode];
+}
+
+- (void)hideControls {
+    // This method hides all the controls. It is used to generate a launch screen image.
+    self.yearLabel.hidden = YES;
+    self.yearSlider.hidden = YES;
+    self.searchButton.hidden = YES;
+    self.zoomLabel.hidden = YES;
+}
+
+- (void)loadSplashImage {
+    
+    CGFloat width = [UIScreen mainScreen].bounds.size.width;
+    CGFloat height = [UIScreen mainScreen].bounds.size.height;
+    
+    if (width == 768 && height == 1024) {
+        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-768_1024_bw.png"];
+    }
+    else if (width == 1024 && height == 768) {
+        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-1024_768_bw.png"];
+    }
+    else if (width == 1536 && height == 2048) {
+        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-1536_2048_bw.png"];
+    }
+    else if (width == 2048 && height == 1536) {
+        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-2048_1536_bw.png"];
+    }
+    else {
+        self.splashImageView.backgroundColor = [UIColor grayColor];
+    }
+}
+
+- (void)hideSplashImage {
+    // Fade out the splash image
+    [UIView animateWithDuration:1.0f
+                     animations:^(void) {
+        self.splashImageView.alpha = 0.0;
+    }
+                     completion:^(BOOL finished) {
+        [self.splashImageView removeFromSuperview];
+    }];
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
