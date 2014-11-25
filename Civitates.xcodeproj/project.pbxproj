@@ -31,6 +31,7 @@
 		3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */; };
 		3D2FA6BF1A1D3C7C00FBE491 /* MapUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */; };
 		3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */; };
+		3D2FA80F1A25314900FBE491 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 3D2FA80E1A25314900FBE491 /* tiles */; };
 		3D3747741A16B43C006106DE /* CityDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747731A16B43C006106DE /* CityDataViewController.m */; };
 		3D3747771A16C44E006106DE /* CityPhysicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747761A16C44E006106DE /* CityPhysicalViewController.m */; };
 		3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6618B12BFF00284C0C /* DataLoader.m */; };
@@ -96,6 +97,7 @@
 		3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUtilities.m; sourceTree = "<group>"; };
 		3D2FA6F81A250F7E00FBE491 /* UIImage+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sizing.h"; sourceTree = "<group>"; };
 		3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sizing.m"; sourceTree = "<group>"; };
+		3D2FA80E1A25314900FBE491 /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
 		3D3747721A16B43C006106DE /* CityDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDataViewController.h; sourceTree = "<group>"; };
 		3D3747731A16B43C006106DE /* CityDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataViewController.m; sourceTree = "<group>"; };
 		3D3747751A16C44E006106DE /* CityPhysicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPhysicalViewController.h; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		3D140088187BA2DD001FEE6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3D2FA80E1A25314900FBE491 /* tiles */,
 				3D2DCF2B19F2F937005CD639 /* Fonts */,
 				3D495E7A18B2785300284C0C /* CityData */,
 				3D0A3ADC1896ED4B00A0FD12 /* Artwork */,
@@ -412,6 +415,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2FA80F1A25314900FBE491 /* tiles in Resources */,
 				3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */,
 				3D495E7B18B2785300284C0C /* CityData in Resources */,
 				3D0A3ADD1896ED4B00A0FD12 /* Artwork in Resources */,
