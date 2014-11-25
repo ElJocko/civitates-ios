@@ -87,17 +87,17 @@
     NSData *tile = [self retrieveTileFromBundleAtPath:path];
     
     if (tile) {
-        NSLog(@"Tile in bundle (%d/%d/%d)", path.x, path.y, path.z);
+//        NSLog(@"Tile in bundle (%d/%d/%d)", path.x, path.y, path.z);
         result(tile, nil);
     }
     else {
         tile = [self retrieveTileFromCacheAtPath:path];
         if (tile) {
-            NSLog(@"Tile in cache (%d/%d/%d)", path.x, path.y, path.z);
+//            NSLog(@"Tile in cache (%d/%d/%d)", path.x, path.y, path.z);
             result(tile, nil);
         }
         else {
-            NSLog(@"Tile not found in bundle or cache (%d/%d/%d)", path.x, path.y, path.z);
+//            NSLog(@"Tile not found in bundle or cache (%d/%d/%d)", path.x, path.y, path.z);
             if (!self.operationQueue) {
                 self.operationQueue = [[NSOperationQueue alloc] init];
             }
