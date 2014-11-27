@@ -56,11 +56,15 @@
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bec-Py-p9a">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XR8-w9-TyC">
+                                <rect key="frame" x="494" y="365" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bec-Py-p9a" secondAttribute="trailing" id="33a-Vx-uk3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EiQ-8y-b7W" secondAttribute="trailing" id="4Ch-HS-PhB"/>
+                            <constraint firstAttribute="centerX" secondItem="XR8-w9-TyC" secondAttribute="centerX" id="7Rw-pl-ibu"/>
                             <constraint firstItem="bec-Py-p9a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C3F-Po-hLS"/>
                             <constraint firstAttribute="centerX" secondItem="WPW-DW-pTo" secondAttribute="centerX" id="FbP-wY-WoE"/>
                             <constraint firstAttribute="trailing" secondItem="GSB-hP-Wyk" secondAttribute="trailing" constant="145" id="KhZ-M2-Nqh"/>
@@ -69,6 +73,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="dLz-WK-x5O" secondAttribute="trailing" constant="5" id="cJd-nr-JUj"/>
                             <constraint firstItem="KKm-zb-pV6" firstAttribute="top" secondItem="EiQ-8y-b7W" secondAttribute="bottom" constant="12" id="iUc-yd-9ve"/>
                             <constraint firstAttribute="centerX" secondItem="GSB-hP-Wyk" secondAttribute="centerX" id="igc-aJ-Rlf"/>
+                            <constraint firstAttribute="centerY" secondItem="XR8-w9-TyC" secondAttribute="centerY" id="jar-Sz-9SM"/>
                             <constraint firstAttribute="trailing" secondItem="Jz2-IQ-0Rd" secondAttribute="trailing" id="lHI-QL-Z8K"/>
                             <constraint firstItem="Jz2-IQ-0Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltb-SN-bgf"/>
                             <constraint firstAttribute="bottom" secondItem="bec-Py-p9a" secondAttribute="bottom" id="nZb-e4-b7D"/>
@@ -82,6 +87,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="XR8-w9-TyC" id="ZyV-6v-3tl"/>
                         <outlet property="mapAttributionLabel" destination="EiQ-8y-b7W" id="d8h-x0-qdk"/>
                         <outlet property="mapView" destination="Jz2-IQ-0Rd" id="JcT-9h-bEX"/>
                         <outlet property="searchButton" destination="dLz-WK-x5O" id="ht6-dP-cBk"/>

@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UILabel *mapAttributionLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *splashImageView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end

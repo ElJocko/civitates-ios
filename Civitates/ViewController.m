@@ -131,7 +131,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     // Temporary label to display the current zoom level
     self.zoomLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 10.0, 200.0, 200.0)];
     self.zoomLabel.font = [UIFont systemFontOfSize:14.0];
-    [self.view addSubview:self.zoomLabel];
+//    [self.view addSubview:self.zoomLabel];
     
     // Initialize the map
     self.mapView.delegate = self;
@@ -157,7 +157,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     [self initializeAnnotationDisplay];
     
     // Hide the splash image after giving time for the map to draw
-    NSTimer *splashTimer = [NSTimer timerWithTimeInterval:2.8 target:self selector:@selector(hideSplashImage) userInfo:nil repeats:NO];
+    NSTimer *splashTimer = [NSTimer timerWithTimeInterval:3.0 target:self selector:@selector(hideSplashImage) userInfo:nil repeats:NO];
     [[NSRunLoop currentRunLoop] addTimer:splashTimer forMode:NSDefaultRunLoopMode];
 }
 
@@ -192,6 +192,8 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 }
 
 - (void)hideSplashImage {
+    [self.activityIndicator stopAnimating];
+    
     // Fade out the splash image
     [UIView animateWithDuration:1.0f
                      animations:^(void) {

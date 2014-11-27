@@ -4,6 +4,7 @@
 	"latitude": 43.1556,
 	"longitude": 11.3994,
 	"elevation": 321,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -25,6 +26,7 @@
 	"latitude": 41.44749,
 	"longitude": 12.62707,
 	"elevation": 3,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -57,6 +59,7 @@
 	"latitude": 41.6123,
 	"longitude": 12.51433,
 	"elevation": 37,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -750,
@@ -92,6 +95,7 @@
 	"latitude": 45.05639,
 	"longitude": 12.05778,
 	"elevation": 4,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -530,
@@ -135,6 +139,7 @@
 	"latitude": 37.31168,
 	"longitude": 13.57962,
 	"elevation": 230,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -582,
@@ -200,6 +205,7 @@
 	"latitude": 40.6349,
 	"longitude": 14.60238,
 	"elevation": 6,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 575,
@@ -235,6 +241,7 @@
 	"latitude": 43.59816,
 	"longitude": 13.51008,
 	"elevation": 16,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -387,
@@ -270,6 +277,7 @@
 	"latitude": 41.22984,
 	"longitude": 16.30674,
 	"elevation": 151,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -282,6 +290,7 @@
 	"latitude": 45.77028,
 	"longitude": 13.36833,
 	"elevation": 5,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -180,
@@ -324,6 +333,7 @@
 	"latitude": 43.46734,
 	"longitude": 11.88261,
 	"elevation": 296,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -367,6 +377,7 @@
 	"latitude": 41.475654,
 	"longitude": 15.555444,
 	"elevation": 60,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -396,6 +407,7 @@
 	"latitude": 40.96321,
 	"longitude": 14.21681,
 	"elevation": 39,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -408,6 +420,7 @@
 	"latitude": 41.11773,
 	"longitude": 16.85118,
 	"elevation": 5,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -300,
@@ -440,6 +453,7 @@
 	"latitude": 41.13204,
 	"longitude": 14.77328,
 	"elevation": 135,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -491,6 +505,7 @@
 	"latitude": 39.5059,
 	"longitude": 16.27719,
 	"elevation": 350,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -503,6 +518,7 @@
 	"latitude": 41.48572,
 	"longitude": 14.47293,
 	"elevation": 482,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -515,6 +531,7 @@
 	"latitude": 44.49381,
 	"longitude": 11.33875,
 	"elevation": 54,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -545,7 +562,7 @@
 	},
 	{
 		"name" : "Bona",
-		"language" : "Gallic"
+		"language" : "Gaulish"
 	},
 	{
 		"name" : "Bononia",
@@ -562,6 +579,7 @@
 	"latitude": 42.64383,
 	"longitude": 11.98506,
 	"elevation": 350,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -605,6 +623,7 @@
 	"latitude": 45.52478,
 	"longitude": 10.22727,
 	"elevation": 149,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -225,
@@ -644,6 +663,7 @@
 	"latitude": 40.62773,
 	"longitude": 17.93682,
 	"elevation": 13,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -687,6 +707,7 @@
 	"latitude": 41.22322,
 	"longitude": 14.97744,
 	"elevation": 555,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -699,6 +720,7 @@
 	"latitude": 37.19104,
 	"longitude": 14.18367,
 	"elevation": 402,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -711,6 +733,7 @@
 	"latitude": 43.13985,
 	"longitude": 13.06917,
 	"elevation": 661,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -300,
@@ -743,6 +766,7 @@
 	"latitude": 41.11082,
 	"longitude": 14.2133,
 	"elevation": 25,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -782,6 +806,7 @@
 	"latitude": 45.13336,
 	"longitude": 8.45714,
 	"elevation": 116,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 1292,
@@ -803,6 +828,7 @@
 	"latitude": 41.48762,
 	"longitude": 13.83151,
 	"elevation": 40,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -815,6 +841,7 @@
 	"latitude": 45.71597,
 	"longitude": 8.86264,
 	"elevation": 310,
+	"prefix" : "medieval",
 	"periods" : [
 	{
 		"startDate" : 500,
@@ -836,6 +863,7 @@
 	"latitude": 37.503,
 	"longitude": 15.08638,
 	"elevation": 7,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -730,
@@ -879,6 +907,7 @@
 	"latitude": 38.03856,
 	"longitude": 14.02285,
 	"elevation": 16,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -891,6 +920,7 @@
 	"latitude": 41.99262,
 	"longitude": 12.09237,
 	"elevation": 81,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -942,6 +972,7 @@
 	"latitude": 42.36094,
 	"longitude": 14.13801,
 	"elevation": 330,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -300,
@@ -992,6 +1023,7 @@
 	"latitude": 43.01604,
 	"longitude": 11.94745,
 	"elevation": 398,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1039,6 +1071,7 @@
 	"latitude": 46.09306,
 	"longitude": 13.4275,
 	"elevation": 135,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -50,
@@ -1078,6 +1111,7 @@
 	"latitude": 43.27467,
 	"longitude": 11.98533,
 	"elevation": 494,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1121,6 +1155,7 @@
 	"latitude": 39.30999,
 	"longitude": 16.25019,
 	"elevation": 238,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1133,6 +1168,7 @@
 	"latitude": 45.13617,
 	"longitude": 10.02797,
 	"elevation": 45,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -218,
@@ -1175,6 +1211,7 @@
 	"latitude": 39.0851,
 	"longitude": 17.11781,
 	"elevation": 8,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -710,
@@ -1222,6 +1259,7 @@
 	"latitude": 40.848611,
 	"longitude": 14.053611,
 	"elevation": 45,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -750,
@@ -1269,6 +1307,7 @@
 	"latitude": 37.55885,
 	"longitude": 14.28917,
 	"elevation": 931,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1281,6 +1320,7 @@
 	"latitude": 44.82678,
 	"longitude": 11.62071,
 	"elevation": 9,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 753,
@@ -1309,6 +1349,7 @@
 	"latitude": 43.76667,
 	"longitude": 11.25,
 	"elevation": 50,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -59,
@@ -1363,6 +1404,7 @@
 	"latitude": 41.46093,
 	"longitude": 15.54925,
 	"elevation": 76,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 1000,
@@ -1384,6 +1426,7 @@
 	"latitude": 41.8869,
 	"longitude": 12.7158,
 	"elevation": 70,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1412,6 +1455,7 @@
 	"latitude": 41.21408,
 	"longitude": 13.57082,
 	"elevation": 2,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1451,6 +1495,7 @@
 	"latitude": 42.41,
 	"longitude": 8.6492,
 	"elevation": 28,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1463,6 +1508,7 @@
 	"latitude": 40.05556,
 	"longitude": 17.97639,
 	"elevation": 12,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1475,6 +1521,7 @@
 	"latitude": 44.40632,
 	"longitude": 8.93386,
 	"elevation": 19,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -199,
@@ -1522,6 +1569,7 @@
 	"latitude": 38.27137,
 	"longitude": 16.2207,
 	"elevation": 500,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1534,6 +1582,7 @@
 	"latitude": 37.82755,
 	"longitude": 15.26713,
 	"elevation": 5,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1546,10 +1595,11 @@
 	"latitude": 45.67861,
 	"longitude": 13.38694,
 	"elevation": 2,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 400,
-		"endDate" : 1451,
+		"endDate" : 2100,
 		"preferredName" : "Grado",
 		"size" : 4,
 		"tagPosition" : 0
@@ -1571,6 +1621,7 @@
 	"latitude": 45.46723,
 	"longitude": 7.87617,
 	"elevation": 253,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -100,
@@ -1603,6 +1654,7 @@
 	"latitude": 41.80554,
 	"longitude": 14.91933,
 	"elevation": 341,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1635,6 +1687,7 @@
 	"latitude": 41.04562,
 	"longitude": 15.79076,
 	"elevation": 313,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1647,6 +1700,7 @@
 	"latitude": 41.6616,
 	"longitude": 12.4784,
 	"elevation": 86,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1675,6 +1729,7 @@
 	"latitude": 40.35703,
 	"longitude": 18.17202,
 	"elevation": 49,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1687,6 +1742,7 @@
 	"latitude": 43.43536,
 	"longitude": 13.60978,
 	"elevation": 127,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1699,6 +1755,7 @@
 	"latitude": 43.84357,
 	"longitude": 10.50585,
 	"elevation": 19,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -300,
@@ -1731,6 +1788,7 @@
 	"latitude": 44.066667,
 	"longitude": 10.033333,
 	"elevation": 17,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -109,
@@ -1742,7 +1800,7 @@
 	{
 		"startDate" : 642,
 		"endDate" : 1058,
-		"preferredName" : "Lunu",
+		"preferredName" : "Luni",
 		"size" : 4,
 		"tagPosition" : 0
 	}
@@ -1763,6 +1821,7 @@
 	"latitude": 45.16031,
 	"longitude": 10.79784,
 	"elevation": 19,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -146,
@@ -1795,6 +1854,7 @@
 	"latitude": 40.66852,
 	"longitude": 16.60158,
 	"elevation": 401,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1807,6 +1867,7 @@
 	"latitude": 40.99656,
 	"longitude": 15.65364,
 	"elevation": 538,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 700,
@@ -1842,6 +1903,7 @@
 	"latitude": 38.19327,
 	"longitude": 15.54969,
 	"elevation": 3,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -1889,6 +1951,7 @@
 	"latitude": 45.46427,
 	"longitude": 9.18951,
 	"elevation": 122,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -400,
@@ -1939,6 +2002,7 @@
 	"latitude": 38.22117,
 	"longitude": 15.23828,
 	"elevation": 1,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1951,6 +2015,7 @@
 	"latitude": 38.60958,
 	"longitude": 16.0696,
 	"elevation": 365,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -1963,6 +2028,7 @@
 	"latitude": 44.64783,
 	"longitude": 10.92539,
 	"elevation": 34,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -2020,6 +2086,7 @@
 	"latitude": 40.95593,
 	"longitude": 17.2896,
 	"elevation": 9,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2032,6 +2099,7 @@
 	"latitude": 40.55222,
 	"longitude": 16.66689,
 	"elevation": 352,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2044,6 +2112,7 @@
 	"latitude": 43.16114,
 	"longitude": 11.38794,
 	"elevation": 317,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2072,6 +2141,7 @@
 	"latitude": 40.83333,
 	"longitude": 14.25,
 	"elevation": 17,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -550,
@@ -2122,6 +2192,7 @@
 	"latitude": 40.17512,
 	"longitude": 18.02972,
 	"elevation": 45,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2134,6 +2205,7 @@
 	"latitude": 38.98333,
 	"longitude": 16.31667,
 	"elevation": 0,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2146,6 +2218,7 @@
 	"latitude": 40.9238,
 	"longitude": 14.52686,
 	"elevation": 34,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2185,6 +2258,7 @@
 	"latitude": 36.89014,
 	"longitude": 15.06929,
 	"elevation": 152,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2197,6 +2271,7 @@
 	"latitude": 40.49733,
 	"longitude": 17.64131,
 	"elevation": 154,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2209,6 +2284,7 @@
 	"latitude": 40.14782,
 	"longitude": 18.48593,
 	"elevation": 15,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -191,
@@ -2252,6 +2328,7 @@
 	"latitude": 41.83552,
 	"longitude": 12.88899,
 	"elevation": 450,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2291,6 +2368,7 @@
 	"latitude": 38.11582,
 	"longitude": 13.35976,
 	"elevation": 14,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -734,
@@ -2301,8 +2379,15 @@
 	},
 	{
 		"startDate" : -259,
-		"endDate" : 830,
+		"endDate" : 439,
 		"preferredName" : "Panormus",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 440,
+		"endDate" : 830,
+		"preferredName" : "Palermo",
 		"size" : 2,
 		"tagPosition" : 0
 	},
@@ -2356,6 +2441,7 @@
 	"latitude": 44.80266,
 	"longitude": 10.32898,
 	"elevation": 57,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2384,6 +2470,7 @@
 	"latitude": 45.41519,
 	"longitude": 11.88181,
 	"elevation": 12,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2427,6 +2514,7 @@
 	"latitude": 37.57095,
 	"longitude": 14.90268,
 	"elevation": 225,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2439,6 +2527,7 @@
 	"latitude": 45.18446,
 	"longitude": 9.16145,
 	"elevation": 77,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -218,
@@ -2478,6 +2567,7 @@
 	"latitude": 43.1122,
 	"longitude": 12.38878,
 	"elevation": 493,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2517,6 +2607,7 @@
 	"latitude": 45.04676,
 	"longitude": 9.69937,
 	"elevation": 61,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -218,
@@ -2538,6 +2629,7 @@
 	"latitude": 43.71553,
 	"longitude": 10.39659,
 	"elevation": 4,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -180,
@@ -2585,10 +2677,10 @@
 },
 {
 	"identifier" : "Pompeii",
-	"title" : "ANCIENT",
 	"latitude": 40.75,
 	"longitude": 14.486111,
 	"elevation": 33,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -600,
@@ -2610,6 +2702,7 @@
 	"latitude": 41.46162,
 	"longitude": 13.66671,
 	"elevation": 97,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 860,
@@ -2638,6 +2731,7 @@
 	"latitude": 42.989444,
 	"longitude": 10.491389,
 	"elevation": 179,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2674,6 +2768,7 @@
 	"latitude": 40.64432,
 	"longitude": 15.80857,
 	"elevation": 819,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2686,6 +2781,7 @@
 	"latitude": 36.92824,
 	"longitude": 14.71719,
 	"elevation": 502,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2725,6 +2821,7 @@
 	"latitude": 44.4175,
 	"longitude": 12.20111,
 	"elevation": 4,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -500,
@@ -2767,6 +2864,7 @@
 	"latitude": 38.11047,
 	"longitude": 15.66129,
 	"elevation": 31,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -737,
@@ -2822,6 +2920,7 @@
 	"latitude": 44.06333,
 	"longitude": 12.58083,
 	"elevation": 5,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -268,
@@ -2854,13 +2953,14 @@
 	"latitude": 41.89474,
 	"longitude": 12.4839,
 	"elevation": 20,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
 		"endDate" : 2100,
 		"preferredName" : "Rome",
 		"size" : 0,
-		"tagPosition" : 0
+		"tagPosition" : 4
 	}
 	],
 	"altNames" : [
@@ -2883,6 +2983,7 @@
 	"latitude": 39.5751,
 	"longitude": 16.6349,
 	"elevation": 270,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -2895,6 +2996,7 @@
 	"latitude": 42.809444,
 	"longitude": 11.138611,
 	"elevation": 25,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -2930,6 +3032,7 @@
 	"latitude": 40.67802,
 	"longitude": 14.74577,
 	"elevation": 4,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -197,
@@ -2976,6 +3079,7 @@
 	"latitude": 44.64644,
 	"longitude": 7.48623,
 	"elevation": 340,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 1142,
@@ -3000,10 +3104,11 @@
 	]
 },
 {
-	"identifier" : "San Felice Circeo",
+	"identifier" : "Circeii",
 	"latitude": 41.23716,
 	"longitude": 13.09416,
 	"elevation": 98,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -550,
@@ -3029,6 +3134,7 @@
 	"latitude": 40.2674,
 	"longitude": 14.93898,
 	"elevation": 33,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3041,6 +3147,7 @@
 	"latitude": 43.93667,
 	"longitude": 12.44639,
 	"elevation": 0,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 1200,
@@ -3062,6 +3169,7 @@
 	"latitude": 39.1478,
 	"longitude": 16.91001,
 	"elevation": 326,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3074,6 +3182,7 @@
 	"latitude": 39.813,
 	"longitude": 15.79558,
 	"elevation": 25,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3086,6 +3195,7 @@
 	"latitude": 43.32004,
 	"longitude": 11.33283,
 	"elevation": 322,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 560,
@@ -3111,6 +3221,7 @@
 	"latitude": 41.606944,
 	"longitude": 15.895833,
 	"elevation": 4,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -400,
@@ -3143,6 +3254,7 @@
 	"latitude": 40.62557,
 	"longitude": 14.3701,
 	"elevation": 50,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3155,6 +3267,7 @@
 	"latitude": 44.655,
 	"longitude": 12.115,
 	"elevation": 0,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -550,
@@ -3180,6 +3293,7 @@
 	"latitude": 42.74484,
 	"longitude": 12.73737,
 	"elevation": 396,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -241,
@@ -3219,6 +3333,7 @@
 	"latitude": 38.78091,
 	"longitude": 16.51175,
 	"elevation": 344,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 600,
@@ -3240,6 +3355,7 @@
 	"latitude": 37.08515,
 	"longitude": 15.273,
 	"elevation": 17,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -734,
@@ -3294,6 +3410,7 @@
 	"latitude": 37.85358,
 	"longitude": 15.28851,
 	"elevation": 204,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3306,6 +3423,7 @@
 	"latitude": 40.47611,
 	"longitude": 17.22972,
 	"elevation": 15,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -706,
@@ -3349,6 +3467,7 @@
 	"latitude": 42.25419,
 	"longitude": 11.75657,
 	"elevation": 133,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3403,6 +3522,7 @@
 	"latitude": 41.28967,
 	"longitude": 13.24127,
 	"elevation": 22,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3439,6 +3559,7 @@
 	"latitude": 41.96092,
 	"longitude": 12.79888,
 	"elevation": 235,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3478,6 +3599,7 @@
 	"latitude": 42.77994,
 	"longitude": 12.40456,
 	"elevation": 400,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3535,6 +3657,7 @@
 	"latitude": 41.28358,
 	"longitude": 16.42059,
 	"elevation": 7,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 850,
@@ -3570,6 +3693,7 @@
 	"latitude": 38.01906,
 	"longitude": 12.49758,
 	"elevation": 3,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3582,6 +3706,7 @@
 	"latitude": 46.06787,
 	"longitude": 11.12108,
 	"elevation": 194,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -30,
@@ -3629,6 +3754,7 @@
 	"latitude": 45.66667,
 	"longitude": 12.245,
 	"elevation": 15,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -89,
@@ -3668,6 +3794,7 @@
 	"latitude": 40.61939,
 	"longitude": 16.15133,
 	"elevation": 698,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3680,6 +3807,7 @@
 	"latitude": 37.78535,
 	"longitude": 14.59848,
 	"elevation": 1121,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3692,6 +3820,7 @@
 	"latitude": 45.07049,
 	"longitude": 7.68682,
 	"elevation": 239,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -27,
@@ -3735,6 +3864,7 @@
 	"latitude": 42.023889,
 	"longitude": 12.401389,
 	"elevation": 118,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -750,
@@ -3755,6 +3885,10 @@
 	{
 		"name" : "Veii",
 		"language" : "Etruscan"
+	},
+	{
+		"name" : "Veius",
+		"language" : "Latin"
 	}
 	]
 },
@@ -3763,6 +3897,7 @@
 	"latitude": 45.43861,
 	"longitude": 12.32667,
 	"elevation": 2,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : 421,
@@ -3813,6 +3948,7 @@
 	"latitude": 40.96132,
 	"longitude": 15.81486,
 	"elevation": 415,
+	"prefix" : "modern",
 	"periods" : [
 
 	],
@@ -3825,6 +3961,7 @@
 	"latitude": 45.43419,
 	"longitude": 10.99779,
 	"elevation": 59,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -89,
@@ -3867,6 +4004,7 @@
 	"latitude": 42.8575784,
 	"longitude": 10.9717745,
 	"elevation": 319,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3914,6 +4052,7 @@
 	"latitude": 43.40034,
 	"longitude": 10.86002,
 	"elevation": 531,
+	"prefix" : "modern",
 	"periods" : [
 	{
 		"startDate" : -700,
@@ -3961,6 +4100,7 @@
 	"latitude": 42.418889,
 	"longitude": 11.631667,
 	"elevation": 65,
+	"prefix" : "ancient",
 	"periods" : [
 	{
 		"startDate" : -700,
