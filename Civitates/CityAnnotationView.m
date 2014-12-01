@@ -168,9 +168,16 @@ static double TOUCH_DIAMETER = 30.0;
     else if (self.cityAnnotation.labelPosition == 4) {
         label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerTop - labelRect.size.height, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
     }
-    else {
+    else if (self.cityAnnotation.labelPosition == 5) {
         label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerBottom + LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
     }
+    else if (self.cityAnnotation.labelPosition == 6) {
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight, markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+    }
+    else {
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+    }
+
     label.text = self.cityAnnotation.label;
     label.font =[UIFont systemFontOfSize:fontSize];
     label.drawOutline = YES;

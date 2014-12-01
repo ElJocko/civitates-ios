@@ -66,21 +66,21 @@
 		"endDate" : -201,
 		"preferredName" : "Ardea",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -200,
 		"endDate" : -100,
 		"preferredName" : "Ardea",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1000,
 		"endDate" : 2100,
 		"preferredName" : "Ardea",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -585,8 +585,8 @@
 		"startDate" : -700,
 		"endDate" : -264,
 		"preferredName" : "Velzna",
-		"size" : 1,
-		"tagPosition" : 0
+		"size" : 2,
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : -263,
@@ -676,7 +676,7 @@
 		"startDate" : -267,
 		"endDate" : 674,
 		"preferredName" : "Brundisium",
-		"size" : 3,
+		"size" : 1,
 		"tagPosition" : 0
 	},
 	{
@@ -777,6 +777,13 @@
 	},
 	{
 		"startDate" : -423,
+		"endDate" : 456,
+		"preferredName" : "Capua",
+		"size" : 1,
+		"tagPosition" : 4
+	},
+	{
+		"startDate" : 457,
 		"endDate" : 1156,
 		"preferredName" : "Capua",
 		"size" : 2,
@@ -926,8 +933,8 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Caisra",
-		"size" : 2,
-		"tagPosition" : 0
+		"size" : 3,
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -199,
@@ -1030,7 +1037,7 @@
 		"endDate" : -200,
 		"preferredName" : "Clevsin",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 6
 	},
 	{
 		"startDate" : -199,
@@ -1117,7 +1124,7 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Curtun",
-		"size" : 2,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -1446,14 +1453,14 @@
 		"endDate" : -100,
 		"preferredName" : "Gabii",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 5
 	},
 	{
 		"startDate" : -99,
 		"endDate" : 300,
 		"preferredName" : "Gabii",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 5
 	}
 	],
 	"altNames" : [
@@ -1641,14 +1648,14 @@
 		"endDate" : -90,
 		"preferredName" : "Heraclea",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -89,
 		"endDate" : 400,
 		"preferredName" : "Heraclea",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -1753,14 +1760,14 @@
 		"endDate" : -300,
 		"preferredName" : "Lavinium",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -299,
 		"endDate" : 400,
 		"preferredName" : "Lavinium",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -2004,21 +2011,21 @@
 		"endDate" : -222,
 		"preferredName" : "Mediolanum",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -221,
 		"endDate" : 285,
 		"preferredName" : "Mediolanum",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 286,
 		"endDate" : 539,
 		"preferredName" : "Mediolanum",
 		"size" : 1,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 540,
@@ -2403,7 +2410,7 @@
 		"endDate" : -73,
 		"preferredName" : "Praeneste",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : -72,
@@ -2641,7 +2648,7 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Perusia",
-		"size" : 2,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -2902,7 +2909,7 @@
 		"startDate" : -88,
 		"endDate" : 401,
 		"preferredName" : "Ravenna",
-		"size" : 2,
+		"size" : 1,
 		"tagPosition" : 1
 	},
 	{
@@ -3183,7 +3190,7 @@
 		"endDate" : -30,
 		"preferredName" : "Circeii",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -3526,15 +3533,15 @@
 		"startDate" : -272,
 		"endDate" : 685,
 		"preferredName" : "Tarentum",
-		"size" : 1,
-		"tagPosition" : 0
+		"size" : 2,
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 686,
 		"endDate" : 2100,
 		"preferredName" : "Taranto",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -3564,7 +3571,7 @@
 		"endDate" : -200,
 		"preferredName" : "Tarchna",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -199,
@@ -3619,14 +3626,14 @@
 		"endDate" : 600,
 		"preferredName" : "Tarracina",
 		"size" : 3,
-		"tagPosition" : 2
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
 		"preferredName" : "Terracina",
 		"size" : 3,
-		"tagPosition" : 2
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
@@ -4001,7 +4008,7 @@
 		"startDate" : -750,
 		"endDate" : -396,
 		"preferredName" : "Veii",
-		"size" : 2,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -4182,8 +4189,8 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Vetluna",
-		"size" : 2,
-		"tagPosition" : 2
+		"size" : 1,
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -199,
@@ -4231,7 +4238,7 @@
 		"endDate" : -298,
 		"preferredName" : "Velathri",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -297,
@@ -4279,7 +4286,7 @@
 		"endDate" : -280,
 		"preferredName" : "Velch",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -279,
