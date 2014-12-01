@@ -11,7 +11,7 @@
 		"endDate" : -500,
 		"preferredName" : "Acquarossa",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 6
 	}
 	],
 	"altNames" : [
@@ -1903,6 +1903,57 @@
 	]
 },
 {
+	"identifier" : "Marsala",
+	"latitude": 37.79664,
+	"longitude": 12.43518,
+	"elevation": 12,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : -397,
+		"endDate" : -241,
+		"preferredName" : "Lilybaion",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -240,
+		"endDate" : 400,
+		"preferredName" : "Lilybaeum",
+		"size" : 3,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 401,
+		"endDate" : 750,
+		"preferredName" : "Lilybaeum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 751,
+		"endDate" : 2100,
+		"preferredName" : "Marsala",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Marsala",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Lilybaeum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Lilybaion",
+		"language" : "Phoenician"
+	}
+	]
+},
+{
 	"identifier" : "Matera",
 	"latitude": 40.66852,
 	"longitude": 16.60158,
@@ -2172,14 +2223,14 @@
 		"endDate" : -200,
 		"preferredName" : "Murlo",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 4
 	},
 	{
 		"startDate" : -199,
 		"endDate" : 2100,
 		"preferredName" : "Murlo",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 4
 	}
 	],
 	"altNames" : [
@@ -2344,7 +2395,7 @@
 		"endDate" : 849,
 		"preferredName" : "Ostia",
 		"size" : 4,
-		"tagPosition" : 3
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
