@@ -10,10 +10,10 @@
 #import "City.h"
 #import "AlternateName.h"
 #import "CityNameTableViewCell2.h"
+#import "CultureTheme.h"
 
 @interface CityNameTableViewController ()
 
-@property NSDictionary *cultureSymbols;
 @property NSArray *consolidatedNames;
 
 @end
@@ -34,29 +34,11 @@
     [super viewDidLoad];
     [self.tableView registerNib:[UINib nibWithNibName:@"CityNameTableViewCell2" bundle:nil] forCellReuseIdentifier:@"cityNameCell"];
 
-    UIImage *latinImage = [UIImage imageNamed:@"Artwork/Latin.png"];
-    UIImage *greekImage = [UIImage imageNamed:@"Artwork/Greek.png"];
-    UIImage *italianImage = [UIImage imageNamed:@"Artwork/Italian.png"];
-    UIImage *englishImage = [UIImage imageNamed:@"Artwork/English.png"];
-    UIImage *etruscanImage = [UIImage imageNamed:@"Artwork/Etruscan.png"];
-    
-    self.cultureSymbols = [NSDictionary dictionaryWithObjectsAndKeys:latinImage, @"Latin", greekImage, @"Greek", italianImage, @"Italian", englishImage, @"English", etruscanImage, @"Etruscan", nil];
-    
     self.consolidatedNames = [[NSArray alloc] init];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    NSDictionary *cultureOrder = @{
-                                   @"Umbrian": @1,
-                                   @"Etruscan": @2,
-                                   @"Gallic": @3,
-                                   @"Greek": @4,
-                                   @"Latin": @5,
-                                   @"Italian": @6,
-                                   @"English": @7
-                                   };
-    
     if (self.city) {
         // Each city has one or more names associated with it. These names are provided to this viewController
         // as an array of alternateName objects, where each object has a name and a culture (e.g., "Fefluna"/"Etruscan").
@@ -96,14 +78,17 @@
             AlternateName *name1 = obj1;
             AlternateName *name2 = obj2;
             
-            NSNumber *name1Order = [cultureOrder objectForKey:name1.culture];
-            NSNumber *name2Order = [cultureOrder objectForKey:name2.culture];
+            CultureTheme *theme1 = [CultureTheme themeWithName:name1.culture];
+            CultureTheme *theme2 = [CultureTheme themeWithName:name2.culture];
             
-            if (name1Order && name2Order) {
-                return [name1Order compare:name2Order];
+            if (theme1.order < theme2.order) {
+                return NSOrderedAscending;
+            }
+            else if (theme1.order > theme2.order) {
+                return NSOrderedDescending;
             }
             else {
-                return YES;
+                return NSOrderedSame;
             }
         }];
     }
@@ -140,7 +125,10 @@
         
         AlternateName *name = [self.consolidatedNames objectAtIndex:indexPath.item];
         
-        cell.cultureImage.image = [self.cultureSymbols objectForKey:name.culture];
+        CultureTheme *theme = [CultureTheme themeWithName:name.culture];
+        cell.cultureImage.backgroundColor = theme.color;
+        
+        cell.cultureAbbreviationLabel.text = theme.abbreviation;
         
         cell.nameLabel.text = name.name;
         cell.cultureLabel.text = name.culture;

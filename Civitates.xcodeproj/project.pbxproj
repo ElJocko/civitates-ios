@@ -32,6 +32,8 @@
 		3D2FA6BF1A1D3C7C00FBE491 /* MapUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */; };
 		3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */; };
 		3D2FA80F1A25314900FBE491 /* tiles in Resources */ = {isa = PBXBuildFile; fileRef = 3D2FA80E1A25314900FBE491 /* tiles */; };
+		3D2FA8121A2A107600FBE491 /* CultureTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D2FA8111A2A107600FBE491 /* CultureTheme.m */; };
+		3D2FA8141A2A13A600FBE491 /* CultureTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D2FA8131A2A13A600FBE491 /* CultureTheme.json */; };
 		3D3747741A16B43C006106DE /* CityDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747731A16B43C006106DE /* CityDataViewController.m */; };
 		3D3747771A16C44E006106DE /* CityPhysicalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3747761A16C44E006106DE /* CityPhysicalViewController.m */; };
 		3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D495E6618B12BFF00284C0C /* DataLoader.m */; };
@@ -98,6 +100,9 @@
 		3D2FA6F81A250F7E00FBE491 /* UIImage+Sizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sizing.h"; sourceTree = "<group>"; };
 		3D2FA6F91A250F7E00FBE491 /* UIImage+Sizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sizing.m"; sourceTree = "<group>"; };
 		3D2FA80E1A25314900FBE491 /* tiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiles; sourceTree = "<group>"; };
+		3D2FA8101A2A107600FBE491 /* CultureTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CultureTheme.h; sourceTree = "<group>"; };
+		3D2FA8111A2A107600FBE491 /* CultureTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CultureTheme.m; sourceTree = "<group>"; };
+		3D2FA8131A2A13A600FBE491 /* CultureTheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CultureTheme.json; path = Civitates/CityData/CultureTheme.json; sourceTree = "<group>"; };
 		3D3747721A16B43C006106DE /* CityDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityDataViewController.h; sourceTree = "<group>"; };
 		3D3747731A16B43C006106DE /* CityDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityDataViewController.m; sourceTree = "<group>"; };
 		3D3747751A16C44E006106DE /* CityPhysicalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityPhysicalViewController.h; sourceTree = "<group>"; };
@@ -156,6 +161,7 @@
 		3D140075187BA2DD001FEE6C = {
 			isa = PBXGroup;
 			children = (
+				3D2FA8131A2A13A600FBE491 /* CultureTheme.json */,
 				3D140087187BA2DD001FEE6C /* Civitates */,
 				3D1400A6187BA2DD001FEE6C /* CivitatesTests */,
 				3D140080187BA2DD001FEE6C /* Frameworks */,
@@ -272,6 +278,8 @@
 				3D495E7218B1304300284C0C /* AlternateName.m */,
 				3D495E6518B12BFF00284C0C /* DataLoader.h */,
 				3D495E6618B12BFF00284C0C /* DataLoader.m */,
+				3D2FA8101A2A107600FBE491 /* CultureTheme.h */,
+				3D2FA8111A2A107600FBE491 /* CultureTheme.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -423,6 +431,7 @@
 				3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */,
 				3D14009A187BA2DD001FEE6C /* Images.xcassets in Resources */,
 				3D14008C187BA2DD001FEE6C /* InfoPlist.strings in Resources */,
+				3D2FA8141A2A13A600FBE491 /* CultureTheme.json in Resources */,
 				3D2DCF3119F2FFF0005CD639 /* quattrocento.bold.ttf in Resources */,
 				3D140095187BA2DD001FEE6C /* Main.storyboard in Resources */,
 				3D53EC7D19D085B900C9F1FC /* CityPopover.storyboard in Resources */,
@@ -460,6 +469,7 @@
 				3D1FD5E9192E5B9D00D3D523 /* CityNameTableViewController.m in Sources */,
 				3D140098187BA2DD001FEE6C /* ViewController.m in Sources */,
 				3D140092187BA2DD001FEE6C /* AppDelegate.m in Sources */,
+				3D2FA8121A2A107600FBE491 /* CultureTheme.m in Sources */,
 				3D14008E187BA2DD001FEE6C /* main.m in Sources */,
 				3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */,
 				3D495E6A18B12EF400284C0C /* City.m in Sources */,

@@ -537,7 +537,7 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Felsina",
-		"size" : 1,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -585,7 +585,7 @@
 		"startDate" : -700,
 		"endDate" : -264,
 		"preferredName" : "Velzna",
-		"size" : 2,
+		"size" : 1,
 		"tagPosition" : 0
 	},
 	{
@@ -773,21 +773,21 @@
 		"endDate" : -424,
 		"preferredName" : "Capeva",
 		"size" : 2,
-		"tagPosition" : 3
+		"tagPosition" : 4
 	},
 	{
 		"startDate" : -423,
 		"endDate" : 1156,
 		"preferredName" : "Capua",
 		"size" : 2,
-		"tagPosition" : 3
+		"tagPosition" : 4
 	},
 	{
 		"startDate" : 1157,
 		"endDate" : 2100,
 		"preferredName" : "Capua",
 		"size" : 3,
-		"tagPosition" : 3
+		"tagPosition" : 4
 	}
 	],
 	"altNames" : [
@@ -1029,7 +1029,7 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Clevsin",
-		"size" : 1,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
@@ -1266,21 +1266,21 @@
 		"endDate" : -421,
 		"preferredName" : "Cumae",
 		"size" : 1,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -420,
 		"endDate" : 600,
 		"preferredName" : "Cumae",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 1207,
 		"preferredName" : "Cuma",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -1307,6 +1307,19 @@
 	"latitude": 37.55885,
 	"longitude": 14.28917,
 	"elevation": 931,
+	"prefix" : "modern",
+	"periods" : [
+
+	],
+	"altNames" : [
+
+	]
+},
+{
+	"identifier" : "Falerii",
+	"latitude": 42.29523,
+	"longitude": 12.40917,
+	"elevation": 145,
 	"prefix" : "modern",
 	"periods" : [
 
@@ -1462,21 +1475,21 @@
 		"endDate" : 600,
 		"preferredName" : "Caieta",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 1229,
 		"preferredName" : "Gaeta",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1230,
 		"endDate" : 2100,
 		"preferredName" : "Gaeta",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -1602,7 +1615,7 @@
 		"endDate" : 2100,
 		"preferredName" : "Grado",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -1613,6 +1626,39 @@
 	{
 		"name" : "Grado",
 		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Heraclea",
+	"latitude": 40.22,
+	"longitude": 16.669722,
+	"elevation": 31,
+	"prefix" : "ancient",
+	"periods" : [
+	{
+		"startDate" : -433,
+		"endDate" : -90,
+		"preferredName" : "Heraclea",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -89,
+		"endDate" : 400,
+		"preferredName" : "Heraclea",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Heraclea",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Heracleia",
+		"language" : "Greek"
 	}
 	]
 },
@@ -2035,35 +2081,35 @@
 		"endDate" : -250,
 		"preferredName" : "Mutna",
 		"size" : 3,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : -249,
 		"endDate" : -177,
 		"preferredName" : "Mutina",
 		"size" : 3,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : -176,
 		"endDate" : 600,
 		"preferredName" : "Mutina",
 		"size" : 2,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : 900,
 		"endDate" : 1500,
 		"preferredName" : "Modena",
 		"size" : 3,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : 1501,
 		"endDate" : 2100,
 		"preferredName" : "Modena",
 		"size" : 2,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
@@ -2148,28 +2194,28 @@
 		"endDate" : -200,
 		"preferredName" : "Neapolis",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Neapolis",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 1442,
 		"preferredName" : "Naples",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1443,
 		"endDate" : 2100,
 		"preferredName" : "Naples",
 		"size" : 1,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -2277,6 +2323,28 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Ostia",
+	"latitude": 41.758212,
+	"longitude": 12.29989,
+	"elevation": 4,
+	"prefix" : "ancient",
+	"periods" : [
+	{
+		"startDate" : -400,
+		"endDate" : 849,
+		"preferredName" : "Ostia",
+		"size" : 4,
+		"tagPosition" : 3
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Ostia",
+		"language" : "Latin"
+	}
 	]
 },
 {
@@ -2534,21 +2602,21 @@
 		"endDate" : 571,
 		"preferredName" : "Ticinum",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 572,
 		"endDate" : 1525,
 		"preferredName" : "Pavia",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1526,
 		"endDate" : 2100,
 		"preferredName" : "Pavia",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -2614,7 +2682,7 @@
 		"endDate" : 2100,
 		"preferredName" : "Piacenza",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -2636,28 +2704,28 @@
 		"endDate" : 600,
 		"preferredName" : "Pisae",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 929,
 		"preferredName" : "Pisa",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 930,
 		"endDate" : 1290,
 		"preferredName" : "Pisa",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1291,
 		"endDate" : 2100,
 		"preferredName" : "Pisa",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -2737,7 +2805,7 @@
 		"startDate" : -700,
 		"endDate" : -200,
 		"preferredName" : "Fufluna",
-		"size" : 1,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -2828,28 +2896,28 @@
 		"endDate" : -89,
 		"preferredName" : "Ravenna",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : -88,
 		"endDate" : 401,
 		"preferredName" : "Ravenna",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : 402,
 		"endDate" : 751,
 		"preferredName" : "Ravenna",
 		"size" : 1,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : 752,
 		"endDate" : 2100,
 		"preferredName" : "Ravenna",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -2871,21 +2939,21 @@
 		"endDate" : -200,
 		"preferredName" : "Rhegion",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Rhegium",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
 		"preferredName" : "Reggio",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -3002,7 +3070,7 @@
 		"startDate" : -700,
 		"endDate" : -294,
 		"preferredName" : "Rusellae",
-		"size" : 1,
+		"size" : 3,
 		"tagPosition" : 0
 	},
 	{
@@ -3217,7 +3285,7 @@
 	]
 },
 {
-	"identifier" : "Siponto",
+	"identifier" : "Sipontum",
 	"latitude": 41.606944,
 	"longitude": 15.895833,
 	"elevation": 4,
@@ -3351,6 +3419,28 @@
 	]
 },
 {
+	"identifier" : "Sybaris",
+	"latitude": 39.716667,
+	"longitude": 16.493889,
+	"elevation": 1,
+	"prefix" : "ancient",
+	"periods" : [
+	{
+		"startDate" : -720,
+		"endDate" : -445,
+		"preferredName" : "Sybaris",
+		"size" : 2,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Sybaris",
+		"language" : "Greek"
+	}
+	]
+},
+{
 	"identifier" : "Syracuse",
 	"latitude": 37.08515,
 	"longitude": 15.273,
@@ -3430,21 +3520,21 @@
 		"endDate" : -273,
 		"preferredName" : "Taras",
 		"size" : 3,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : -272,
 		"endDate" : 685,
 		"preferredName" : "Tarentum",
 		"size" : 1,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	},
 	{
 		"startDate" : 686,
 		"endDate" : 2100,
 		"preferredName" : "Taranto",
 		"size" : 2,
-		"tagPosition" : 1
+		"tagPosition" : 0
 	}
 	],
 	"altNames" : [
@@ -3480,7 +3570,7 @@
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Tarquinii",
-		"size" : 3,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
@@ -3529,14 +3619,14 @@
 		"endDate" : 600,
 		"preferredName" : "Tarracina",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
 		"preferredName" : "Terracina",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -3551,6 +3641,47 @@
 	{
 		"name" : "Terracina",
 		"language" : "Italian"
+	}
+	]
+},
+{
+	"identifier" : "Thurii",
+	"latitude": 39.717222,
+	"longitude": 16.495556,
+	"elevation": 2,
+	"prefix" : "ancient",
+	"periods" : [
+	{
+		"startDate" : -443,
+		"endDate" : -204,
+		"preferredName" : "Thurii",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -203,
+		"endDate" : 600,
+		"preferredName" : "Thurii",
+		"size" : 3,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Thurii",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Thurium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Copia",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Copiae",
+		"language" : "Latin"
 	}
 	]
 },
@@ -3870,7 +4001,7 @@
 		"startDate" : -750,
 		"endDate" : -396,
 		"preferredName" : "Veii",
-		"size" : 1,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
@@ -3888,6 +4019,47 @@
 	},
 	{
 		"name" : "Veius",
+		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "Velia",
+	"latitude": 40.160833,
+	"longitude": 15.155,
+	"elevation": 54,
+	"prefix" : "ancient",
+	"periods" : [
+	{
+		"startDate" : -540,
+		"endDate" : -273,
+		"preferredName" : "Elea",
+		"size" : 2,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -272,
+		"endDate" : 100,
+		"preferredName" : "Velia",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Hyele",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Ele",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Elea",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Velia",
 		"language" : "Latin"
 	}
 	]
@@ -4011,21 +4183,21 @@
 		"endDate" : -200,
 		"preferredName" : "Vetluna",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : -199,
 		"endDate" : 600,
 		"preferredName" : "Vetulonium",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
 		"preferredName" : "Vetulonia",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -4058,7 +4230,7 @@
 		"startDate" : -700,
 		"endDate" : -298,
 		"preferredName" : "Velathri",
-		"size" : 1,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{
@@ -4106,7 +4278,7 @@
 		"startDate" : -700,
 		"endDate" : -280,
 		"preferredName" : "Velch",
-		"size" : 1,
+		"size" : 2,
 		"tagPosition" : 0
 	},
 	{

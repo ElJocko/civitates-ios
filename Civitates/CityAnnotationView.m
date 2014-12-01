@@ -165,6 +165,9 @@ static double TOUCH_DIAMETER = 30.0;
     else if (self.cityAnnotation.labelPosition == 3) {
         label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerBottom - LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
     }
+    else if (self.cityAnnotation.labelPosition == 4) {
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerTop - labelRect.size.height, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+    }
     else {
         label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerBottom + LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
     }

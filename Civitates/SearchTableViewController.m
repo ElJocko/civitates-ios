@@ -9,10 +9,10 @@
 #import "SearchTableViewController.h"
 #import "AlternateName.h"
 #import "CityNameTableViewCell2.h"
+#import "CultureTheme.h"
 
 @interface SearchTableViewController ()
 
-@property NSDictionary *cultureSymbols;
 @property NSArray *filteredCityNames;
 
 @end
@@ -25,14 +25,6 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"CityNameTableViewCell2" bundle:nil] forCellReuseIdentifier:@"cityNameCell"];
     
     [self.searchDisplayController.searchResultsTableView registerNib:[UINib nibWithNibName:@"CityNameTableViewCell2" bundle:nil] forCellReuseIdentifier:@"cityNameCell"];
-    
-    UIImage *latinImage = [UIImage imageNamed:@"Artwork/Latin.png"];
-    UIImage *greekImage = [UIImage imageNamed:@"Artwork/Greek.png"];
-    UIImage *italianImage = [UIImage imageNamed:@"Artwork/Italian.png"];
-    UIImage *englishImage = [UIImage imageNamed:@"Artwork/English.png"];
-    UIImage *etruscanImage = [UIImage imageNamed:@"Artwork/Etruscan.png"];
-    
-    self.cultureSymbols = [NSDictionary dictionaryWithObjectsAndKeys:latinImage, @"Latin", greekImage, @"Greek", italianImage, @"Italian", englishImage, @"English", etruscanImage, @"Etruscan", nil];
     
     self.filteredCityNames = [NSMutableArray arrayWithCapacity:self.cityNames.count];
 }
@@ -80,7 +72,10 @@
             name = [self.cityNames objectAtIndex:indexPath.item];
         }
         
-        cell.cultureImage.image = [self.cultureSymbols objectForKey:name.culture];
+        CultureTheme *theme = [CultureTheme themeWithName:name.culture];
+        cell.cultureImage.backgroundColor = theme.color;
+        
+        cell.cultureAbbreviationLabel.text = theme.abbreviation;
         
         cell.nameLabel.text = name.name;
         cell.cultureLabel.text = name.culture;

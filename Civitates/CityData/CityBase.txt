@@ -77,6 +77,7 @@ Nicastro	Nicastro	IT	modern
 Nola	Nola	IT	modern
 Noto	Noto	IT	modern
 Oria	Oria	IT	modern
+Ostia	Lido di Ostia	IT	ancient
 Otranto	Otranto	IT	modern
 Palestrina	Palestrina	IT	modern
 Palermo	Palermo	IT	modern
@@ -109,7 +110,7 @@ Santa Severina	Santa Severina	IT	modern
 Scalea	Scalea	IT	modern
 Scribla	Scribla	IT	modern
 Siena	Siena	IT	modern
-Siponto	Siponto	IT	ancient
+Sipontum	Sipontum	IT	ancient
 Sorrento	Sorrento	IT	modern
 Spina	Spina	IT	ancient
 Spoleto	Spoleto	IT	modern

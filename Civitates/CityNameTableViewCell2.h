@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *cultureImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cultureLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cultureAbbreviationLabel;
 
 @end

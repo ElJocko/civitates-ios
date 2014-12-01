@@ -45,9 +45,9 @@ Brindisi	-267	674	Brundisium	3	0
 Brindisi	675	2100	Brindisi	4	0
 Camerino	-300	600	Camerinum	4	0
 Camerino	601	2100	Camerino	4	0
-Capua	-700	-424	Capeva	2	3
-Capua	-423	1156	Capua	2	3
-Capua	1157	2100	Capua	3	3
+Capua	-700	-424	Capeva	2	4
+Capua	-423	1156	Capua	2	4
+Capua	1157	2100	Capua	3	4
 Castelseprio	500	1287	Castelseprio	4	0
 Catania	-730	-264	Katane	4	0
 Catania	-263	535	Catana	3	0
@@ -75,9 +75,9 @@ Cremona	1500	2100	Cremona	4	0
 Crotone	-710	-200	Kroton	2	0
 Crotone	-199	600	Crotona	3	0
 Crotone	601	2100	Crotone	4	0
-Cumae	-750	-421	Cumae	1	0
-Cumae	-420	600	Cumae	3	0
-Cumae	601	1207	Cuma	4	0
+Cumae	-750	-421	Cumae	1	2
+Cumae	-420	600	Cumae	3	2
+Cumae	601	1207	Cuma	4	2
 Ferrara	753	1400	Ferrara	4	0
 Ferrara	1401	2100	Ferrara	3	0
 Florence	-59	600	Florentia	2	0
@@ -87,13 +87,13 @@ Florence	1301	2100	Florence	1	0
 Foggia	1000	2100	Foggia	4	0
 Gabii	-700	-100	Gabii	3	0
 Gabii	-99	300	Gabii	4	0
-Gaeta	-700	600	Caieta	4	0
-Gaeta	601	1229	Gaeta	3	0
-Gaeta	1230	2100	Gaeta	4	0
+Gaeta	-700	600	Caieta	4	3
+Gaeta	601	1229	Gaeta	3	3
+Gaeta	1230	2100	Gaeta	4	3
 Genoa	-199	600	Genua	2	0
 Genoa	601	1500	Genoa	2	0
 Genoa	1501	2100	Genoa	1	0
-Grado	400	2100	Grado	4	0
+Grado	400	2100	Grado	4	1
 Ivrea	-100	571	Eporedia	4	0
 Ivrea	572	2100	Ivrea	3	0
 Larino	-700	600	Larinum	4	0
@@ -124,13 +124,14 @@ Modena	1501	2100	Modena	2	1
 Casale Monferrato	1292	2100	Casale Monferrato	3	0
 Murlo	-700	-200	Murlo	3	0
 Murlo	-199	2100	Murlo	4	0
-Naples	-550	-200	Neapolis	3	0
-Naples	-199	600	Neapolis	2	0
-Naples	601	1442	Naples	2	0
-Naples	1443	2100	Naples	1	0
+Naples	-550	-200	Neapolis	3	3
+Naples	-199	600	Neapolis	2	3
+Naples	601	1442	Naples	2	3
+Naples	1443	2100	Naples	1	3
 Nola	-700	-328	Nuvlana	3	0
 Nola	-327	-73	Nola	2	0
 Nola	-72	2100	Nola	3	0
+Ostia	-400	849	Ostia	4	3
 Otranto	-191	550	Hydruntum	4	0
 Otranto	551	1480	Otranto	2	0
 Otranto	1481	2100	Otranto	4	0
@@ -148,17 +149,17 @@ Palestrina	-72	600	Praeneste	4	0
 Palestrina	601	2100	Palestrina	4	0
 Parma	-700	1500	Parma	3	0
 Parma	1501	2100	Parma	2	0
-Pavia	-218	571	Ticinum	4	0
-Pavia	572	1525	Pavia	2	0
-Pavia	1526	2100	Pavia	3	0
+Pavia	-218	571	Ticinum	4	3
+Pavia	572	1525	Pavia	2	3
+Pavia	1526	2100	Pavia	3	3
 Perugia	-700	-200	Perusia	2	0
 Perugia	-199	600	Perusia	3	0
 Perugia	601	2100	Perugia	3	0
-Piacenza	-218	2100	Piacenza	4	0
-Pisa	-180	600	Pisae	3	0
-Pisa	601	929	Pisa	3	0
-Pisa	930	1290	Pisa	2	0
-Pisa	1291	2100	Pisa	3	0
+Piacenza	-218	2100	Piacenza	4	1
+Pisa	-180	600	Pisae	3	3
+Pisa	601	929	Pisa	3	3
+Pisa	930	1290	Pisa	2	3
+Pisa	1291	2100	Pisa	3	3
 Pompeii	-600	79	Pompeii	3	0
 Pontecorvo	860	1189	Pontecorvo	4	0
 Pontecorvo	1190	2100	Pontecorvo	3	0
@@ -167,13 +168,13 @@ Populonia	-199	570	Populonia	3	0
 Ragusa	-700	-200	Hybla Heraea	4	0
 Ragusa	-199	600	Ragusia	4	0
 Ragusa	601	2100	Ragusa	4	0
-Ravenna	-500	-89	Ravenna	3	0
-Ravenna	-88	401	Ravenna	2	0
-Ravenna	402	751	Ravenna	1	0
-Ravenna	752	2100	Ravenna	2	0
-Reggio Calabria	-737	-200	Rhegion	2	0
-Reggio Calabria	-199	600	Rhegium	2	0
-Reggio Calabria	601	2100	Reggio	3	0
+Ravenna	-500	-89	Ravenna	3	1
+Ravenna	-88	401	Ravenna	2	1
+Ravenna	402	751	Ravenna	1	1
+Ravenna	752	2100	Ravenna	2	1
+Reggio Calabria	-737	-200	Rhegion	2	1
+Reggio Calabria	-199	600	Rhegium	2	1
+Reggio Calabria	601	2100	Reggio	3	1
 Rimini	-268	600	Ariminum	3	0
 Rimini	601	2100	Rimini	3	0
 Rome	-700	2100	Rome	0	4
@@ -189,8 +190,8 @@ Saluzzo	1416	2100	Saluzzo	3	0
 Circeii	-550	-30	Circeii	4	0
 San Marino	1200	2100	San Marino	3	0
 Siena	560	2100	Siena	4	0
-Siponto	-400	663	Sipontum	4	0
-Siponto	1034	1250	Siponto	4	0
+Sipontum	-400	663	Sipontum	4	0
+Sipontum	1034	1250	Siponto	4	0
 Spina	-550	-300	Spina	2	0
 Spoleto	-241	569	Spoletium	4	0
 Spoleto	570	1354	Spoleto	2	0
@@ -200,15 +201,15 @@ Syracuse	-734	-212	Syrakousai	1	0
 Syracuse	-211	878	Syracusa	2	0
 Syracuse	879	1500	Syracuse	2	0
 Syracuse	1501	2100	Syracuse	3	0
-Taranto	-706	-273	Taras	3	1
-Taranto	-272	685	Tarentum	1	1
-Taranto	686	2100	Taranto	2	1
+Taranto	-706	-273	Taras	3	0
+Taranto	-272	685	Tarentum	1	0
+Taranto	686	2100	Taranto	2	0
 Tarquinia	-700	-200	Tarchna	2	0
 Tarquinia	-199	600	Tarquinii	3	0
 Tarquinia	601	1250	Tarquinia	3	0
 Tarquinia	1251	1922	Corneto	4	0
-Terracina	-700	600	Tarracina	3	0
-Terracina	601	2100	Terracina	3	0
+Terracina	-700	600	Tarracina	3	2
+Terracina	601	2100	Terracina	3	2
 Tivoli	-700	-338	Tibur	3	0
 Tivoli	-337	600	Tibur	3	0
 Tivoli	601	2100	Tivoli	3	0
@@ -239,9 +240,9 @@ Verona	-89	488	Verona	4	0
 Verona	489	773	Verona	3	0
 Verona	774	1405	Verona	2	0
 Verona	1406	2100	Verona	3	0
-Vetulonia	-700	-200	Vetluna	2	0
-Vetulonia	-199	600	Vetulonium	3	0
-Vetulonia	601	2100	Vetulonia	4	0
+Vetulonia	-700	-200	Vetluna	2	2
+Vetulonia	-199	600	Vetulonium	3	2
+Vetulonia	601	2100	Vetulonia	4	2
 Volterra	-700	-298	Velathri	1	0
 Volterra	-297	600	Volaterrae	3	0
 Volterra	601	2100	Volterra	3	0

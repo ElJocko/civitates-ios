@@ -42,12 +42,12 @@
         NSInteger elevation = [[cityObject objectForKey:@"elevation"] integerValue];
         city.location = CLLocationCoordinate2DMake(latitude, longitude);
         
-        NSString *title = [cityObject objectForKey:@"title"];
-        if (title) {
-            city.title = title;
+        NSString *prefix = [cityObject objectForKey:@"prefix"];
+        if (prefix) {
+            city.prefix = prefix;
         }
         else {
-            city.title = @"MODERN";
+            city.prefix = @"modern";
         }
         
         // Add the physical data

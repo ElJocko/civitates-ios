@@ -116,6 +116,7 @@ Naples	Napoli	Italian
 Naples	Neapolis	Greek
 Nola	Nuvlana	Etruscan
 Nola	Nola	Latin
+Ostia	Ostia	Latin
 Otranto	Otranto	Italian
 Otranto	Hydrus	Greek
 Otranto	Hydruntum	Latin
@@ -166,8 +167,8 @@ Circeii	Circeii	Latin
 San Marino	San Marino	Italian
 Siena	Saena Julia	Latin
 Siena	Siena	Italian
-Siponto	Siponto	Italian
-Siponto	Sipontum	Latin
+Sipontum	Siponto	Italian
+Sipontum	Sipontum	Latin
 Spina	Spina	Etruscan
 Spina	Spica	Etruscan
 Spoleto	Spoletium	Latin

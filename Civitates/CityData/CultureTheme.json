@@ -1,0 +1,132 @@
+{ "themes" : [
+	{
+    	"name": "Umbrian",
+        "abbreviation": "Um",
+        "color": {
+        	"r": 230,
+            "g": 166,
+            "b": 68,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Ligurian",
+        "abbreviation": "Li",
+        "color": {
+        	"r": 240,
+            "g": 167,
+            "b": 78,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Oscan",
+        "abbreviation": "Os",
+        "color": {
+        	"r": 250,
+            "g": 177,
+            "b": 88,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Phoenician",
+        "abbreviation": "Ph",
+        "color": {
+        	"r": 225,
+            "g": 131,
+            "b": 57,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Volscian",
+        "abbreviation": "Vo",
+        "color": {
+        	"r": 210,
+            "g": 140,
+            "b": 53,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Etruscan",
+        "abbreviation": "Et",
+        "color": {
+        	"r": 182,
+            "g": 87,
+            "b": 29,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Gaulish",
+        "abbreviation": "Ga",
+        "color": {
+        	"r": 177,
+            "g": 195,
+            "b": 146,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Greek",
+        "abbreviation": "Gr",
+        "color": {
+        	"r": 205,
+            "g": 173,
+            "b": 0,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Latin",
+        "abbreviation": "La",
+        "color": {
+        	"r": 230,
+            "g": 156,
+            "b": 108,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Italian",
+        "abbreviation": "It",
+        "color": {
+        	"r": 250,
+            "g": 196,
+            "b": 108,
+            "a": 255
+        }
+    },
+	{
+    	"name": "Arabic",
+        "abbreviation": "Ar",
+        "color": {
+        	"r": 102,
+            "g": 84,
+            "b": 62,
+            "a": 255
+        }
+    },
+	{
+    	"name": "German",
+        "abbreviation": "Ge",
+        "color": {
+        	"r": 132,
+            "g": 124,
+            "b": 106,
+            "a": 255
+        }
+    },
+	{
+    	"name": "English",
+        "abbreviation": "En",
+        "color": {
+        	"r": 152,
+            "g": 144,
+            "b": 126,
+            "a": 255
+        }
+    }
+]}

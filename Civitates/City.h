@@ -17,7 +17,7 @@
 - (CityPeriod *)periodForYear:(int)year;
 
 @property NSString *identifier;
-@property NSString *title;
+@property NSString *prefix;
 @property CLLocationCoordinate2D location;
 @property NSArray *periods;
 @property NSArray *alternateNames;
