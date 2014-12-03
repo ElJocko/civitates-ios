@@ -144,7 +144,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     [self.mapView addOverlay:cachedTileOverlay];
     
     // Slew the map to the initial span
-    MKCoordinateSpan span = MKCoordinateSpanMake(4.0, 4.0);
+    MKCoordinateSpan span = MKCoordinateSpanMake(10.0, 10.0);
     CLLocationCoordinate2D center = CLLocationCoordinate2DMake(41.9, 12.5);
     MKCoordinateRegion region = MKCoordinateRegionMake(center, span);
     [self.mapView setRegion:region animated:YES];
@@ -167,6 +167,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     self.yearSlider.hidden = YES;
     self.searchButton.hidden = YES;
     self.zoomLabel.hidden = YES;
+    self.mapAttributionLabel.hidden = YES;
 }
 
 - (void)loadSplashImage {
@@ -202,6 +203,8 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
                      completion:^(BOOL finished) {
         [self.splashImageView removeFromSuperview];
     }];
+    
+//    [self hideControls];
 }
 
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
