@@ -175,6 +175,21 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
     
+    // Pull the image from the image set.
+    // (Inserting the image an image into the LaunchImage set modifies it from the original.
+    // We need to get an equivilant image so that we match.)
+    if (width > height) {
+        self.splashImageView.image = [UIImage imageNamed:@"SplashImageLandscape"];
+    }
+    else {
+        self.splashImageView.image = [UIImage imageNamed:@"SplashImagePortrait"];
+    }
+    
+    if (self.splashImageView.image == nil) {
+        self.splashImageView.backgroundColor = [UIColor grayColor];
+    }
+ 
+    /*
     if (width == 768 && height == 1024) {
         self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-768_1024_bw.png"];
     }
@@ -190,6 +205,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     else {
         self.splashImageView.backgroundColor = [UIColor grayColor];
     }
+     */
 }
 
 - (void)hideSplashImage {
