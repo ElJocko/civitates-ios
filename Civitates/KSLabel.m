@@ -30,6 +30,10 @@
 //	2) or crediting me inside the app's credits page
 //	3) or a tweet mentioning @modogo
 
+
+// Altered by Jack Sheriff
+// Added offset
+
 #import "KSLabel.h"
 
 @implementation KSLabel

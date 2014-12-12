@@ -1,0 +1,37 @@
+This app makes use of several third party products.
+
+Map Tiles
+=========
+
+This app uses the Ancient World Mapping Center map tiles as the base
+layer for its map.
+
+http://awmc.unc.edu/wordpress/tiles/
+
+These tiles are released under the Creative Commons
+Attribution-NonCommercial 3.0 Unported (CC BY-NC 3.0) license.
+
+http://creativecommons.org/licenses/by-nc/3.0/
+
+
+Fonts
+=====
+
+This app uses the Quattrocento regular and bold fonts created by Pablo
+Impallari.
+
+http://www.impallari.com
+
+These fonts are released under the SIL OPEN FONT LICENSE Version 1.1.
+
+http://scripts.sil.org/OFL
+
+
+KSLabel Source Code
+===================
+
+This app uses the KSLabel class created by Kai from VigorousCoding.
+
+http://www.vigorouscoding.com
+
+This source code is released under the ZLib license.

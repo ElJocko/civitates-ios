@@ -7,6 +7,7 @@ Agrigento	Agrigentum	Latin
 Agrigento	Akragas	Greek
 Agrigento	Kirkent	Arabic
 Agrigento	Girgenti	Arabic
+Alessandria	Alessandria	Italian
 Amalfi	Amalfi	Italian
 Ancona	Ancona	Greek
 Anzio	Anzio	Italian
@@ -19,6 +20,8 @@ Arezzo	Arretium	Latin
 Arpi	Arpi	Greek
 Arpi	Argyripa	Greek
 Arpi	Argos Hippium	Greek
+Assisi	Asisium	Latin
+Assisi	Assisi	Italian
 Bari	Bari	Italian
 Bari	Barium	Latin
 Benevento	Benevento	Italian
@@ -61,6 +64,8 @@ Chiusi	Camars	Umbrian
 Chiusi	Chiusi	Italian
 Cividale del Friuli	Cividale del Friuli	Italian
 Cividale del Friuli	Cividale	Italian
+Como	Novum Comum	Latin
+Como	Como	Italian
 Cortona	Cortona	Italian
 Cortona	Corito	Latin
 Cortona	Curtun	Etruscan
@@ -73,6 +78,13 @@ Cumae	Cumae	Latin
 Cumae	Cuma	Italian
 Cumae	Kume	Greek
 Cumae	Kumai	Greek
+Enna	Henna	Latin
+Enna	Castrogiovanni	Italian
+Enna	Enna	Italian
+Enna	Haenna	Latin
+Enna	Qas'r Ianni	Arabic
+Felarii	Felarii	Latin
+Felarii	Civita Castellana	Italian
 Ferrara	Ferrara	Italian
 Florence	Florence	English
 Florence	Firenze	Italian
@@ -88,8 +100,12 @@ Genoa	Genova	Italian
 Genoa	Zena	Ligurian
 Grado	ad Aquae Gradatae	Latin
 Grado	Grado	Italian
+Heraclea	Heraclea	Greek
+Heraclea	Heracleia	Greek
 Ivrea	Ivrea	Italian
 Ivrea	Eporedia	Latin
+L'Aquila	Aquila	Italian
+L'Aquila	L'Aquila	Italian
 Larino	Larino	Italian
 Larino	Larinum	Latin
 Lavinium	Lavinium	Latin
@@ -99,6 +115,9 @@ Luni	Luni	Italian
 Luni	Luna	Latin
 Mantua	Mantua	Latin
 Mantua	Mantova	Italian
+Marsala	Marsala	Italian
+Marsala	Lilybaeum	Latin
+Marsala	Lilybaion	Phoenician
 Melfi	Melfi	Italian
 Messina	Messina	Italian
 Messina	Messana	Latin
@@ -116,6 +135,7 @@ Naples	Napoli	Italian
 Naples	Neapolis	Greek
 Nola	Nuvlana	Etruscan
 Nola	Nola	Latin
+Orvieto	Orvieto	Italian
 Ostia	Ostia	Latin
 Otranto	Otranto	Italian
 Otranto	Hydrus	Greek
@@ -144,6 +164,7 @@ Pontecorvo	Pontecorvo	Italian
 Populonia	Fufluna	Etruscan
 Populonia	Pupluna	Etruscan
 Populonia	Populonia	Latin
+Ragusa	Hybla Heraea	Greek
 Ragusa	Ragusa	Italian
 Ragusa	Ragusia	Latin
 Ravenna	Ravenna	Etruscan
@@ -165,6 +186,8 @@ Saluzzo	Saluzzo	Italian
 Circeii	San Felice Circeo	Italian
 Circeii	Circeii	Latin
 San Marino	San Marino	Italian
+Savona	Savo	Latin
+Savona	Savona	Italian
 Siena	Saena Julia	Latin
 Siena	Siena	Italian
 Sipontum	Siponto	Italian
@@ -174,6 +197,7 @@ Spina	Spica	Etruscan
 Spoleto	Spoletium	Latin
 Spoleto	Spoleto	Italian
 Squillace	Squillace	Italian
+Sybaris	Sybaris	Greek
 Syracuse	Syrakousai	Greek
 Syracuse	Syracusa	Latin
 Syracuse	Siracusa	Italian
@@ -188,23 +212,36 @@ Tarquinia	Corneto	Italian
 Terracina	Anxur	Volscian
 Terracina	Tarracina	Latin
 Terracina	Terracina	Italian
+Thurii	Thurii	Greek
+Thurii	Thurium	Latin
+Thurii	Copia	Latin
+Thurii	Copiae	Latin
 Tivoli	Tivoli	Italian
 Tivoli	Tibur	Etruscan
 Todi	Todi	Italian
 Todi	Tuder	Latin
 Todi	Tutere	Umbrian
 Trani	Trani	Italian
+Trapani	Drepana	Greek
+Trapani	Drepanum	Latin
+Trapani	Trapani	Italian
 Trento	Trento	Italian
 Trento	Trent	English
 Trento	Trient	German
 Trento	Tridentum	Latin
 Treviso	Treviso	Italian
 Treviso	Tarvisium	Latin
+Tropea	Trapeia	Greek
+Tropea	Tropea	Latin
 Turin	Turin	English
 Turin	Torino	Italian
 Turin	Augusta Taurinorum	Latin
 Veii	Veii	Etruscan
 Veii	Veius	Latin
+Velia	Hyele	Greek
+Velia	Ele	Greek
+Velia	Elea	Greek
+Velia	Velia	Latin
 Venice	Venice	English
 Venice	Venezia	Italian
 Venice	Venetiae	Latin

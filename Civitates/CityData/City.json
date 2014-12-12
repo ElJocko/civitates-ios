@@ -22,6 +22,28 @@
 	]
 },
 {
+	"identifier" : "Alessandria",
+	"latitude": 44.91245,
+	"longitude": 8.61894,
+	"elevation": 95,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : 1168,
+		"endDate" : 2100,
+		"preferredName" : "Alessandria",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Alessandria",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Anzio",
 	"latitude": 41.44749,
 	"longitude": 12.62707,
@@ -399,6 +421,39 @@
 	{
 		"name" : "Argos Hippium",
 		"language" : "Greek"
+	}
+	]
+},
+{
+	"identifier" : "Assisi",
+	"latitude": 43.07083,
+	"longitude": 12.61429,
+	"elevation": 424,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : -295,
+		"endDate" : 545,
+		"preferredName" : "Asisium",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 546,
+		"endDate" : 2100,
+		"preferredName" : "Assisi",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Asisium",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Assisi",
+		"language" : "Italian"
 	}
 	]
 },
@@ -1114,6 +1169,39 @@
 	]
 },
 {
+	"identifier" : "Como",
+	"latitude": 45.80998,
+	"longitude": 9.08744,
+	"elevation": 201,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : -50,
+		"endDate" : 600,
+		"preferredName" : "Novum Comum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Como",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Novum Comum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Como",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Cortona",
 	"latitude": 43.27467,
 	"longitude": 11.98533,
@@ -1316,10 +1404,49 @@
 	"elevation": 931,
 	"prefix" : "modern",
 	"periods" : [
-
+	{
+		"startDate" : -400,
+		"endDate" : 858,
+		"preferredName" : "Henna",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 859,
+		"endDate" : 1086,
+		"preferredName" : "Qas'r Ianni",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 1087,
+		"endDate" : 1927,
+		"preferredName" : "Castrogiovanni",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Henna",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Castrogiovanni",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Enna",
+		"language" : "Italian"
+	},
+	{
+		"name" : "Haenna",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Qas'r Ianni",
+		"language" : "Arabic"
+	}
 	]
 },
 {
@@ -1699,6 +1826,32 @@
 	{
 		"name" : "Eporedia",
 		"language" : "Latin"
+	}
+	]
+},
+{
+	"identifier" : "L'Aquila",
+	"latitude": 42.35055,
+	"longitude": 13.39954,
+	"elevation": 714,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : 1254,
+		"endDate" : 1861,
+		"preferredName" : "Aquila",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Aquila",
+		"language" : "Italian"
+	},
+	{
+		"name" : "L'Aquila",
+		"language" : "Italian"
 	}
 	]
 },
@@ -2384,6 +2537,28 @@
 	]
 },
 {
+	"identifier" : "Orvieto",
+	"latitude": 42.71953,
+	"longitude": 12.11156,
+	"elevation": 325,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : 900,
+		"endDate" : 2100,
+		"preferredName" : "Orvieto",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Orvieto",
+		"language" : "Italian"
+	}
+	]
+},
+{
 	"identifier" : "Ostia",
 	"latitude": 41.758212,
 	"longitude": 12.29989,
@@ -2933,6 +3108,10 @@
 	],
 	"altNames" : [
 	{
+		"name" : "Hybla Heraea",
+		"language" : "Greek"
+	},
+	{
 		"name" : "Ragusa",
 		"language" : "Italian"
 	},
@@ -3301,6 +3480,39 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Savona",
+	"latitude": 44.30905,
+	"longitude": 8.47715,
+	"elevation": 4,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : -205,
+		"endDate" : 600,
+		"preferredName" : "Savo",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Savona",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Savo",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Savona",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -3884,10 +4096,41 @@
 	"elevation": 3,
 	"prefix" : "modern",
 	"periods" : [
-
+	{
+		"startDate" : -450,
+		"endDate" : -242,
+		"preferredName" : "Drepana",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : -241,
+		"endDate" : 600,
+		"preferredName" : "Drepanum",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Trapani",
+		"size" : 4,
+		"tagPosition" : 0
+	}
 	],
 	"altNames" : [
-
+	{
+		"name" : "Drepana",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Drepanum",
+		"language" : "Latin"
+	},
+	{
+		"name" : "Trapani",
+		"language" : "Italian"
+	}
 	]
 },
 {
@@ -3989,6 +4232,39 @@
 	],
 	"altNames" : [
 
+	]
+},
+{
+	"identifier" : "Tropea",
+	"latitude": 38.67538,
+	"longitude": 15.89479,
+	"elevation": 61,
+	"prefix" : "modern",
+	"periods" : [
+	{
+		"startDate" : -50,
+		"endDate" : 600,
+		"preferredName" : "Trapeia",
+		"size" : 4,
+		"tagPosition" : 0
+	},
+	{
+		"startDate" : 601,
+		"endDate" : 2100,
+		"preferredName" : "Tropea",
+		"size" : 4,
+		"tagPosition" : 0
+	}
+	],
+	"altNames" : [
+	{
+		"name" : "Trapeia",
+		"language" : "Greek"
+	},
+	{
+		"name" : "Tropea",
+		"language" : "Latin"
+	}
 	]
 },
 {

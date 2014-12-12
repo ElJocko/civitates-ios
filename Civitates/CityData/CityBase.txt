@@ -1,5 +1,6 @@
 Aceranza	Aceranza	IT	modern
 Acquarossa	Acquarossa	IT	ancient
+Alessandria	Alessandria	IT	modern
 Anzio	Anzio	IT	modern
 Ardea	Ardea	IT	modern
 Adria	Adria	IT	modern
@@ -11,6 +12,7 @@ Aquileia	Aquileia	IT	modern
 Ariano	Ariano	IT	modern
 Arezzo	Arezzo	IT	modern
 Arpi	Arpi	IT	ancient
+Assisi	Assisi	IT	modern
 Aversa	Aversa	IT	modern
 Bari	Bari	IT	modern
 Benevento	Benevento	IT	modern
@@ -33,12 +35,14 @@ Cerveteri	Cerveteri	IT	modern
 Chieti	Chieti	IT	modern
 Chiusi	Chiusi	IT	modern
 Cividale del Friuli	Cividale del Friuli	IT	modern
+Como	Como	IT	modern
 Cortona	Cortona	IT	modern
 Cosenza	Cosenza	IT	modern
 Cremona	Cremona	IT	modern
 Crotone	Crotone	IT	modern
 Cumae	Cumae	IT	ancient
 Enna	Enna	IT	modern
+Falerii	Civita Castellana	IT	modern
 Ferrara	Ferrara	IT	modern
 Florence	Firenze	IT	modern
 Foggia	Foggia	IT	modern
@@ -50,7 +54,9 @@ Genoa	Genoa	IT	modern
 Gerace	Gerace	IT	modern
 Giardini-Naxos	Giardini-Naxos	IT	modern
 Grado	Grado	IT	modern
+Heraclea	Heraclea	IT	ancient
 Ivrea	Ivrea	IT	modern
+L'Aquila	L'Aquila	IT	modern
 Larino	Larino	IT	modern
 Lavello	Lavello	IT	modern
 Lavinium	Lavinium	IT	ancient
@@ -59,6 +65,7 @@ Loreto	Loreto	IT	modern
 Lucca	Lucca	IT	modern
 Luni	Luni	IT	ancient
 Mantua	Mantova	IT	modern
+Marsala	Marsala	IT	modern
 Matera	Matera	IT	modern
 Mazara	Mazara	IT	modern
 Melfi	Melfi	IT	modern
@@ -77,7 +84,8 @@ Nicastro	Nicastro	IT	modern
 Nola	Nola	IT	modern
 Noto	Noto	IT	modern
 Oria	Oria	IT	modern
-Ostia	Lido di Ostia	IT	ancient
+Orvieto	Orvieto	IT	modern
+Ostia	Ostia	IT	ancient
 Otranto	Otranto	IT	modern
 Palestrina	Palestrina	IT	modern
 Palermo	Palermo	IT	modern
@@ -107,6 +115,7 @@ Circeii	San Felice Circeo	IT	ancient
 San Marco	San Marco	IT	modern
 San Marino	San Marino	SM	modern
 Santa Severina	Santa Severina	IT	modern
+Savona	Savona	IT	modern
 Scalea	Scalea	IT	modern
 Scribla	Scribla	IT	modern
 Siena	Siena	IT	modern
@@ -115,11 +124,13 @@ Sorrento	Sorrento	IT	modern
 Spina	Spina	IT	ancient
 Spoleto	Spoleto	IT	modern
 Squillace	Squillace	IT	modern
+Sybaris	Sybaris	IT	ancient
 Syracuse	Siracusa	IT	modern
 Taormina	Taormina	IT	modern
 Taranto	Taranto	IT	modern
 Tarquinia	Tarquinia	IT	modern
 Terracina	Terracina	IT	modern
+Thurii	Thurii	IT	ancient
 Tivoli	Tivoli	IT	modern
 Todi	Todi	IT	modern
 Trani	Trani	IT	modern
@@ -127,9 +138,11 @@ Trapani	Trapani	IT	modern
 Trento	Trento	IT	modern
 Treviso	Treviso	IT	modern
 Tricarico	Tricarico	IT	modern
+Tropea	Tropea	IT	modern
 Troina	Troina	IT	modern
 Turin	Turin	IT	modern
 Veii	Veii	IT	ancient
+Velia	Velia	IT	ancient
 Venice	Venezia	IT	modern
 Venosa	Venosa	IT	modern
 Verona	Verona	IT	modern

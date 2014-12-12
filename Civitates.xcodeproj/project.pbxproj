@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3D0A3ADD1896ED4B00A0FD12 /* Artwork in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A3ADC1896ED4B00A0FD12 /* Artwork */; };
+		3D0A77A51A3BA19800FEF6E2 /* FONTLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A77A31A3BA19800FEF6E2 /* FONTLOG.txt */; };
+		3D0A77A61A3BA19800FEF6E2 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D0A77A41A3BA19800FEF6E2 /* OFL.txt */; };
 		3D140082187BA2DD001FEE6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D140081187BA2DD001FEE6C /* Foundation.framework */; };
 		3D140084187BA2DD001FEE6C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D140083187BA2DD001FEE6C /* CoreGraphics.framework */; };
 		3D140086187BA2DD001FEE6C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D140085187BA2DD001FEE6C /* UIKit.framework */; };
@@ -50,6 +52,7 @@
 		3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */; };
 		3DBE2F23189816B4009868E1 /* CityAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE2F22189816B4009868E1 /* CityAnnotationView.m */; };
 		3DE63259189FF7AC00E9F163 /* TSQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE63258189FF7AC00E9F163 /* TSQuadTree.m */; };
+		3DE6B2E41A39097100FA65C3 /* Acknowledgements.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3DE6B2E31A39097100FA65C3 /* Acknowledgements.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		3D0A3ADC1896ED4B00A0FD12 /* Artwork */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Artwork; sourceTree = "<group>"; };
+		3D0A77A31A3BA19800FEF6E2 /* FONTLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FONTLOG.txt; sourceTree = "<group>"; };
+		3D0A77A41A3BA19800FEF6E2 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		3D14007E187BA2DD001FEE6C /* Civitates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Civitates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D140081187BA2DD001FEE6C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3D140083187BA2DD001FEE6C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -131,6 +136,7 @@
 		3DBE2F22189816B4009868E1 /* CityAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAnnotationView.m; sourceTree = "<group>"; };
 		3DE63257189FF7AB00E9F163 /* TSQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQuadTree.h; sourceTree = "<group>"; };
 		3DE63258189FF7AC00E9F163 /* TSQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQuadTree.m; sourceTree = "<group>"; };
+		3DE6B2E31A39097100FA65C3 /* Acknowledgements.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Acknowledgements.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,7 @@
 				3D14008F187BA2DD001FEE6C /* Civitates-Prefix.pch */,
 				3D2DCF2019F0C21E005CD639 /* AppUserDefaults.h */,
 				3D2DCF2119F0C21E005CD639 /* AppUserDefaults.m */,
+				3DE6B2E31A39097100FA65C3 /* Acknowledgements.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +259,8 @@
 		3D2DCF2B19F2F937005CD639 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3D0A77A31A3BA19800FEF6E2 /* FONTLOG.txt */,
+				3D0A77A41A3BA19800FEF6E2 /* OFL.txt */,
 				3D2DCF2F19F2FFF0005CD639 /* quattrocento.bold.ttf */,
 				3D2DCF3019F2FFF0005CD639 /* quattrocento.regular.ttf */,
 			);
@@ -423,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0A77A61A3BA19800FEF6E2 /* OFL.txt in Resources */,
+				3DE6B2E41A39097100FA65C3 /* Acknowledgements.txt in Resources */,
 				3D2FA80F1A25314900FBE491 /* tiles in Resources */,
 				3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */,
 				3D495E7B18B2785300284C0C /* CityData in Resources */,
@@ -430,6 +441,7 @@
 				3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */,
 				3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */,
 				3D14009A187BA2DD001FEE6C /* Images.xcassets in Resources */,
+				3D0A77A51A3BA19800FEF6E2 /* FONTLOG.txt in Resources */,
 				3D14008C187BA2DD001FEE6C /* InfoPlist.strings in Resources */,
 				3D2FA8141A2A13A600FBE491 /* CultureTheme.json in Resources */,
 				3D2DCF3119F2FFF0005CD639 /* quattrocento.bold.ttf in Resources */,
