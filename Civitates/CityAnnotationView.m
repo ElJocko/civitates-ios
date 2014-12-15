@@ -17,6 +17,7 @@ static double MARKER_DIAMETER_2 = 12.0;
 static double MARKER_DIAMETER_1 = 13.0;
 static double MARKER_DIAMETER_0 = 15.0;
 
+static double LABEL_PADDING = 2.0;
 static double LABEL_OFFSET = 2.0;
 
 static double FONT_SIZE_4 = 14.0;
@@ -154,28 +155,28 @@ static double TOUCH_DIAMETER = 30.0;
     CGRect labelRect = [self.cityAnnotation.label boundingRectWithSize:maxSixe options:NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]} context:drawingContext];
     KSLabel *label;
     if (self.cityAnnotation.labelPosition == 0) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight, markerTop - labelRect.size.height + LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight - LABEL_OFFSET, markerTop - labelRect.size.height + LABEL_OFFSET, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 1) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight, markerBottom - LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight - LABEL_OFFSET, markerBottom - LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 2) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerTop - labelRect.size.height + LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - labelRect.size.width, markerTop - labelRect.size.height + LABEL_OFFSET, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 3) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerBottom - LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - labelRect.size.width, markerBottom - LABEL_OFFSET, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 4) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerTop - labelRect.size.height, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerTop - labelRect.size.height, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 5) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerBottom + LABEL_OFFSET, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerCenter - labelRect.size.width / 2.0, markerBottom + LABEL_OFFSET, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else if (self.cityAnnotation.labelPosition == 6) {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight, markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerRight, markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
     else {
-        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_OFFSET, labelRect.size.height)];
+        label = [[KSLabel alloc] initWithFrame:CGRectMake(markerLeft - (labelRect.size.width + LABEL_OFFSET), markerCenter - labelRect.size.height / 2.0, labelRect.size.width + LABEL_PADDING, labelRect.size.height)];
     }
 
     label.text = self.cityAnnotation.label;

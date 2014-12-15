@@ -648,14 +648,14 @@
 		"endDate" : 600,
 		"preferredName" : "Volsinii",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 2100,
 		"preferredName" : "Bolsena",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -875,7 +875,7 @@
 		"endDate" : 2100,
 		"preferredName" : "Casale Monferrato",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 4
 	}
 	],
 	"altNames" : [
@@ -1675,21 +1675,21 @@
 		"endDate" : 600,
 		"preferredName" : "Genua",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 601,
 		"endDate" : 1500,
 		"preferredName" : "Genoa",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	},
 	{
 		"startDate" : 1501,
 		"endDate" : 2100,
 		"preferredName" : "Genoa",
 		"size" : 1,
-		"tagPosition" : 0
+		"tagPosition" : 2
 	}
 	],
 	"altNames" : [
@@ -2292,35 +2292,35 @@
 		"endDate" : -250,
 		"preferredName" : "Mutna",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -249,
 		"endDate" : -177,
 		"preferredName" : "Mutina",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : -176,
 		"endDate" : 600,
 		"preferredName" : "Mutina",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 900,
 		"endDate" : 1500,
 		"preferredName" : "Modena",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	},
 	{
 		"startDate" : 1501,
 		"endDate" : 2100,
 		"preferredName" : "Modena",
 		"size" : 2,
-		"tagPosition" : 0
+		"tagPosition" : 3
 	}
 	],
 	"altNames" : [
@@ -2778,21 +2778,21 @@
 		"endDate" : -46,
 		"preferredName" : "Patavium",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : -45,
 		"endDate" : 613,
 		"preferredName" : "Patavium",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	},
 	{
 		"startDate" : 614,
 		"endDate" : 2100,
 		"preferredName" : "Padua",
 		"size" : 4,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [
@@ -3459,7 +3459,7 @@
 		"endDate" : 2100,
 		"preferredName" : "San Marino",
 		"size" : 3,
-		"tagPosition" : 0
+		"tagPosition" : 1
 	}
 	],
 	"altNames" : [

@@ -38,8 +38,8 @@ Bologna	-700	-200	Felsina	3	0
 Bologna	-199	600	Bononia	3	0
 Bologna	601	2100	Bologna	2	0
 Bolsena	-700	-264	Velzna	2	1
-Bolsena	-263	600	Volsinii	3	0
-Bolsena	601	2100	Bolsena	3	0
+Bolsena	-263	600	Volsinii	3	1
+Bolsena	601	2100	Bolsena	3	1
 Brescia	-225	550	Brixia	4	0
 Brescia	551	1439	Brescia	3	0
 Brescia	1440	2100	Brescia	4	0
@@ -101,9 +101,9 @@ Gabii	-99	300	Gabii	4	5
 Gaeta	-700	600	Caieta	4	3
 Gaeta	601	1229	Gaeta	3	3
 Gaeta	1230	2100	Gaeta	4	3
-Genoa	-199	600	Genua	2	0
-Genoa	601	1500	Genoa	2	0
-Genoa	1501	2100	Genoa	1	0
+Genoa	-199	600	Genua	2	2
+Genoa	601	1500	Genoa	2	2
+Genoa	1501	2100	Genoa	1	2
 Grado	400	2100	Grado	4	1
 Heraclea	-433	-90	Heraclea	2	3
 Heraclea	-89	400	Heraclea	3	3
@@ -134,12 +134,12 @@ Milan	-400	-222	Mediolanum	3	2
 Milan	-221	285	Mediolanum	2	2
 Milan	286	539	Mediolanum	1	2
 Milan	540	2100	Milan	1	0
-Modena	-600	-250	Mutna	3	0
-Modena	-249	-177	Mutina	3	0
-Modena	-176	600	Mutina	2	0
-Modena	900	1500	Modena	3	0
-Modena	1501	2100	Modena	2	0
-Casale Monferrato	1292	2100	Casale Monferrato	3	0
+Modena	-600	-250	Mutna	3	3
+Modena	-249	-177	Mutina	3	3
+Modena	-176	600	Mutina	2	3
+Modena	900	1500	Modena	3	3
+Modena	1501	2100	Modena	2	3
+Casale Monferrato	1292	2100	Casale Monferrato	3	4
 Murlo	-700	-200	Murlo	3	4
 Murlo	-199	2100	Murlo	4	4
 Naples	-550	-200	Neapolis	3	3
@@ -154,9 +154,9 @@ Ostia	-400	849	Ostia	4	2
 Otranto	-191	550	Hydruntum	4	0
 Otranto	551	1480	Otranto	2	0
 Otranto	1481	2100	Otranto	4	0
-Padua	-700	-46	Patavium	4	0
-Padua	-45	613	Patavium	3	0
-Padua	614	2100	Padua	4	0
+Padua	-700	-46	Patavium	4	1
+Padua	-45	613	Patavium	3	1
+Padua	614	2100	Padua	4	1
 Palermo	-734	-260	Panormos	3	0
 Palermo	-259	439	Panormus	2	0
 Palermo	440	830	Palermo	2	0
@@ -207,7 +207,7 @@ Salerno	1225	2100	Salerno	3	0
 Saluzzo	1142	1415	Saluzzo	4	0
 Saluzzo	1416	2100	Saluzzo	3	0
 Circeii	-550	-30	Circeii	4	3
-San Marino	1200	2100	San Marino	3	0
+San Marino	1200	2100	San Marino	3	1
 Savona	-205	600	Savo	4	0
 Savona	601	2100	Savona	4	0
 Siena	560	2100	Siena	4	0
