@@ -52,4 +52,32 @@
     return (latitude1 == latitude2 && longitude1 == longitude2 && latitudeSpan1 == latitudeSpan2 && longitudeSpan1 == longitudeSpan2);
 }
 
++ (MKMapPoint)mapPointForTileAtPath:(MKTileOverlayPath)path {
+    // Calculate the NW corner of the tile
+    CGFloat n = pow(2.0, path.z);
+    CGFloat longitude = ((path.x / n) * 360.0) - 180.0;
+    CGFloat latRadians = atan(sinh(M_PI * (1 - 2 * path.y / n)));
+    CGFloat latitude = (latRadians * 180.0) / M_PI;
+    
+    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(latitude, longitude);
+
+    MKMapPoint mapPoint = MKMapPointForCoordinate(coordinate);
+    return mapPoint;
+}
+
++ (MKMapRect)mapRectForTileAtPath:(MKTileOverlayPath)path {
+    MKMapPoint nwCorner = [self mapPointForTileAtPath:path];
+    
+    MKTileOverlayPath seTilePath;
+    seTilePath.x = path.x + 1;
+    seTilePath.y = path.y + 1;
+    seTilePath.z = path.z;
+    seTilePath.contentScaleFactor = path.contentScaleFactor;
+    MKMapPoint seCorner = [self mapPointForTileAtPath:seTilePath];
+    
+    MKMapRect mapRect = MKMapRectMake(nwCorner.x, nwCorner.y, seCorner.x - nwCorner.x, seCorner.y - nwCorner.y);
+    return mapRect;
+}
+
+
 @end

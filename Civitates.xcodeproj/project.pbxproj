@@ -48,6 +48,12 @@
 		3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D53EC7919CF62D800C9F1FC /* CityNameTableViewCell2.xib */; };
 		3D53EC7D19D085B900C9F1FC /* CityPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */; };
 		3D62AE431896A28700A02C18 /* CityAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D62AE421896A28700A02C18 /* CityAnnotation.m */; };
+		3D9844EB1A5DF4B400B6E5B0 /* HeatMapRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9844EA1A5DF4B400B6E5B0 /* HeatMapRenderer.m */; };
+		3D9844EF1A5DF55100B6E5B0 /* SHGeoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9844EE1A5DF55100B6E5B0 /* SHGeoUtils.m */; };
+		3D9844F21A5DF7B100B6E5B0 /* HeatMapTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9844F11A5DF7B100B6E5B0 /* HeatMapTileOverlay.m */; };
+		3DA307FB1A6360E600E2581E /* PointThemeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA307FA1A6360E600E2581E /* PointThemeRenderer.m */; };
+		3DA308061A65DC9B00E2581E /* MapImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA308051A65DC9B00E2581E /* MapImageUtilities.m */; };
+		3DA3082E1A69757F00E2581E /* OpenWaterMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA3082D1A69757F00E2581E /* OpenWaterMask.png */; };
 		3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB58E1A19EF6D5B00CE3146 /* SearchPopover.storyboard */; };
 		3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */; };
 		3DBE2F23189816B4009868E1 /* CityAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBE2F22189816B4009868E1 /* CityAnnotationView.m */; };
@@ -129,6 +135,17 @@
 		3D53EC7C19D085B900C9F1FC /* CityPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CityPopover.storyboard; sourceTree = "<group>"; };
 		3D62AE411896A28700A02C18 /* CityAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityAnnotation.h; sourceTree = "<group>"; };
 		3D62AE421896A28700A02C18 /* CityAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityAnnotation.m; sourceTree = "<group>"; };
+		3D9844E91A5DF4B400B6E5B0 /* HeatMapRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapRenderer.h; sourceTree = "<group>"; };
+		3D9844EA1A5DF4B400B6E5B0 /* HeatMapRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapRenderer.m; sourceTree = "<group>"; };
+		3D9844ED1A5DF53700B6E5B0 /* SHGeoUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHGeoUtils.h; sourceTree = "<group>"; };
+		3D9844EE1A5DF55100B6E5B0 /* SHGeoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHGeoUtils.m; sourceTree = "<group>"; };
+		3D9844F01A5DF7B100B6E5B0 /* HeatMapTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeatMapTileOverlay.h; sourceTree = "<group>"; };
+		3D9844F11A5DF7B100B6E5B0 /* HeatMapTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeatMapTileOverlay.m; sourceTree = "<group>"; };
+		3DA307F91A6360E600E2581E /* PointThemeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointThemeRenderer.h; sourceTree = "<group>"; };
+		3DA307FA1A6360E600E2581E /* PointThemeRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointThemeRenderer.m; sourceTree = "<group>"; };
+		3DA308041A65DC9B00E2581E /* MapImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapImageUtilities.h; sourceTree = "<group>"; };
+		3DA308051A65DC9B00E2581E /* MapImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapImageUtilities.m; sourceTree = "<group>"; };
+		3DA3082D1A69757F00E2581E /* OpenWaterMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OpenWaterMask.png; path = Masks/OpenWaterMask.png; sourceTree = "<group>"; };
 		3DB58E1A19EF6D5B00CE3146 /* SearchPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchPopover.storyboard; sourceTree = "<group>"; };
 		3DB58E1C19EF784F00CE3146 /* SearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		3DB58E1D19EF784F00CE3146 /* SearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
@@ -199,10 +216,11 @@
 		3D140087187BA2DD001FEE6C /* Civitates */ = {
 			isa = PBXGroup;
 			children = (
+				3D9844EC1A5DF50300B6E5B0 /* HeatMapImage */,
 				3D2FA6BC1A1D3C5C00FBE491 /* Map Utilities */,
 				3DB58E1919EF6CF200CE3146 /* Search Popover */,
 				3D53EC7319CF563E00C9F1FC /* City Popover */,
-				3D53EC6F19CA3A8A00C9F1FC /* Overlay */,
+				3D53EC6F19CA3A8A00C9F1FC /* Overlays */,
 				3D495E7018B12FAE00284C0C /* UserInterface */,
 				3D495E6F18B12F9600284C0C /* Map */,
 				3D495E6E18B12F8500284C0C /* Data */,
@@ -223,6 +241,7 @@
 		3D140088187BA2DD001FEE6C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3DA3082C1A69756400E2581E /* Masks */,
 				3D2FA80E1A25314900FBE491 /* tiles */,
 				3D2DCF2B19F2F937005CD639 /* Fonts */,
 				3D495E7A18B2785300284C0C /* CityData */,
@@ -272,6 +291,8 @@
 			children = (
 				3D2FA6BD1A1D3C7C00FBE491 /* MapUtilities.h */,
 				3D2FA6BE1A1D3C7C00FBE491 /* MapUtilities.m */,
+				3DA308041A65DC9B00E2581E /* MapImageUtilities.h */,
+				3DA308051A65DC9B00E2581E /* MapImageUtilities.m */,
 			);
 			name = "Map Utilities";
 			sourceTree = "<group>";
@@ -316,13 +337,17 @@
 			name = UserInterface;
 			sourceTree = "<group>";
 		};
-		3D53EC6F19CA3A8A00C9F1FC /* Overlay */ = {
+		3D53EC6F19CA3A8A00C9F1FC /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
 				3D53EC7019CA3AC500C9F1FC /* FileCacheTileOverlay.h */,
 				3D53EC7119CA3AC500C9F1FC /* FileCacheTileOverlay.m */,
+				3D9844F01A5DF7B100B6E5B0 /* HeatMapTileOverlay.h */,
+				3D9844F11A5DF7B100B6E5B0 /* HeatMapTileOverlay.m */,
+				3D9844E91A5DF4B400B6E5B0 /* HeatMapRenderer.h */,
+				3D9844EA1A5DF4B400B6E5B0 /* HeatMapRenderer.m */,
 			);
-			name = Overlay;
+			name = Overlays;
 			sourceTree = "<group>";
 		};
 		3D53EC7319CF563E00C9F1FC /* City Popover */ = {
@@ -340,6 +365,25 @@
 				3D3747761A16C44E006106DE /* CityPhysicalViewController.m */,
 			);
 			name = "City Popover";
+			sourceTree = "<group>";
+		};
+		3D9844EC1A5DF50300B6E5B0 /* HeatMapImage */ = {
+			isa = PBXGroup;
+			children = (
+				3D9844ED1A5DF53700B6E5B0 /* SHGeoUtils.h */,
+				3D9844EE1A5DF55100B6E5B0 /* SHGeoUtils.m */,
+				3DA307F91A6360E600E2581E /* PointThemeRenderer.h */,
+				3DA307FA1A6360E600E2581E /* PointThemeRenderer.m */,
+			);
+			name = HeatMapImage;
+			sourceTree = "<group>";
+		};
+		3DA3082C1A69756400E2581E /* Masks */ = {
+			isa = PBXGroup;
+			children = (
+				3DA3082D1A69757F00E2581E /* OpenWaterMask.png */,
+			);
+			name = Masks;
 			sourceTree = "<group>";
 		};
 		3DB58E1919EF6CF200CE3146 /* Search Popover */ = {
@@ -437,6 +481,7 @@
 				3D2FA80F1A25314900FBE491 /* tiles in Resources */,
 				3DB58E1B19EF6D5B00CE3146 /* SearchPopover.storyboard in Resources */,
 				3D495E7B18B2785300284C0C /* CityData in Resources */,
+				3DA3082E1A69757F00E2581E /* OpenWaterMask.png in Resources */,
 				3D0A3ADD1896ED4B00A0FD12 /* Artwork in Resources */,
 				3D53EC7B19CF62D800C9F1FC /* CityNameTableViewCell2.xib in Resources */,
 				3D2DCF3219F2FFF0005CD639 /* quattrocento.regular.ttf in Resources */,
@@ -468,8 +513,10 @@
 				3D495E6718B12BFF00284C0C /* DataLoader.m in Sources */,
 				3D2DCF2219F0C21E005CD639 /* AppUserDefaults.m in Sources */,
 				3D62AE431896A28700A02C18 /* CityAnnotation.m in Sources */,
+				3D9844EB1A5DF4B400B6E5B0 /* HeatMapRenderer.m in Sources */,
 				3D2FA6BF1A1D3C7C00FBE491 /* MapUtilities.m in Sources */,
 				3D53EC7A19CF62D800C9F1FC /* CityNameTableViewCell2.m in Sources */,
+				3D9844EF1A5DF55100B6E5B0 /* SHGeoUtils.m in Sources */,
 				3DB58E1E19EF784F00CE3146 /* SearchTableViewController.m in Sources */,
 				3D53EC7219CA3AC500C9F1FC /* FileCacheTileOverlay.m in Sources */,
 				3D297214187E0E5B00273CD3 /* DynamicTileOverlay.m in Sources */,
@@ -477,12 +524,15 @@
 				3DBE2F23189816B4009868E1 /* CityAnnotationView.m in Sources */,
 				3D3747741A16B43C006106DE /* CityDataViewController.m in Sources */,
 				3DE63259189FF7AC00E9F163 /* TSQuadTree.m in Sources */,
+				3D9844F21A5DF7B100B6E5B0 /* HeatMapTileOverlay.m in Sources */,
 				3D27727818C7DDA100A3890F /* KSLabel.m in Sources */,
 				3D1FD5E9192E5B9D00D3D523 /* CityNameTableViewController.m in Sources */,
 				3D140098187BA2DD001FEE6C /* ViewController.m in Sources */,
 				3D140092187BA2DD001FEE6C /* AppDelegate.m in Sources */,
 				3D2FA8121A2A107600FBE491 /* CultureTheme.m in Sources */,
+				3DA308061A65DC9B00E2581E /* MapImageUtilities.m in Sources */,
 				3D14008E187BA2DD001FEE6C /* main.m in Sources */,
+				3DA307FB1A6360E600E2581E /* PointThemeRenderer.m in Sources */,
 				3D2FA6FA1A250F7E00FBE491 /* UIImage+Sizing.m in Sources */,
 				3D495E6A18B12EF400284C0C /* City.m in Sources */,
 				3D495E6D18B12F6F00284C0C /* CityPeriod.m in Sources */,

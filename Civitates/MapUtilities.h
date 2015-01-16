@@ -23,4 +23,7 @@ typedef CGFloat ZoomLevel;
 
 + (BOOL)mapRegion:(MKCoordinateRegion)mapRegion1 equalsMapRegion:(MKCoordinateRegion)mapRegion2;
 
++ (MKMapPoint)mapPointForTileAtPath:(MKTileOverlayPath)path;
++ (MKMapRect)mapRectForTileAtPath:(MKTileOverlayPath)path;
+
 @end

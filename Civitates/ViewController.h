@@ -8,10 +8,11 @@
 
 #import "KSLabel.h"
 #import "SearchPopoverDelegate.h"
+#import "HeatMapTileOverlay.h"
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController <MKMapViewDelegate, UIPopoverControllerDelegate, SearchPopoverDelegate>
+@interface ViewController : UIViewController <MKMapViewDelegate, UIPopoverControllerDelegate, SearchPopoverDelegate, HeatMapDelegate>
 
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet KSLabel *yearLabel;

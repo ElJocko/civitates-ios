@@ -7,6 +7,7 @@
 //
 
 #import "FileCacheTileOverlay.h"
+#import "MapImageUtilities.h"
 
 // This class performs the usual actions of the MKTileOverlay class, plus caches tiles in the /Library/caches directory.
 // Note that there is no explicit management of the cache at this point. So tiles do not expire and no maximum size of the cache is set.
@@ -87,7 +88,7 @@
     NSData *tile = [self retrieveTileFromBundleAtPath:path];
     
     if (tile) {
-//        NSLog(@"Tile in bundle (%d/%d/%d)", path.x, path.y, path.z);
+//        NSLog(@"Tile in bundle (%ld/%ld/%ld)", (long)path.x, (long)path.y, (long)path.z);
         result(tile, nil);
     }
     else {
@@ -105,6 +106,10 @@
             NSURLRequest *request = [NSURLRequest requestWithURL:tileURL];
             [NSURLConnection sendAsynchronousRequest:request queue:self.operationQueue completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                 if (!connectionError) {
+                    UIImage *image = [UIImage imageWithData:data];
+//                    image = [MapImageUtilities maskFromImage:image];
+                    data = UIImagePNGRepresentation(image);
+                    
                     [self storeTile:data forPath:path];
                 }
                 result(data, connectionError);

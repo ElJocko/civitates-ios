@@ -17,6 +17,7 @@
 #import "AlternateName.h"
 #import "CityDataViewController.h"
 #import "FileCacheTileOverlay.h"
+#import "HeatMapRenderer.h"
 #import "SearchTableViewController.h"
 #import "AppUserDefaults.h"
 #import "MapUtilities.h"
@@ -64,6 +65,9 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 @property NSArray *allAlternateNames;
 
 @property City *cityToSelectAfterRefresh;
+
+@property HeatMapTileOverlay *themeMapOverlay;
+@property MKTileOverlayRenderer *themeMapRenderer;
 
 @end
 
@@ -137,11 +141,18 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     self.mapView.delegate = self;
     
     // Create a cached tile overlay with AWMC map tiles
+//    NSString *awmcUrlTemplate = @"http://c.tiles.mapbox.com/v3/isawnyu.h0rdaemi/{z}/{x}/{y}.png";
     NSString *awmcUrlTemplate = @"http://c.tiles.mapbox.com/v3/isawnyu.map-knmctlkh/{z}/{x}/{y}.png";
     FileCacheTileOverlay *cachedTileOverlay = [[FileCacheTileOverlay alloc] initWithURLTemplate:awmcUrlTemplate];
     cachedTileOverlay.canReplaceMapContent = YES;
     cachedTileOverlay.geometryFlipped = NO;
     [self.mapView addOverlay:cachedTileOverlay];
+    
+    // Create the heat map overlay
+    self.themeMapOverlay = [[HeatMapTileOverlay alloc] init];
+    self.themeMapOverlay.canReplaceMapContent = NO;
+    self.themeMapOverlay.delegate = self;
+    [self.mapView addOverlay:self.themeMapOverlay];
     
     // Slew the map to the initial span
     MKCoordinateSpan span = MKCoordinateSpanMake(10.0, 10.0);
@@ -476,12 +487,31 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id <MKOverlay>)overlay
 {
-    if ([overlay isKindOfClass:[MKTileOverlay class]]) {
+    if ([overlay isKindOfClass:[FileCacheTileOverlay class]]) {
         MKTileOverlayRenderer *renderer = [[MKTileOverlayRenderer alloc] initWithOverlay:overlay];
         return renderer;
     }
+    else if ([overlay isKindOfClass:[HeatMapTileOverlay class]]) {
+        if (self.themeMapRenderer == nil) {
+            self.themeMapRenderer = [[MKTileOverlayRenderer alloc] initWithOverlay:overlay];
+        }
+        return self.themeMapRenderer;
+    }
     else {
         return nil;
+    }
+}
+
+- (NSArray *)locationsToRenderInMapRect:(MKMapRect)mapRect
+{
+    @synchronized(self) {
+        NSMutableArray *locations = [NSMutableArray array];
+        NSSet *annotations = [self.mapView annotationsInMapRect:mapRect];
+        for (CityAnnotation *annotation in annotations) {
+            CLLocation *location = [[CLLocation alloc] initWithLatitude:annotation.coordinate.latitude longitude:annotation.coordinate.longitude];
+            [locations addObject:location];
+        }
+        return locations.copy;
     }
 }
 
@@ -653,7 +683,8 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 
 //    NSLog(@"remove %d", offscreenAnnotationsToRemove.count);
 //    NSLog(@"** 11 ** %d", self.displayYear);
-    
+    NSSet *themeAnnotations = [self annotationsForCurrentRegion];
+    [self refreshThemeMap:themeAnnotations];
 }
 
 - (void)selectCityAfterRefresh {
@@ -690,6 +721,24 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     presentationController.permittedArrowDirections = UIPopoverArrowDirectionAny;
 }
 
+- (NSSet *)annotationsForCurrentRegion {
+    MKCoordinateRegion visibleRegion = self.mapView.region;
+    
+    NSMutableSet *onscreenAnnotations = [[NSMutableSet alloc] init];
+    
+    // See if we're over the threshold
+    for (City *city in self.cities) {
+        CityPeriod *cityPeriod = [city periodForYear:self.displayYear];
+        if (cityPeriod != nil) {
+            if (LocationInRegion2(city.location, visibleRegion)) {
+                [onscreenAnnotations addObject:cityPeriod.annotation];
+            }
+        }
+    }
+    
+    return onscreenAnnotations.copy;
+}
+
 - (NSArray *)annotationsForCurrentZoomAndRegion {
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     
@@ -704,7 +753,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     // See if we're over the threshold
     for (int i = 0; i < 5; ++i) {
         if (zoomLevel >= [[self.zoomThreshold objectAtIndex:i] doubleValue]) {
-//            NSLog(@"Over threshold for category %d", i);
+            //            NSLog(@"Over threshold for category %d", i);
             for (City *city in self.cities) {
                 CityPeriod *cityPeriod = [city periodForYear:self.displayYear];
                 if (cityPeriod != nil && cityPeriod.category == i) {
@@ -718,7 +767,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
             }
         }
     }
- 
+    
     [tempArray addObject:onscreenAnnotations.copy];
     [tempArray addObject:offscreenAnnotations.copy];
     
@@ -741,6 +790,20 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
         
         return [name1.name caseInsensitiveCompare:name2.name];
     }];
+}
+
+- (void)refreshThemeMap:(NSSet *)annotations {
+    NSMutableArray *locations = [NSMutableArray array];
+
+    for (CityAnnotation *annotation in annotations) {
+        CLLocationCoordinate2D coordinate = annotation.coordinate;
+        [locations addObject:[NSValue valueWithBytes:&coordinate objCType:@encode(CLLocationCoordinate2D)]];
+    }
+    
+    self.themeMapOverlay.locations = locations.copy;
+    if (self.themeMapRenderer) {
+        [self.themeMapRenderer reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning
