@@ -11,6 +11,7 @@
 @interface CultureTheme : NSObject
 
 @property NSString *name;
+@property NSString *display;
 @property NSString *abbreviation;
 @property UIColor *color;
 @property NSInteger order;

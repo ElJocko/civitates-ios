@@ -44,6 +44,7 @@ static NSDictionary *themeDictionary;
     for (id themeObject in themeObjects) {
         CultureTheme *theme = [[CultureTheme alloc] init];
         theme.name = [themeObject objectForKey:@"name"];
+        theme.display = [themeObject objectForKey:@"display"];
         theme.abbreviation = [themeObject objectForKey:@"abbreviation"];
         theme.order = i;
         ++i;

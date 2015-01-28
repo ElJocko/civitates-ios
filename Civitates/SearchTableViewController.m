@@ -78,7 +78,7 @@
         cell.cultureAbbreviationLabel.text = theme.abbreviation;
         
         cell.nameLabel.text = name.name;
-        cell.cultureLabel.text = name.culture;
+        cell.cultureLabel.text = theme.display;
     }
     
     return cell;
