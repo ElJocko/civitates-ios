@@ -90,7 +90,7 @@
     {
               "name": "ModernGreek",
               "display": "Modern Greek",
-              "abbreviation": "MG",
+              "abbreviation": "mG",
               "color": {
               "r": 225,
               "g": 193,
@@ -120,17 +120,28 @@
             "a": 255
         }
     },
-	{
-    	"name": "Arabic",
-        "display": "Arabic",
-        "abbreviation": "Ar",
-        "color": {
-        	"r": 102,
-            "g": 84,
-            "b": 62,
-            "a": 255
-        }
-    },
+              {
+              "name": "Arabic",
+              "display": "Arabic",
+              "abbreviation": "Ar",
+              "color": {
+              "r": 102,
+              "g": 84,
+              "b": 62,
+              "a": 255
+              }
+              },
+              {
+              "name": "Turkish",
+              "display": "Turkish",
+              "abbreviation": "Tu",
+              "color": {
+              "r": 82,
+              "g": 64,
+              "b": 42,
+              "a": 255
+              }
+              },
 	{
     	"name": "German",
         "display": "German",
