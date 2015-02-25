@@ -13,8 +13,8 @@
 
 @interface City : NSObject
 
-- (CityAnnotation *)annotationForYear:(int)year;
-- (CityPeriod *)periodForYear:(int)year;
+- (CityAnnotation *)annotationForYear:(NSInteger)year;
+- (CityPeriod *)periodForYear:(NSInteger)year;
 
 @property NSString *identifier;
 @property NSString *prefix;

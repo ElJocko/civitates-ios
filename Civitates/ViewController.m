@@ -69,7 +69,7 @@ BOOL LocationInRegion2(CLLocationCoordinate2D location, MKCoordinateRegion regio
 
 @implementation ViewController
 
-static ZoomLevel MAX_ZOOM_LEVEL = 10.0;
+static ZoomLevel MAX_ZOOM_LEVEL = 11.0;
 static ZoomLevel SELECT_CITY_ZOOM_LEVEL = 8.1;
 static BOOL USE_COMMON_ERA = NO;
 
@@ -467,7 +467,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 {
     // Display the current year with the selected era designation
     if (self.displayYear < 0) {
-        self.yearLabel.text = [NSString stringWithFormat:@"%d %@", (self.displayYear * -1), self.preZeroEra];
+        self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (self.displayYear * -1), self.preZeroEra];
     }
     else {
         self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (long)self.displayYear, self.postZeroEra];

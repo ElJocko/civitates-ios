@@ -11,7 +11,7 @@
 
 @implementation City
 
-- (CityAnnotation *)annotationForYear:(int)year
+- (CityAnnotation *)annotationForYear:(NSInteger)year
 {
     for (CityPeriod *period in self.periods) {
         if (period.startDate <= year && year <= period.endDate) {
@@ -22,7 +22,7 @@
     return nil;
 }
 
-- (CityPeriod *)periodForYear:(int)year
+- (CityPeriod *)periodForYear:(NSInteger)year
 {
     for (CityPeriod *period in self.periods) {
         if (period.startDate <= year && year <= period.endDate) {
