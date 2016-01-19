@@ -17,7 +17,7 @@
 + (NSArray *)readCityData {
     NSMutableArray *tempArray = [[NSMutableArray alloc] init];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"City" ofType:@"json" inDirectory:@"CityData"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"json" inDirectory:@"CityData"];
     if (!filePath) {
         return tempArray.copy;
     }
@@ -91,6 +91,8 @@
         // Save the city
         [tempArray addObject:city];
     }
+    
+    NSLog(@"Read %lu cities from city data file.", (unsigned long)tempArray.count);
     
     return tempArray.copy;
 }
