@@ -659,7 +659,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     CityAnnotationView *cityAnnotationView = (CityAnnotationView *)view;
     CityDataViewController *contentViewController = [[UIStoryboard storyboardWithName:@"CityPopover" bundle:nil] instantiateViewControllerWithIdentifier:@"CityPopoverViewController"];
     contentViewController.modalPresentationStyle = UIModalPresentationPopover;
-    contentViewController.preferredContentSize = CGSizeMake(300.0, 50.0 * 3.0 + 54.0 * 3.0);
+    contentViewController.preferredContentSize = CGSizeMake(330.0, 50.0 * 3.0 + 54.0 * 3.0);
     contentViewController.city = cityAnnotationView.cityAnnotation.city;
     
     // Present the popover
