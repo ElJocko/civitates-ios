@@ -16,7 +16,6 @@
 
 @interface FileCacheTileOverlay()
 
-//@property MKTileOverlay *overlay;
 @property NSOperationQueue *operationQueue;
 
 @end
@@ -45,6 +44,7 @@
     
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         data = [[NSFileManager defaultManager] contentsAtPath:filePath];
+//        NSLog(@"Tile in bundle: %ld %ld %ld", path.x, path.y, path.z);
     }
     
     return data;

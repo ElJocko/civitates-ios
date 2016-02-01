@@ -78,7 +78,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 - (void)viewDidLoad
 {
     // Load the appropriately sized splash image
-    [self loadSplashImage];
+//    [self loadSplashImage];
     
     // Load the city data
     self.cities = [DataLoader readCityData];
@@ -109,7 +109,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     [self updateYearLabel];
     
     // Initilizer the search button
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Artwork/antiqueSearch2" ofType:@"png"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"antiquesearch2" ofType:@"png" inDirectory:@"Artwork"];
     UIImage *searchImage = [UIImage imageWithContentsOfFile:filePath];
     searchImage = [searchImage imageWithSize:CGSizeMake(52.0, 52.0)];
     [self.searchButton setBackgroundImage:searchImage forState:UIControlStateNormal];
@@ -188,24 +188,6 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     if (self.splashImageView.image == nil) {
         self.splashImageView.backgroundColor = [UIColor grayColor];
     }
- 
-    /*
-    if (width == 768 && height == 1024) {
-        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-768_1024_bw.png"];
-    }
-    else if (width == 1024 && height == 768) {
-        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-1024_768_bw.png"];
-    }
-    else if (width == 1536 && height == 2048) {
-        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-1536_2048_bw.png"];
-    }
-    else if (width == 2048 && height == 1536) {
-        self.splashImageView.image = [UIImage imageNamed:@"Artwork/launch-2048_1536_bw.png"];
-    }
-    else {
-        self.splashImageView.backgroundColor = [UIColor grayColor];
-    }
-     */
 }
 
 - (void)hideSplashImage {
