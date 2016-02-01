@@ -467,7 +467,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
 {
     // Display the current year with the selected era designation
     if (self.displayYear < 0) {
-        self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (self.displayYear * -1), self.preZeroEra];
+        self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (long)(self.displayYear * -1), self.preZeroEra];
     }
     else {
         self.yearLabel.text = [NSString stringWithFormat:@"%ld %@", (long)self.displayYear, self.postZeroEra];

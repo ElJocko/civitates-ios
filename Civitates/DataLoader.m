@@ -29,10 +29,10 @@
         return tempArray.copy;
     }
     
-    //    NSLog(@"City data to load: %@", cities);
-    
     // Get the top level object
     NSArray* cityObjects = [citiesObject objectForKey:@"cities"];
+    
+    NSLog(@"City data to load: %lu cities.", (unsigned long)cityObjects.count);
     
     for (id cityObject in cityObjects) {
         City *city = [[City alloc] init];
