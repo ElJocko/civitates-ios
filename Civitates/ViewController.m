@@ -137,7 +137,7 @@ static NSString *MAP_ATTRIBUTION = @"Map tiles courtesy of the Ancient World Map
     self.mapView.delegate = self;
     
     // Create a cached tile overlay with AWMC map tiles
-    NSString *awmcUrlTemplate = @"http://c.tiles.mapbox.com/v3/isawnyu.map-knmctlkh/{z}/{x}/{y}.png";
+    NSString *awmcUrlTemplate = @"https://c.tiles.mapbox.com/v3/isawnyu.map-knmctlkh/{z}/{x}/{y}.png";
     FileCacheTileOverlay *cachedTileOverlay = [[FileCacheTileOverlay alloc] initWithURLTemplate:awmcUrlTemplate];
     cachedTileOverlay.canReplaceMapContent = YES;
     cachedTileOverlay.geometryFlipped = NO;
