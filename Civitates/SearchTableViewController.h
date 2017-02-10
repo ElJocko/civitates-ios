@@ -9,10 +9,10 @@
 #import "SearchPopoverDelegate.h"
 #import <UIKit/UIKit.h>
 
-@interface SearchTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate>
+@interface SearchTableViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating>
 
+@property (weak, nonatomic) IBOutlet UIView *searchBarContainerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UISearchBar *citySearchBar;
 @property (weak) id <SearchPopoverDelegate> searchDelegate;
 
 @property NSArray *cityNames;
