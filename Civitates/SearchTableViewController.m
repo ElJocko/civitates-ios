@@ -27,18 +27,17 @@
     
     // Initialize the search controller--use the existing table view for results
     self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [self.searchController loadViewIfNeeded];
     
     // Use the current view controller to update the search results
     self.searchController.searchResultsUpdater = self;
     self.searchController.delegate = self;
     
     // Install the search bar as the table header
-    [self.searchController.searchBar sizeToFit];
     [self.searchBarContainerView addSubview:self.searchController.searchBar];
     self.searchController.searchBar.placeholder = @"city name";
     self.searchController.searchBar.searchBarStyle = UISearchBarStyleProminent;
     self.searchController.searchBar.showsCancelButton = NO;
-//    self.tableView.tableHeaderView = self.searchController.searchBar;
     
     // Set the presentation context.
     self.definesPresentationContext = YES;
@@ -48,35 +47,40 @@
     self.filteredCityNames = [NSMutableArray arrayWithArray:self.cityNames];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [self.searchController.searchBar sizeToFit];
+}
+
+- (void)willDismissSearchController:(UISearchController *)searchController {
+    NSLog(@"willDismissSearchController");
+}
+
+- (void)willPresentSearchController:(UISearchController *)searchController {
+    NSLog(@"willPresentSearchController");
+}
+
+- (void)didDismissSearchController:(UISearchController *)searchController {
+    NSLog(@"didDismissSearchController");
+}
+
+- (void)didPresentSearchController:(UISearchController *)searchController {
+    NSLog(@"didPresentSearchController");
+    self.searchController.searchBar.showsCancelButton = NO;
+}
+
+//- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
+//    self.searchController.active = false;
+//    
+//    [super dismissViewControllerAnimated:flag completion:nil];
+//}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     int numberOfSections = 1; // There's always a names section
     
     return numberOfSections;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
-{
-    if (!self.searchController.active)
-    {
-        if (index > 0)
-        {
-            // The index is offset by one to allow for the extra search icon inserted at the front
-            // of the index
-            
-            return 0;
-        }
-        else
-        {
-            // The first entry in the index is for the search icon so we return section not found
-            // and force the table to scroll to the top.
-            
-            CGRect searchBarFrame = self.searchController.searchBar.frame;
-            [self.tableView scrollRectToVisible:searchBarFrame animated:NO];
-            return NSNotFound;
-        }
-    }
-    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -124,6 +128,7 @@
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSString *searchText = searchController.searchBar.text;
+    NSLog(@"updateSearchResults with text: %@", searchText);
     if (searchText.length > 0) {
         [self filterContentForSearchText:searchText];
     }
@@ -136,32 +141,13 @@
     [self.tableView reloadData];
 }
 
-//- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-//    [searchBar resignFirstResponder];
-//}
-
-/*
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
-    // Tells the table data source to reload when text changes
-    [self filterContentForSearchText:searchString scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
-    // Return YES to cause the search result table view to be reloaded.
-    return YES;
-}
-
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
-    // Tells the table data source to reload when scope bar selection changes
-    [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:
-     [[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
-    // Return YES to cause the search result table view to be reloaded.
-    return YES;
-}
-*/
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AlternateName *name = [self.filteredCityNames objectAtIndex:indexPath.item];
+    
+    NSLog(@"didSelectRow with name: %@", name.name);
 
     if (self.searchDelegate) {
+        self.searchController.active = false;
         [self.searchDelegate didSelectAlternateName:name];
     }
 }
